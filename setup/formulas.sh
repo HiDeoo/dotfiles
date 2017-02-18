@@ -9,6 +9,7 @@ apps=(
   git
   git-extras
   homebrew/completions/brew-cask-completion
+  htop
   mongodb
   mtr
   nvm
