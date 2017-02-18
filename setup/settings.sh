@@ -62,18 +62,19 @@ defaults write com.apple.loginwindow LoginwindowLaunchesRelaunchApps -bool false
 # Disable transparency.
 defaults write com.apple.universalaccess reduceTransparency -bool true
 
-# Disable the Menu Bar Items for Time Machine & Users.
+# Disable the Menu Bar Items for Time Machine, Bluetooth, Airport, Battery & Users.
 for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
 	defaults write "${domain}" dontAutoLoad -array \
 		"/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
+    "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
+    "/System/Library/CoreServices/Menu Extras/AirPort.menu" \
+  	"/System/Library/CoreServices/Menu Extras/Battery.menu" \
 		"/System/Library/CoreServices/Menu Extras/User.menu"
 done
 
-# Disable the Menu Bar Items for Bluetooth, Airport & Battery.
+# Enable the Menu Bar Item for Volume.
 defaults write com.apple.systemuiserver menuExtras -array \
-	"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
-	"/System/Library/CoreServices/Menu Extras/AirPort.menu" \
-	"/System/Library/CoreServices/Menu Extras/Battery.menu"
+	"/System/Library/CoreServices/Menu Extras/Volume.menu"
 
 # Set sidebar icon size to small.
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
