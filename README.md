@@ -41,7 +41,7 @@ $ cd dotfiles
 $ chmod +x configure install
 ```
 
-**Note: Make sure to backup your existing dotfiles before using the `configure` script as this will erase the current ones.**
+*Note: Make sure to backup your existing dotfiles or add all your configurations in this repository before using the `configure` script as it will erase the current ones.*
 
 Use either the `configure` or `install` script:
 
