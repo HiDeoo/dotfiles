@@ -1,0 +1,14 @@
+# Player path & options.
+player= "/Applications/VLC.app/Contents/MacOS/VLC" --file-caching 5000 --network-caching 5000
+
+# Size of the thread pool used to download segments.
+stream-segment-threads=8
+
+# Size of the thread pool used to download HLS segments.
+hls-segment-threads=8
+
+# Size of the thread pool used to download HDS segments.
+hds-segment-threads=8
+
+# Twitch OAuth token (required: https://blog.twitch.tv/client-id-required-for-kraken-api-calls-afbb8e95f843#.g3cswn6xe)
+#twitch-oauth-token=

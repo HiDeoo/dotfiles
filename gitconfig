@@ -1,0 +1,13 @@
+[user]
+	name = HiDeo
+	email = hideo.sup@gmail.com
+[github]
+	user = HiDeoo
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/local/bin/gpg_wrap

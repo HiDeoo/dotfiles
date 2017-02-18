@@ -1,0 +1,19 @@
+#!/usr/bin/env zsh
+
+set -e
+
+PREZTO_DIR=".zprezto"
+
+if [ -d "${ZDOTDIR:-$HOME}/${PREZTO_DIR}" ]; then
+  exit 0
+fi
+
+git clone --recursive https://github.com/zsh-users/prezto.git "${ZDOTDIR:-$HOME}/${PREZTO_DIR}"
+
+setopt EXTENDED_GLOB
+
+for rcfile in "${ZDOTDIR:-$HOME}"/${PREZTO_DIR}/runcoms/^README.md(.N); do
+  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+done
+
+chsh -s /bin/zsh

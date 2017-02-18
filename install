@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -e
+
+INSTALL_DIR="setup"
+
+cd "${INSTALL_DIR}"
+
+sh xcode.sh
+sh homebrew.sh
+sh formulas.sh
+sh casks.sh
+sh node.sh
+sh settings.sh

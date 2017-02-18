@@ -1,0 +1,34 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+      force: true
+
+- clean: ['~']
+
+- shell:
+  -
+    command: zsh .prezto
+    description: Installing Prezto
+    stdout: true
+    stderr: true
+
+- link:
+    ~/.zlogin:
+    ~/.zlogout:
+    ~/.zprofile:
+    ~/.zshenv:
+    ~/.zshrc:
+    ~/.zpreztorc:
+    ~/.livestreamerrc:
+    ~/.wgetrc:
+    ~/.vimrc:
+    ~/.gitconfig:
+    /usr/local/bin/imgcat:
+      path: bin/imgcat
+    /usr/local/bin/+x:
+      path: bin/+x
+
+- shell:
+  - [chmod +x /usr/local/bin/imgcat, Setting permissions for imgcat]
+  - [chmod +x /usr/local/bin/+x, Setting permissions for +x]
