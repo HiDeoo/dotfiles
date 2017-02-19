@@ -107,7 +107,7 @@ alias mongodb='mongod -f /usr/local/etc/mongod.conf'
 alias vvlc='open -n /Applications/VLC.app'
 
 # Streamlink alias.
-alias lv='stremalink'
+alias lv='streamlink'
 
 # PS aliases.
 alias psa='ps aux'
