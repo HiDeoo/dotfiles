@@ -52,10 +52,10 @@ alias c='code'
 
 # Updates.
 alias update_os='sudo softwareupdate -i -a;'
-alias update_brew='brew -v update; brew upgrade --force-bottle --cleanup; brew cleanup; brew cask cleanup; brew prune; brew doctor;'
-alias update_npm='update_brew; npm install npm -g; npm update -g'
+alias update_brew='brew -v update; brew upgrade --cleanup; brew cleanup; brew cask cleanup; brew prune; brew doctor;'
+alias update_npm='npm install npm -g; npm update -g'
 alias update_gem='sudo gem update --system; sudo gem update'
-alias update_all='update_os; update_brew; update_gem; update_npm'
+alias update_all='update_os; update_brew; update_npm'
 
 # Clean LaunchServices.
 alias lscleanup='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
