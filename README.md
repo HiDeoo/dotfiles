@@ -15,7 +15,7 @@ This script will install Prezto if necessary, automatically symlink all dotfiles
 Included dotfiles:
 
   * All [Prezto](https://github.com/zsh-users/prezto) configuration
-  * [.livestreamerrc](http://docs.livestreamer.io/cli.html#configuration-file)
+  * [.streamlinkrc](https://streamlink.github.io/cli.html#cli-streamlinkrc)
   * [.wgetrc](https://www.gnu.org/software/wget/manual/html_node/Wgetrc-Commands.html)
   * [.vimrc](http://www.vim.org/docs.php)
   * [.gitconfig](https://git-scm.com/docs/git-config)
@@ -72,7 +72,7 @@ The dotfiles & custom scripts installation is made using [Dotbot](https://github
     ~/.zshenv:
     ~/.zshrc:
     ~/.zpreztorc:
-    ~/.livestreamerrc:
+    ~/.streamlinkrc:
     ~/.wgetrc:
     ~/.vimrc:
     ~/.gitconfig:
