@@ -1,0 +1,14 @@
+# Default stream to open.
+default-stream=best
+
+# Twitch OAuth token.
+#twitch-oauth-token=
+
+# Size of the thread pool used to download HLS segments.
+hls-segment-threads=3
+
+# Size of the thread pool used to download HDS segments.
+hds-segment-threads=3
+
+# Size of the thread pool used to download segments.
+stream-segment-threads=3
