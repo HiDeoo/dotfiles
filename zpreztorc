@@ -26,7 +26,6 @@ zstyle ':prezto:load' pmodule \
   'git' \
   'archive' \
   'osx' \
-  'node' \
   'rsync' \
   'syntax-highlighting' \
   'history-substring-search' \
