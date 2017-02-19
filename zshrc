@@ -55,6 +55,7 @@ alias update_os='sudo softwareupdate -i -a;'
 alias update_brew='brew -v update; brew upgrade --cleanup; brew cleanup; brew cask cleanup; brew prune; brew doctor;'
 alias update_npm='npm install npm -g; npm update -g'
 alias update_gem='sudo gem update --system; sudo gem update'
+alias update_pip='pip install -U pip; sudo -H pip-review --auto'
 alias update_all='update_os; update_brew; update_npm'
 
 # Clean LaunchServices.
