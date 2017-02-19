@@ -106,8 +106,8 @@ alias mongodb='mongod -f /usr/local/etc/mongod.conf'
 # Launch a new VLC instance.
 alias vvlc='open -n /Applications/VLC.app'
 
-# Open a stream using Livestreamer at the best quality.
-function lv() { livestreamer "$*" best; }
+# Streamlink alias.
+alias lv='stremalink'
 
 # PS aliases.
 alias psa='ps aux'
