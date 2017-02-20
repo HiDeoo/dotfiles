@@ -12,6 +12,11 @@
     description: Installing Prezto
     stdout: true
     stderr: true
+  -
+    command: sh .vundle
+    description: Installing Vundle
+    stdout: true
+    stderr: true
 
 - link:
     ~/.zlogin:
