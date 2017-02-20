@@ -148,6 +148,9 @@ alias mukic='wk && cd muki-client'
 # ShareY
 alias sharey='wk && cd ShareY'
 
+# Dotfiles
+alias dotfiles='wk && cd dotfiles'
+
 #
 # Exports
 #
