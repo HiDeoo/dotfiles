@@ -172,3 +172,10 @@ function nvm() {
   source $(brew --prefix nvm)/nvm.sh
   nvm "$@"
 }
+
+#
+# Shortcuts
+#
+
+# Add a keybinding to accept suggestions.
+bindkey '^ ' autosuggest-accept
