@@ -35,5 +35,6 @@
       path: bin/+x
 
 - shell:
-  - [chmod +x /usr/local/bin/imgcat, Setting permissions for imgcat]
-  - [chmod +x /usr/local/bin/+x, Setting permissions for +x]
+  - [chmod +x /usr/local/bin/imgcat, Setting permissions for imgcat.]
+  - [chmod +x /usr/local/bin/+x, Setting permissions for +x.]
+  - [vim +PluginInstall +qall, Installing Vim plugins.]
