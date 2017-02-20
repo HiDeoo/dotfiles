@@ -31,7 +31,7 @@ This script is meant to be used after a fresh install of macOS and will automati
 
 ## Usage & customization
 
-*Note: To properly customize the scripts, you should clone this repository and modify it to fit your needs and include your own configuration. You can also copy whatever portion of script / configuration that you find useful.*
+*Note: To properly customize the scripts, you should fork this repository and modify it to fit your needs and include your own configuration. You can also copy whatever portion of script / configuration that you find useful.*
 
 To install, just clone the repository and set the correct permissions:
 
