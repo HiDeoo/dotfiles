@@ -16,8 +16,8 @@ apps=(
   dropbox
   fantastical
   firefox
+  filebot
   gitkraken
-  google-chrome-canary
   google-chrome-dev
   imageoptim
   istat-menus
@@ -28,11 +28,9 @@ apps=(
   namebench
   onyx
   postman
-  robomongo
   slack
   spectacle
   spotify
-  steam
   the-unarchiver
   vlc
 )
