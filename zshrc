@@ -26,13 +26,14 @@ alias -- -='cd -'
 #
 # Navigation
 #
+alias q=exit
 
 # Various Shortcuts.
 alias d='cd ~/Dropbox'
 alias dl='cd ~/Downloads'
 alias dt='cd ~/Desktop'
-alias wk='cd ~/Dropbox/Work'
-
+#alias wk='cd ~/Dropbox/Work'
+alias gd='cd ~/Google\ Drive/'
 #
 # Editors
 #
@@ -94,10 +95,10 @@ alias hosts='sudo $EDITOR /etc/hosts'
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
 
 # SSH into Vagrant.
-alias vm='ssh vagrant@127.0.0.1 -p 2222'
+# alias vm='ssh vagrant@127.0.0.1 -p 2222'
 
 # Start MongDB.
-alias mongodb='mongod -f /usr/local/etc/mongod.conf'
+# alias mongodb='mongod -f /usr/local/etc/mongod.conf'
 
 #
 # Miscellaneous

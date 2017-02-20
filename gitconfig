@@ -1,8 +1,8 @@
 [user]
-	name = HiDeo
-	email = hideo.sup@gmail.com
+	name = tiyab
+	email = stef.dams@gmail.com
 [github]
-	user = HiDeoo
+	user = tiyab
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
