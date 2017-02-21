@@ -1,10 +1,6 @@
 " Syntax highlighting.
 syntax enable
 
-" Colors & Scheme.
-set background=dark
-colorscheme solarized
-
 " Use iMproved Vi.
 set nocompatible
 
@@ -17,6 +13,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Plugins list.
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'tpope/vim-sleuth'
@@ -43,6 +40,10 @@ Plugin 'xolox/vim-easytags'
 " End of Plugins list.
 call vundle#end()
 filetype plugin indent on
+
+" Colors & Scheme.
+set background=dark
+colorscheme solarized
 
 " Leader configuration.
 let mapleader = ","
