@@ -9,12 +9,12 @@
 - shell:
   -
     command: zsh .prezto
-    description: Installing Prezto
+    description: Installing Prezto.
     stdout: true
     stderr: true
   -
     command: sh .vundle
-    description: Installing Vundle
+    description: Installing Vundle.
     stdout: true
     stderr: true
 

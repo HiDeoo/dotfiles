@@ -12,6 +12,8 @@ Two main scripts are available:
 
 This script will install Prezto if necessary, automatically symlink all dotfiles included in this repository to their assumed location and install some useful scripts to your system.
 
+Regarding Vim, if not installed, [Vundle](https://github.com/VundleVim/Vundle.vim), a Vim plugin manager will also be installed automatically.
+
 Included dotfiles:
 
   * All [Prezto](https://github.com/zsh-users/prezto) configuration
@@ -61,7 +63,12 @@ The dotfiles & custom scripts installation is made using [Dotbot](https://github
 - shell:
   -
     command: zsh .prezto
-    description: Installing Prezto
+    description: Installing Prezto.
+    stdout: true
+    stderr: true
+  -
+    command: sh .vundle
+    description: Installing Vundle.
     stdout: true
     stderr: true
 
@@ -82,8 +89,9 @@ The dotfiles & custom scripts installation is made using [Dotbot](https://github
       path: bin/+x
 
 - shell:
-  - [chmod +x /usr/local/bin/imgcat, Setting permissions for imgcat]
-  - [chmod +x /usr/local/bin/+x, Setting permissions for +x]
+  - [chmod +x /usr/local/bin/imgcat, Setting permissions for imgcat.]
+  - [chmod +x /usr/local/bin/+x, Setting permissions for +x.]
+  - [vim +PluginInstall +qall, Installing Vim plugins.]
 ```
 
 This file allow you to configure every steps of the process by defining how dotfiles should be set up, what shell commands should be run, etc.
