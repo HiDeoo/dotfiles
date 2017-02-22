@@ -18,6 +18,7 @@ apps=(
   rtmpdump
   ruby
   the_silver_searcher
+  trash
   vim
   wget
   xz
