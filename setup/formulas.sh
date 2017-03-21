@@ -5,9 +5,11 @@ echo "Installing Formulas"
 brew tap homebrew/dupes
 
 apps=(
+  coreutils
   ctags
   git
   git-extras
+  grep
   homebrew/completions/brew-cask-completion
   htop
   mongodb

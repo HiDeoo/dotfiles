@@ -103,6 +103,9 @@ alias mongodb='mongod -f /usr/local/etc/mongod.conf'
 # Miscellaneous
 #
 
+# GNU grep
+alias grep='ggrep'
+
 # Launch a new VLC instance.
 alias vvlc='open -n /Applications/VLC.app'
 
