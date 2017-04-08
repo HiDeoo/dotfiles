@@ -53,10 +53,18 @@ alias c='code'
 # Updates.
 alias update_os='sudo softwareupdate -i -a;'
 alias update_brew='brew -v update; brew upgrade --cleanup; brew cleanup; brew cask cleanup; brew prune; brew doctor;'
-alias update_npm='npm install npm -g; npm update -g'
+alias update_npm='npm i -g npm; npmgu;'
 alias update_gem='sudo gem update --system; sudo gem update'
 alias update_pip='pip install -U pip; sudo -H pip-review --auto'
 alias update_all='update_os; update_brew; update_npm'
+
+# Npm global updates
+function npmgu() {
+  for package in $(npm -g outdated --parseable --depth=0 | cut -d: -f4)
+  do
+      npm -g install "$package"
+  done
+}
 
 # Clean LaunchServices.
 alias lscleanup='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
