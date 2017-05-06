@@ -142,8 +142,11 @@ alias cp='cp -v'
 alias mv='mv -v'
 alias rmn='/bin/rm -i -v'
 
-# Use trash instead of rm
+# Use trash instead of rm.
 alias rm='trash'
+
+# Fix aliases when using sudo.
+alias sudo='sudo '
 
 #
 # Projects
