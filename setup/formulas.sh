@@ -19,6 +19,7 @@ apps=(
   python
   rtmpdump
   ruby
+  streamlink
   the_silver_searcher
   trash
   vim
