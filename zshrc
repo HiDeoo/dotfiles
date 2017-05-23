@@ -56,7 +56,8 @@ alias update_brew='brew -v update; brew upgrade --cleanup; brew cleanup; brew ca
 alias update_npm='npm i -g npm; npmgu;'
 alias update_gem='sudo gem update --system; sudo gem update'
 alias update_pip='pip install -U pip; sudo -H pip-review --auto'
-alias update_all='update_os; update_brew; update_npm'
+alias update_prezto='cd ~/.zprezto && git pull && git submodule update --init --recursive && cd -'
+alias update_all='update_os; update_brew; update_npm; update_prezto'
 
 # Npm global updates
 function npmgu() {

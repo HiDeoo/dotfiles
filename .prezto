@@ -8,7 +8,7 @@ if [ -d "${ZDOTDIR:-$HOME}/${PREZTO_DIR}" ]; then
   exit 0
 fi
 
-git clone --recursive https://github.com/zsh-users/prezto.git "${ZDOTDIR:-$HOME}/${PREZTO_DIR}"
+git clone --recursive https://github.com/sorin-ionescu/prezto "${ZDOTDIR:-$HOME}/${PREZTO_DIR}"
 
 setopt EXTENDED_GLOB
 
