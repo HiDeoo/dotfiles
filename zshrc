@@ -108,6 +108,9 @@ alias vm='ssh vagrant@127.0.0.1 -p 2222'
 # Start MongDB.
 alias mongodb='mongod -f /usr/local/etc/mongod.conf'
 
+# Delete local branches which have already been merged into the current HEAD.
+alias gitcleanup='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
+
 #
 # Miscellaneous
 #
