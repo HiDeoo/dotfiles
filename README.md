@@ -4,7 +4,7 @@ This repository contains a collection of [dotfiles](https://dotfiles.github.io/)
 
 ## Features
 
-[Prezto](https://github.com/zsh-users/prezto), the configuration framework for Zsh, is used and will be automatically installed if not detected.
+[Prezto](https://github.com/sorin-ionescu/prezto), the configuration framework for Zsh, is used and will be automatically installed if not detected.
 
 Two main scripts are available:
 
@@ -16,7 +16,7 @@ Regarding Vim, if not installed, [Vundle](https://github.com/VundleVim/Vundle.vi
 
 Included dotfiles:
 
-  * All [Prezto](https://github.com/zsh-users/prezto) configuration
+  * All [Prezto](https://github.com/sorin-ionescu/prezto) configuration
   * [.streamlinkrc](https://streamlink.github.io/cli.html#cli-streamlinkrc)
   * [.wgetrc](https://www.gnu.org/software/wget/manual/html_node/Wgetrc-Commands.html)
   * [.vimrc](http://www.vim.org/docs.php)
