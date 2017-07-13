@@ -17,8 +17,8 @@ fi
 # Reload ZSH.
 alias rr='exec zsh'
 
-# Edit aliases in Atom.
-alias al='a ~/.zshrc'
+# Edit aliases in VSCode.
+alias al='c ~/.zshrc'
 
 # Navigate to the previous directory.
 alias -- -='cd -'
