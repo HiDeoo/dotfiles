@@ -21,6 +21,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-dispatch'
 Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-surround'
@@ -52,17 +53,16 @@ let g:mapleader = ","
 " Airline configuration.
 set laststatus=2
 set t_Co=256
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '◀'
-let g:airline_symbols = {}
-let g:airline_symbols.linenr = '␊ '
-let g:airline_symbols.linenr = '␤ '
-let g:airline_symbols.linenr = '¶ '
-let g:airline#extensions#branch#symbol = '⎇ '
-let g:airline#extensions#paste#symbol = 'ρ'
-let g:airline#extensions#paste#symbol = 'Þ'
-let g:airline#extensions#paste#symbol = '∥'
-let g:airline#extensions#whitespace#symbol = 'Ξ'
+let g:airline_theme='tomorrow'
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = '☰'
+let g:airline_symbols.maxlinenr = ' ¶'
 
 " Enhance command-line completion.
 set wildmenu

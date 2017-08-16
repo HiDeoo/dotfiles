@@ -18,7 +18,7 @@ fi
 alias rr='exec zsh'
 
 # Edit aliases in VSCode.
-alias al='c ~/.zshrc'
+alias al='a ~/.zshrc'
 
 # Navigate to the previous directory.
 alias -- -='cd -'
