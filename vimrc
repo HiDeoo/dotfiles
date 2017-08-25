@@ -181,3 +181,13 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+
+" Trailing Whitespaces.
+function! TrimWhiteSpace()
+  %s/\s\+$//e
+endfunction
+match ErrorMsg '\s\+$'
+autocmd FileWritePre    * :call TrimWhiteSpace()
+autocmd FileAppendPre   * :call TrimWhiteSpace()
+autocmd FilterWritePre  * :call TrimWhiteSpace()
+autocmd BufWritePre     * :call TrimWhiteSpace()
