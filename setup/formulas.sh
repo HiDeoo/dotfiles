@@ -12,6 +12,7 @@ apps=(
   grep
   homebrew/completions/brew-cask-completion
   htop
+  hub
   mongodb
   mtr
   nvm
@@ -21,6 +22,7 @@ apps=(
   ruby
   streamlink
   the_silver_searcher
+  tldr
   trash
   vim
   wget

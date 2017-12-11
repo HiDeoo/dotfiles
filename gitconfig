@@ -11,3 +11,6 @@
 	gpgsign = true
 [gpg]
 	program = /usr/local/bin/gpg_wrap
+[alias]
+	ls = log --graph --pretty=format:"%C(yellow)%h\\ %C(green)[%ad]%C(red)%d\\ %C(reset)%s\\ %C(blue)(%cn)" --date=short
+	co = checkout

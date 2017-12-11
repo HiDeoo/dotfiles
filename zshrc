@@ -18,7 +18,7 @@ fi
 alias rr='exec zsh'
 
 # Edit aliases in Atom.
-alias al='a ~/.zshrc'
+alias al='c ~/.zshrc'
 
 # Navigate to the previous directory.
 alias -- -='cd -'
