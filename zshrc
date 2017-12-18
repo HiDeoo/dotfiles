@@ -17,10 +17,6 @@ fi
 # Reload ZSH.
 alias rr='exec zsh'
 
-# fzf
-export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
-export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
-
 # Edit aliases in VSCode.
 alias al='c ~/.zshrc'
 
@@ -205,6 +201,40 @@ function nvm() {
 # Add a keybinding to accept suggestions.
 bindkey '^ ' autosuggest-accept
 
-# Add fzf key bindings.
+#
+# Fzf
+#
+
+# Add fzf default key bindings.
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Add custom key bindings.
 bindkey '^[OP' fzf-cd-widget
+
+# Options.
+export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
+export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
+
+# Custom Ctrl-R that can executes commands when pressing Ctrl-X
+fzf-history-widget() {
+  local selected num
+  setopt localoptions noglobsubst noposixbuiltins pipefail 2> /dev/null
+  selected=( $(fc -rl 1 |
+    FZF_DEFAULT_OPTS="--height ${FZF_TMUX_HEIGHT:-40%} $FZF_DEFAULT_OPTS -n2..,.. --tiebreak=index --bind=ctrl-r:toggle-sort --expect=ctrl-x $FZF_CTRL_R_OPTS --query=${(qqq)LBUFFER} +m" $(__fzfcmd)) )
+  local ret=$?
+  if [ -n "$selected" ]; then
+    local accept=0
+    if [[ $selected[1] = ctrl-x ]]; then
+      accept=1
+      shift selected
+    fi
+    num=$selected[1]
+    if [ -n "$num" ]; then
+      zle vi-fetch-history -n $num
+      [[ $accept = 1 ]] && zle accept-line
+    fi
+  fi
+  zle redisplay
+  typeset -f zle-line-init >/dev/null && zle zle-line-init
+  return $ret
+}
