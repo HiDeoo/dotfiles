@@ -7,6 +7,7 @@ brew tap homebrew/dupes
 apps=(
   coreutils
   ctags
+  fzf
   git
   git-extras
   grep
@@ -24,6 +25,7 @@ apps=(
   the_silver_searcher
   tldr
   trash
+  tree
   vim
   wget
   xz
@@ -33,5 +35,9 @@ apps=(
 brew install "${apps[@]}"
 
 brew cleanup
+
+echo "Installing fzf key bindings."
+
+$(brew --prefix)/opt/fzf/install
 
 exit 0

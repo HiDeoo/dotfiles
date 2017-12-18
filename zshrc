@@ -17,7 +17,11 @@ fi
 # Reload ZSH.
 alias rr='exec zsh'
 
-# Edit aliases in Atom.
+# fzf
+export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
+export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
+
+# Edit aliases in VSCode.
 alias al='c ~/.zshrc'
 
 # Navigate to the previous directory.
@@ -200,3 +204,7 @@ function nvm() {
 
 # Add a keybinding to accept suggestions.
 bindkey '^ ' autosuggest-accept
+
+# Add fzf key bindings.
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+bindkey '^[OP' fzf-cd-widget
