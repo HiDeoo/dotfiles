@@ -2,8 +2,6 @@
 
 echo "Installing Formulas"
 
-brew tap homebrew/dupes
-
 apps=(
   coreutils
   ctags
@@ -16,7 +14,7 @@ apps=(
   hub
   mongodb
   mtr
-  nvm
+  node
   perl
   python
   rtmpdump
@@ -29,6 +27,7 @@ apps=(
   vim
   wget
   xz
+  yarn
   zsh
 )
 

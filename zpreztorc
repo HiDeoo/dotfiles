@@ -72,5 +72,8 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
 # Prompt
 #
 
+# Disable return values
+zstyle ':prezto:module:prompt' show-return-val 'no'
+
 # Set the prompt theme to load.
 zstyle ':prezto:module:prompt' theme 'sorin'

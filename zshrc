@@ -184,17 +184,6 @@ export NODE_REPL_HISTORY_SIZE='10000';
 export HOMEBREW_CASK_OPTS='--appdir=/Applications'
 
 #
-# NVM
-#
-
-# Lazy load nvm when needed only to improve startup time.
-function nvm() {
-  unset -f nvm
-  source $(brew --prefix nvm)/nvm.sh
-  nvm "$@"
-}
-
-#
 # Shortcuts
 #
 

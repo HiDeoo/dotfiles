@@ -9,17 +9,16 @@ apps=(
   1password
   alfred
   appcleaner
-  atom
   calibre
   couleurs
   discord
   dropbox
   fantastical
   firefox
-  gitkraken
   google-chrome-canary
   google-chrome-dev
   imageoptim
+  insomnia
   istat-menus
   iterm2-beta
   kaleidoscope
@@ -27,13 +26,13 @@ apps=(
   licecap
   namebench
   onyx
-  postman
-  robomongo
+  robo-3t
   slack
   spectacle
   spotify
   steam
   the-unarchiver
+  visual-studio-code
   vlc
 )
 
