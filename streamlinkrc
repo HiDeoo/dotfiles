@@ -12,3 +12,6 @@ hds-segment-threads=3
 
 # Size of the thread pool used to download segments.
 stream-segment-threads=3
+
+# Player
+player=/Volumes/Macintosh\ SSD/Applications/VLC.app/Contents/MacOS/VLC

@@ -29,22 +29,63 @@ alias -- -='cd -'
 
 # Various Shortcuts.
 alias d='cd ~/Dropbox'
-alias dl='cd ~/Downloads'
+alias dl='cd /Volumes/Macintosh\ SSD/Downloads'
 alias dt='cd ~/Desktop'
-alias wk='cd ~/Dropbox/Work'
+alias wk='cd /Volumes/Macintosh\ SSD/Work'
 
 #
 # Editors
 #
 
-# Sublime Text.
-alias s='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
-
-# Atom.
-alias a='atom'
-
 # VSCode.
 alias c='code'
+
+#
+# Miscellaneous
+#
+
+# GNU grep
+alias grep='ggrep'
+
+# Launch a new VLC instance.
+alias vvlc='open -n /Volumes/Macintosh\ SSD/Applications/VLC.app'
+
+# Streamlink alias.
+alias lv='streamlink'
+
+# PS aliases.
+alias psa='ps aux'
+alias psg='ps aux | grep'
+
+# HTOP.
+alias htop='sudo htop'
+
+# Human readable DF & DU.
+alias df='df -h'
+alias du='du -h -d 2'
+
+# Clear & list directory.
+alias cls='clear; ls'
+
+# LS & grep.
+alias lsg='ll | grep'
+
+# Make cp, mv & rm to be verbose.
+alias cp='cp -v'
+alias mv='mv -v'
+alias rmn='/bin/rm -i -v'
+
+# Use trash instead of rm.
+alias rm='trash'
+
+# Fix aliases when using sudo.
+alias sudo='sudo '
+
+# Cd to SSD.
+alias ssd='cd /Volumes/Macintosh\ SSD'
+
+# Cd to our custom tmp directory.
+alias tmp='cd /Volumes/Macintosh\ SSD/tmp'
 
 #
 # OSX
@@ -84,7 +125,7 @@ alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias flush='dscacheutil -flushcache && killall -HUP mDNSResponder'
 
 # Upload torrents.
-alias uptorrents='sh -c "scp ~/Downloads/*.torrent hideo@dedibox:torrents/watch && rmn ~/Downloads/*.torrent"'
+alias uptorrents='sh -c "scp /Volumes/Macintosh\ SSD/Downloads/*.torrent hideo@dedibox:torrents/watch && rmn /Volumes/Macintosh\ SSD/Downloads/*.torrent"'
 
 # Start a Proxy Socks v5.
 alias proxy='ssh -C2qTnN -D 8282'
@@ -112,47 +153,6 @@ alias mongodb='mongod -f /usr/local/etc/mongod.conf'
 alias gitcleanup='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 
 #
-# Miscellaneous
-#
-
-# GNU grep
-alias grep='ggrep'
-
-# Launch a new VLC instance.
-alias vvlc='open -n /Applications/VLC.app'
-
-# Streamlink alias.
-alias lv='streamlink'
-
-# PS aliases.
-alias psa='ps aux'
-alias psg='ps aux | grep'
-
-# HTOP.
-alias htop='sudo htop'
-
-# Human readable DF & DU.
-alias df='df -h'
-alias du='du -h -d 2'
-
-# Clear & list directory.
-alias cls='clear; ls'
-
-# LS & grep.
-alias lsg='ll | grep'
-
-# Make cp, mv & rm to be verbose.
-alias cp='cp -v'
-alias mv='mv -v'
-alias rmn='/bin/rm -i -v'
-
-# Use trash instead of rm.
-alias rm='trash'
-
-# Fix aliases when using sudo.
-alias sudo='sudo '
-
-#
 # Projects
 #
 
@@ -167,7 +167,7 @@ alias mukis='wk && cd muki-server'
 alias mukic='wk && cd muki-client'
 
 # ShareY
-alias sharey='wk && cd ShareY'
+alias sharey='wk && cd sharey'
 
 # Dotfiles
 alias dotfiles='wk && cd dotfiles'
@@ -181,7 +181,7 @@ export NODE_REPL_HISTORY=~/.node_history;
 export NODE_REPL_HISTORY_SIZE='10000';
 
 # Homebrew Cask
-export HOMEBREW_CASK_OPTS='--appdir=/Applications'
+export HOMEBREW_CASK_OPTS='--appdir=/Volumes/Macintosh\ SSD/Applications'
 
 #
 # Shortcuts
