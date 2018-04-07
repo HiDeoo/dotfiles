@@ -227,3 +227,29 @@ fzf-history-widget() {
   typeset -f zle-line-init >/dev/null && zle zle-line-init
   return $ret
 }
+
+#
+# Custom commands.
+#
+
+# Remove the last added file in the Downloads folder if it matches a set of extensions.
+dlrm() {
+  validExtensions=("avi" "mkv")
+
+  dl
+  file=($(ls -tU | head -n1))
+  extension="${file##*.}"
+
+  for ext in "${validExtensions[@]}"
+  do
+      if [ "$ext" = "$extension" ] ; then
+          rm $file
+
+          echo "Deleted ${file}"
+
+          break
+      fi
+  done
+
+  cd - > /dev/null
+}
