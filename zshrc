@@ -243,7 +243,7 @@ dlrm() {
   for ext in "${validExtensions[@]}"
   do
       if [ "$ext" = "$extension" ] ; then
-          rm $file
+          rm "$file"
 
           echo "Deleted ${file}"
 
