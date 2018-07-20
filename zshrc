@@ -93,7 +93,7 @@ alias tmp='cd /Volumes/Macintosh\ SSD/tmp'
 
 # Updates.
 alias update_os='sudo softwareupdate -i -a;'
-alias update_brew='brew -v update; brew upgrade --cleanup; brew cleanup; brew cask cleanup; brew prune; brew doctor;'
+alias update_brew='brew -v update; brew upgrade --cleanup; brew cleanup --prune=30; brew cask cleanup; brew prune; brew doctor;'
 alias update_npm='npm i -g npm; npmgu;'
 alias update_gem='sudo gem update --system; sudo gem update'
 alias update_pip='pip install -U pip; sudo -H pip-review --auto'
