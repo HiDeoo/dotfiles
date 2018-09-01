@@ -17,15 +17,15 @@ fi
 # Reload ZSH.
 alias rr='exec zsh'
 
-# Edit aliases in VSCode.
+# Edit zshrc in VSCode.
 alias al='c ~/.zshrc'
-
-# Navigate to the previous directory.
-alias -- -='cd -'
 
 #
 # Navigation
 #
+
+# Navigate to the previous directory.
+alias -- -='cd -'
 
 # Various Shortcuts.
 alias d='cd ~/Dropbox'
@@ -55,10 +55,7 @@ alias lv='streamlink'
 
 # PS aliases.
 alias psa='ps aux'
-alias psg='ps aux | grep'
-
-# HTOP.
-alias htop='sudo htop'
+alias psg='ps aux | grep -i'
 
 # Human readable DF & DU.
 alias df='df -h'
@@ -68,7 +65,7 @@ alias du='du -h -d 2'
 alias cls='clear; ls'
 
 # LS & grep.
-alias lsg='ll | grep'
+alias lsg='ll | grep -i'
 
 # Make cp, mv & rm to be verbose.
 alias cp='cp -v'
@@ -170,7 +167,7 @@ alias mukic='wk && cd muki-client'
 alias sharey='wk && cd sharey'
 
 # Dotfiles
-alias dotfiles='wk && cd dotfiles'
+alias dotfiles='d && cd Work/dotfiles'
 
 #
 # Exports
