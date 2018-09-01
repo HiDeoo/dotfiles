@@ -3,8 +3,10 @@
 echo "Installing Formulas"
 
 apps=(
+  bat
   coreutils
   ctags
+  diff-so-fancy
   fzf
   git
   git-extras
@@ -16,6 +18,7 @@ apps=(
   mtr
   node
   perl
+  prettyping
   python
   rtmpdump
   ruby

@@ -36,6 +36,12 @@ alias dl='cd /Volumes/Macintosh\ SSD/Downloads'
 alias dt='cd ~/Desktop'
 alias wk='cd /Volumes/Macintosh\ SSD/Work'
 
+# Cd to SSD.
+alias ssd='cd /Volumes/Macintosh\ SSD'
+
+# Cd to our custom tmp directory.
+alias tmp='cd /Volumes/Macintosh\ SSD/tmp'
+
 #
 # Editors
 #
@@ -83,11 +89,11 @@ alias rm='trash'
 # Fix aliases when using sudo.
 alias sudo='sudo '
 
-# Cd to SSD.
-alias ssd='cd /Volumes/Macintosh\ SSD'
+# Bat
+alias cat='bat'
 
-# Cd to our custom tmp directory.
-alias tmp='cd /Volumes/Macintosh\ SSD/tmp'
+# Prettyping
+alias ping=prettyping
 
 #
 # OSX
