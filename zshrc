@@ -73,10 +73,9 @@ alias cls='clear; ls'
 # LS & grep.
 alias lsg='ll | grep -i'
 
-# Make cp, mv & rm to be verbose.
+# Make cp & mv to be verbose.
 alias cp='cp -v'
 alias mv='mv -v'
-alias rmn='/bin/rm -i -v'
 
 # Use trash instead of rm.
 alias rm='trash'
@@ -115,7 +114,7 @@ function npmgu() {
 alias lscleanup='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
 
 # Empty trashes on all mounted volumes and the main HDD + Apple’s System Logs.
-alias empty='sudo rmn -rfv /Volumes/*/.Trashes; sudo rmn -rfv ~/.Trash; sudo rmn -rfv /private/var/log/asl/*.asl'
+alias empty='sudo \rm -rfv /Volumes/*/.Trashes; sudo \rm -rfv ~/.Trash; sudo \rm -rfv /private/var/log/asl/*.asl'
 
 #
 # Internet
@@ -128,7 +127,7 @@ alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias flush='dscacheutil -flushcache && killall -HUP mDNSResponder'
 
 # Upload torrents.
-alias uptorrents='sh -c "scp /Volumes/Macintosh\ SSD/Downloads/*.torrent hideo@dedibox:torrents/watch && rmn /Volumes/Macintosh\ SSD/Downloads/*.torrent"'
+alias uptorrents='sh -c "scp /Volumes/Macintosh\ SSD/Downloads/*.torrent hideo@dedibox:torrents/watch && \rm /Volumes/Macintosh\ SSD/Downloads/*.torrent"'
 
 # Start a Proxy Socks v5.
 alias proxy='ssh -C2qTnN -D 8282'
