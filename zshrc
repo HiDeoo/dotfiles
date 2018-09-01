@@ -20,6 +20,9 @@ alias rr='exec zsh'
 # Edit zshrc in VSCode.
 alias al='c ~/.zshrc'
 
+# Remove unused aliases
+unalias lc
+
 #
 # Navigation
 #
@@ -27,7 +30,7 @@ alias al='c ~/.zshrc'
 # Navigate to the previous directory.
 alias -- -='cd -'
 
-# Various Shortcuts.
+# Various shortcuts.
 alias d='cd ~/Dropbox'
 alias dl='cd /Volumes/Macintosh\ SSD/Downloads'
 alias dt='cd ~/Desktop'
@@ -39,6 +42,9 @@ alias wk='cd /Volumes/Macintosh\ SSD/Work'
 
 # VSCode.
 alias c='code'
+
+# Vim
+alias v='vim'
 
 #
 # Miscellaneous
