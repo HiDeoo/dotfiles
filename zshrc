@@ -119,7 +119,7 @@ function npmgu() {
 # Clean LaunchServices.
 alias lscleanup='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
 
-# Empty trashes on all mounted volumes and the main HDD + Apple’s System Logs.
+# Empty trashes on all mounted volumes and the main HDD + Apple's System Logs.
 alias empty='sudo \rm -rfv /Volumes/*/.Trashes; sudo \rm -rfv ~/.Trash; sudo \rm -rfv /private/var/log/asl/*.asl'
 
 #
@@ -263,4 +263,19 @@ dlrm() {
   done
 
   cd - > /dev/null
+}
+
+#
+# Git
+#
+
+# Alias git to hub.
+git() {
+  # Clone and cd in the cloned directory automatically.
+  if [ "$1" = clone ] ; then
+    /usr/local/bin/hub clone $2
+    cd $(basename $2 | sed 's/.git$//')
+  else
+    /usr/local/bin/hub "$@"
+  fi
 }
