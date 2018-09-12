@@ -87,7 +87,7 @@ alias mv='mv -v'
 alias rm='trash'
 
 # Fix aliases when using sudo.
-alias sudo='sudo '
+# alias sudo='sudo '
 
 # Bat
 alias cat='bat'
@@ -179,6 +179,9 @@ alias sharey='wk && cd sharey'
 
 # Dotfiles
 alias dotfiles='d && cd Work/dotfiles'
+
+# Bot Land
+alias bl='wk && cd botland'
 
 #
 # Exports
