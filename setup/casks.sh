@@ -6,7 +6,6 @@ brew tap caskroom/cask
 brew tap caskroom/versions
 
 apps=(
-  1password
   alfred
   appcleaner
   calibre

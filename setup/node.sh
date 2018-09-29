@@ -4,6 +4,7 @@ echo "Installing Node global packages."
 
 packages=(
   create-react-app
+  now
   pouchdb-server
   source-map-explorer
   uuid
