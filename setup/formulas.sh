@@ -6,12 +6,12 @@ apps=(
   bat
   coreutils
   ctags
+  curl
   diff-so-fancy
   fzf
   git
   git-extras
   grep
-  homebrew/completions/brew-cask-completion
   htop
   hub
   mongodb

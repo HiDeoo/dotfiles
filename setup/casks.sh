@@ -15,7 +15,6 @@ apps=(
   fantastical
   firefox
   google-chrome-canary
-  google-chrome-dev
   imageoptim
   insomnia
   istat-menus
@@ -24,7 +23,6 @@ apps=(
   karabiner-elements
   licecap
   namebench
-  onyx
   robo-3t
   slack
   spectacle

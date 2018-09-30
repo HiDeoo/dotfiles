@@ -15,7 +15,7 @@ fi
 #
 
 # Path
-export PATH="/usr/local/opt/node@8/bin:$PATH"
+export PATH="/usr/local/opt/curl/bin:/usr/local/opt/node@8/bin:$PATH"
 
 # Reload ZSH.
 alias rr='exec zsh'
@@ -35,15 +35,15 @@ alias -- -='cd -'
 
 # Various shortcuts.
 alias d='cd ~/Dropbox'
-alias dl='cd /Volumes/Macintosh\ SSD/Downloads'
+alias dl='cd ~/Downloads'
 alias dt='cd ~/Desktop'
-alias wk='cd /Volumes/Macintosh\ SSD/Work'
+alias wk='cd ~/Work'
 
-# Cd to SSD.
-alias ssd='cd /Volumes/Macintosh\ SSD'
+# Cd to Toaster.
+alias toaster='cd /Volumes/Toaster'
 
 # Cd to our custom tmp directory.
-alias tmp='cd /Volumes/Macintosh\ SSD/tmp'
+alias tmp='cd ~/tmp'
 
 #
 # Editors
@@ -63,7 +63,7 @@ alias v='vim'
 alias grep='ggrep'
 
 # Launch a new VLC instance.
-alias vvlc='open -n /Volumes/Macintosh\ SSD/Applications/VLC.app'
+alias vvlc='open -n /Applications/VLC.app'
 
 # Streamlink alias.
 alias lv='streamlink'
@@ -136,7 +136,7 @@ alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias flush='dscacheutil -flushcache && killall -HUP mDNSResponder'
 
 # Upload torrents.
-alias uptorrents='sh -c "scp /Volumes/Macintosh\ SSD/Downloads/*.torrent hideo@dedibox:torrents/watch && \rm /Volumes/Macintosh\ SSD/Downloads/*.torrent"'
+alias uptorrents='sh -c "scp ~/Downloads/*.torrent hideo@dedibox:torrents/watch && \rm ~/Downloads/*.torrent"'
 
 # Start a Proxy Socks v5.
 alias proxy='ssh -C2qTnN -D 8282'
@@ -195,7 +195,7 @@ export NODE_REPL_HISTORY=~/.node_history;
 export NODE_REPL_HISTORY_SIZE='10000';
 
 # Homebrew Cask
-export HOMEBREW_CASK_OPTS='--appdir=/Volumes/Macintosh\ SSD/Applications'
+export HOMEBREW_CASK_OPTS='--appdir=/Applications'
 
 #
 # Shortcuts
