@@ -17,8 +17,22 @@
 [grep]
   lineNumber = true
 [pager]
-	diff = diff-so-fancy | less --tabs=1,5 -RFX
-	show = diff-so-fancy | less --tabs=1,5 -RFX
+	diff = diff-so-fancy | less --tabs=2 -RFX
+	show = diff-so-fancy | less --tabs=2 -RFX
+[color]
+	ui = true
+[color "diff"]
+	commit = "yellow bold"
+	frag = "magenta bold"
+	meta = "yellow"
+	new = "green bold"
+	old = "red bold"
+	whitespace = "red reverse"
+[color "diff-highlight"]
+	newHighlight= "green bold 22"
+	newNormal= "green bold"
+	oldHighlight= "red bold 52"
+	oldNormal= "red bold"
 [diff]
 	indentHeuristic = true
 	tool = Kaleidoscope
@@ -36,6 +50,7 @@
   showPatch = true
 [status]
   showUntrackedFiles = all
+	submoduleSummary = true
 [alias]
 	a = add
 	ap = add -p
@@ -58,3 +73,5 @@
 	s = status -sb
 	sub = submodule update --init --recursive
 	undo = reset --soft HEAD^
+[diff-so-fancy]
+	stripLeadingSymbols = false
