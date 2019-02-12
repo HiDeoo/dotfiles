@@ -138,9 +138,6 @@ alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
 # Flush Directory Service cache.
 alias flush='dscacheutil -flushcache && killall -HUP mDNSResponder'
 
-# Upload torrents.
-alias uptorrents='sh -c "scp ~/Downloads/*.torrent hideo@dedibox:torrents/watch && \rm ~/Downloads/*.torrent"'
-
 # Start a Proxy Socks v5.
 alias proxy='ssh -C2qTnN -D 8282'
 
@@ -157,14 +154,14 @@ alias hosts='sudo $EDITOR /etc/hosts'
 # URL encode.
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
 
-# SSH into Vagrant.
-alias vm='ssh vagrant@127.0.0.1 -p 2222'
-
 # Start MongDB.
 alias mongodb='mongod -f /usr/local/etc/mongod.conf'
 
 # Delete local branches which have already been merged into the current HEAD.
 alias gitcleanup='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
+
+# SSH to Zoidberg.
+alias zoid='ssh zoidberg'
 
 #
 # Projects
@@ -187,7 +184,7 @@ alias sharey='wk && cd sharey'
 alias dotfiles='d && cd Work/dotfiles'
 
 # Bot Land
-alias bl='wk && cd botland'
+alias bl='cd /Volumes/Work/botland'
 
 #
 # Exports
