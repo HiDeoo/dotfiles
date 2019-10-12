@@ -13,7 +13,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Plugins list.
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'connorholyday/vim-snazzy'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'tpope/vim-sleuth'
@@ -43,8 +43,8 @@ call vundle#end()
 filetype plugin indent on
 
 " Colors & Scheme.
-set background=dark
-colorscheme solarized
+colorscheme snazzy
+let g:SnazzyTransparent = 1
 
 " Leader configuration.
 let mapleader = ","
@@ -53,7 +53,7 @@ let g:mapleader = ","
 " Airline configuration.
 set laststatus=2
 set t_Co=256
-let g:airline_theme='tomorrow'
+let g:airline_theme='deus'
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
