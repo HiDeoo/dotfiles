@@ -15,7 +15,7 @@
 [hub]
 	protocol = ssh
 [grep]
-  lineNumber = true
+	lineNumber = true
 [pager]
 	diff = diff-so-fancy | less --tabs=2 -RFX
 	show = diff-so-fancy | less --tabs=2 -RFX
@@ -39,17 +39,17 @@
 [difftool]
 	prompt = false
 [difftool "Kaleidoscope"]
-  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [merge]
 	log = true
 	tool = Kaleidoscope
 [mergetool "Kaleidoscope"]
-  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" \"$REMOTE\"
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" \"$REMOTE\"
 	trustExitCode = true
 [stash]
-  showPatch = true
+	showPatch = true
 [status]
-  showUntrackedFiles = all
+	showUntrackedFiles = all
 	submoduleSummary = true
 [alias]
 	a = add
@@ -62,13 +62,13 @@
 	d = diff
 	dt = difftool
 	last-msg = !git --no-pager log --format=format:%B -1
-  last-sha = !git --no-pager log --format=format:%H -1
+	last-sha = !git --no-pager log --format=format:%H -1
 	ls = log --graph --pretty=format:"%C(yellow)%h\\ %C(green)[%ad]%C(red)%d\\ %C(reset)%s\\ %C(blue)(%cn)" --date=short
 	r = reflog -20
 	ra = rebase --abort
-  rc = rebase --continue
+	rc = rebase --continue
 	rma = rebase master
-  rmi = rebase master -i
+	rmi = rebase master -i
 	rv = remote -v
 	s = status -sb
 	sub = submodule update --init --recursive
