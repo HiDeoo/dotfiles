@@ -18,7 +18,7 @@ fi
 #
 
 # Path
-export PATH="/usr/local/opt/curl/bin:/usr/local/opt/node@8/bin:$PATH"
+export PATH="/usr/local/opt/curl/bin:$PATH"
 
 # Language
 export LANG=en_US.UTF-8
