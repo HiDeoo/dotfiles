@@ -131,6 +131,12 @@ alias lscleanup='/System/Library/Frameworks/CoreServices.framework/Frameworks/La
 # Empty trashes on all mounted volumes and the main HDD + Apple's System Logs.
 alias empty='sudo \rm -rfv /Volumes/*/.Trashes; sudo \rm -rfv ~/.Trash; sudo \rm -rfv /private/var/log/asl/*.asl'
 
+# Remove quarantine on a specific element.
+alias unquarantine='xattr -r -d com.apple.quarantine'
+
+# Approve a specific element from an unidenfied developer via the system-wide assessment rule database.
+alias approve='spctl --add --label "Approved"'
+
 #
 # Internet
 #
