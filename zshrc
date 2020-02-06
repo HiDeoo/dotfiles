@@ -291,3 +291,11 @@ git() {
     /usr/local/bin/hub "$@"
   fi
 }
+
+#
+# Node
+#
+
+# Lazy-load nvm.
+export NVM_LAZY_LOAD=true
+source ~/.zsh-nvm/zsh-nvm.plugin.zsh
