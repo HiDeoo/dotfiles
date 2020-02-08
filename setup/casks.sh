@@ -22,10 +22,8 @@ apps=(
   kaleidoscope
   karabiner-elements
   licecap
-  namebench
-  robo-3t
+  rectangle
   slack
-  spectacle
   spotify
   steam
   the-unarchiver
