@@ -296,6 +296,5 @@ git() {
 # Node
 #
 
-# Lazy-load nvm.
-export NVM_LAZY_LOAD=true
-source ~/.zsh-nvm/zsh-nvm.plugin.zsh
+# Lazy-load fnm.
+eval "$(fnm env --multi)"

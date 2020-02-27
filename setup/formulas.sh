@@ -22,6 +22,7 @@ apps=(
   python
   rtmpdump
   ruby
+  Schniz/tap/fnm
   streamlink
   the_silver_searcher
   tldr
