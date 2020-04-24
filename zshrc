@@ -72,7 +72,7 @@ alias grep='ggrep'
 alias vvlc='open -n /Applications/VLC.app'
 
 # Streamlink alias.
-alias lv='streamlink'
+alias lv='streamlink --twitch-low-latency'
 
 # PS aliases.
 alias psa='ps aux'
