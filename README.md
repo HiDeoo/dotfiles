@@ -16,16 +16,19 @@ Regarding Vim, if not installed, [Vundle](https://github.com/VundleVim/Vundle.vi
 
 Included dotfiles:
 
+  * All [Zsh configuration](http://zsh.sourceforge.net/Intro/intro_3.html#SEC3)
   * All [Prezto](https://github.com/sorin-ionescu/prezto) configuration
   * [.streamlinkrc](https://streamlink.github.io/cli.html#cli-streamlinkrc)
   * [.wgetrc](https://www.gnu.org/software/wget/manual/html_node/Wgetrc-Commands.html)
   * [.vimrc](http://www.vim.org/docs.php)
   * [.gitconfig](https://git-scm.com/docs/git-config)
+  * [.vodrc](https://github.com/HiDeoo/vod)
 
 Included scripts:
 
   * `imgcat`: Script showing inline images in iTerm2 v3.
   * `+x`: Script to quickly add execution permissions to a file.
+  * `lc`: Script to generate a license.
 
 ### `install`
 
@@ -59,7 +62,7 @@ $ ./install
 
 The dotfiles & custom scripts installation is made using [Dotbot](https://github.com/anishathalye/dotbot). The `configure` script will automatically call Dotbot using the `.configure.yaml` file which contains all steps of the process.
 
-```
+```yaml
 - shell:
   -
     command: zsh .prezto
@@ -82,15 +85,19 @@ The dotfiles & custom scripts installation is made using [Dotbot](https://github
     ~/.streamlinkrc:
     ~/.wgetrc:
     ~/.vimrc:
+    ~/.vodrc:
     ~/.gitconfig:
     /usr/local/bin/imgcat:
       path: bin/imgcat
     /usr/local/bin/+x:
       path: bin/+x
+    /usr/local/bin/lc:
+      path: bin/lc
 
 - shell:
   - [chmod +x /usr/local/bin/imgcat, Setting permissions for imgcat.]
   - [chmod +x /usr/local/bin/+x, Setting permissions for +x.]
+  - [chmod +x /usr/local/bin/lc, Setting permissions for lc.]
   - [vim +PluginInstall +qall, Installing Vim plugins.]
 ```
 

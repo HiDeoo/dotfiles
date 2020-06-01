@@ -28,6 +28,7 @@
     ~/.streamlinkrc:
     ~/.wgetrc:
     ~/.vimrc:
+    ~/.vodrc:
     ~/.gitconfig:
     /usr/local/bin/imgcat:
       path: bin/imgcat
