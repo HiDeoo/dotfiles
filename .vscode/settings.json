@@ -1,0 +1,17 @@
+{
+  "files.associations": {
+    "streamlinkrc": "properties",
+    "vimrc": "properties",
+    "vodrc": "yaml",
+    "wgetrc": "properties",
+    "zlogin": "shellscript",
+    "zlogout": "shellscript",
+    "zpreztorc": "shellscript",
+    "zprofile": "shellscript",
+    "zshenv": "shellscript",
+    "zshrc": "shellscript"
+  },
+  "files.exclude": {
+    ".dotbot": true
+  }
+}
