@@ -18,6 +18,9 @@ export LANG=en_US.UTF-8
 # Add a key binding to accept suggestions.
 bindkey '^ ' autosuggest-accept
 
+# Expand aliases after sudo instead of only checking the first word of a command for an alias.
+alias sudo='sudo '
+
 # Reload Zsh.
 alias rr='exec zsh'
 
