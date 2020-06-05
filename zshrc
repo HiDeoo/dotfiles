@@ -34,6 +34,9 @@ unalias lc
 ### Navigation
 ##
 
+# Changes the current working directory using fasd.
+alias d='fasd_cd'
+
 # Navigate to the previous directory.
 alias -- -='cd -'
 
