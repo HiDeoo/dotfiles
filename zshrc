@@ -73,7 +73,8 @@ alias psg='ps aux | grep -i'
 alias df='df -h'
 alias du='du -h -d 2'
 
-# List the current directory & grep.
+# Alias ls.
+alias l='ll'
 alias lsg='ll | grep -i'
 
 # Use the verbose mode for cp & mv.
