@@ -1,11 +1,6 @@
-#
-# Executes commands at the start of an interactive session.
-#
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
-
-# Workaround for: https://github.com/sorin-ionescu/prezto/issues/1744
+# Use .zhistory instead of .zsh_history.
+# This is a workaround to use on macOS Catalina an old history file created on macOS Mojave.
+# See: https://github.com/sorin-ionescu/prezto/issues/1744
 export HISTFILE="${ZDOTDIR:-$HOME}/.zhistory"
 
 # Source Prezto.
@@ -13,102 +8,119 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-#
-# ZSH
-#
+##
+### ZSH
+##
 
-# Path
-export PATH="/usr/local/opt/curl/bin:$PATH"
-
-# Language
+# Set the system locale.
 export LANG=en_US.UTF-8
 
-# Reload ZSH.
+# Add a key binding to accept suggestions.
+bindkey '^ ' autosuggest-accept
+
+# Reload Zsh.
 alias rr='exec zsh'
 
-# Edit zshrc in VSCode.
+# Edit zshrc in VS Code.
 alias al='c ~/.zshrc'
 
-# Remove unused aliases
+# Remove unused aliases.
 unalias lc
 
-#
-# Navigation
-#
+##
+### Navigation
+##
 
 # Navigate to the previous directory.
 alias -- -='cd -'
 
-# Various shortcuts.
-alias d='cd ~/Dropbox'
+# Navigate to various common directories.
+alias db='cd ~/Dropbox'
 alias dl='cd ~/Downloads'
 alias dt='cd ~/Desktop'
 alias wk='cd ~/Work'
-
-# Cd to Toaster.
-alias toaster='cd /Volumes/Toaster'
-
-# Cd to our custom tmp directory.
 alias tmp='cd ~/tmp'
 
-#
-# Editors
-#
+# Navigate to the Toaster volume.
+alias toaster='cd /Volumes/Toaster'
 
-# VSCode.
+# Navigate to the dotfiles repository.
+alias dotfiles='db && cd Work/dotfiles'
+
+##
+### Editors
+##
+
+# Alias common editors.
 alias c='code'
-
-# Vim
 alias v='vim'
 
-#
-# Miscellaneous
-#
+##
+### Miscellaneous
+##
 
-# GNU grep
+# Use GNU grep instead of BSD grep.
 alias grep='ggrep'
+
+# Alias ps.
+alias psa='ps aux'
+alias psg='ps aux | grep -i'
+
+# Use human readable df & du.
+alias df='df -h'
+alias du='du -h -d 2'
+
+# List the current directory & grep.
+alias lsg='ll | grep -i'
+
+# Use the verbose mode for cp & mv.
+alias cp='cp -v'
+alias mv='mv -v'
+
+# Override some default commands.
+alias cat='bat'
+alias ping='prettyping'
+alias rm='trash'
+
+# Clear & list the current directory.
+alias cls='clear; ls'
 
 # Launch a new VLC instance.
 alias vvlc='open -n /Applications/VLC.app'
 
-# Streamlink alias.
+# Start Streamlink.
 alias lv='streamlink --twitch-low-latency'
 
-# PS aliases.
-alias psa='ps aux'
-alias psg='ps aux | grep -i'
+# Remove the last added file in the ~/Downloads directory if it matches a set of extensions.
+dlrm() {
+  validExtensions=("avi" "mkv")
 
-# Human readable DF & DU.
-alias df='df -h'
-alias du='du -h -d 2'
+  dl
+  file=($(ls -tU | head -n1))
+  extension="${file##*.}"
 
-# Clear & list directory.
-alias cls='clear; ls'
+  for ext in "${validExtensions[@]}"
+  do
+      if [ "$ext" = "$extension" ] ; then
+          rm "$file"
 
-# LS & grep.
-alias lsg='ll | grep -i'
+          echo "Deleted ${file}"
 
-# Make cp & mv to be verbose.
-alias cp='cp -v'
-alias mv='mv -v'
+          break
+      fi
+  done
 
-# Use trash instead of rm.
-alias rm='trash'
+  cd - > /dev/null
+}
 
-# Fix aliases when using sudo.
-# alias sudo='sudo '
+##
+### macOS
+##
 
-# Bat
-alias cat='bat'
+# Configure the Homebrew Cask application directory.
+export HOMEBREW_CASK_OPTS='--appdir=/Applications'
 
-# Prettyping
-alias ping=prettyping
-
-#
-# macOS
-#
-
-# Updates.
+# Update various parts of the system.
 alias update_os='sudo softwareupdate -i -a'
 alias update_brew='brew -v update; brew upgrade; brew cleanup --prune=30; brew doctor'
 alias update_npm='npmgu'
@@ -117,7 +129,7 @@ alias update_pip='pip install -U pip; sudo -H pip-review --auto'
 alias update_prezto='cd ~/.zprezto && git pull && git submodule update --init --recursive && cd -'
 alias update_all='update_os; update_brew; update_npm; update_prezto'
 
-# Npm global updates
+# Update npm global packages.
 function npmgu() {
   for package in $(npm -g outdated --parseable --depth=0 | cut -d: -f4)
   do
@@ -128,7 +140,7 @@ function npmgu() {
 # Clean LaunchServices.
 alias lscleanup='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
 
-# Empty trashes on all mounted volumes and the main HDD + Apple's System Logs.
+# Empty trashes on all mounted volumes, the trash of the main disk & Apple's System Logs.
 alias empty='sudo \rm -rfv /Volumes/*/.Trashes; sudo \rm -rfv ~/.Trash; sudo \rm -rfv /private/var/log/asl/*.asl'
 
 # Remove quarantine on a specific element.
@@ -137,12 +149,12 @@ alias unquarantine='xattr -r -d com.apple.quarantine'
 # Approve a specific element from an unidenfied developer via the system-wide assessment rule database.
 alias approve='spctl --add --label "Approved"'
 
-#
-# Internet
-#
+##
+### Internet
+##
 
-# Get external IP.
-alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
+# Get external IPv4.
+alias ip='dig +short -4 myip.opendns.com @resolver1.opendns.com'
 
 # Flush Directory Service cache.
 alias flush='dscacheutil -flushcache && killall -HUP mDNSResponder'
@@ -150,72 +162,28 @@ alias flush='dscacheutil -flushcache && killall -HUP mDNSResponder'
 # Start a Proxy Socks v5.
 alias proxy='ssh -C2qTnN -D 8282'
 
-# Dig.
+# Add default options to dig.
 alias dig='dig +nocmd any +multiline +noall +answer'
 
 # Edit the hosts file.
 alias hosts='sudo $EDITOR /etc/hosts'
 
-#
-# Dev
-#
+##
+### Dev
+##
 
-# URL encode.
+# URL-encode a string.
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
 
-# Start MongDB.
-alias mongodb='mongod -f /usr/local/etc/mongod.conf'
-
-# Delete local branches which have already been merged into the current HEAD.
+# Delete git local branches which have already been merged into the current HEAD.
 alias gitcleanup='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 
-# SSH to Zoidberg.
+# Ssh to Zoidberg.
 alias zoid='ssh zoidberg'
 
-#
-# Projects
-#
-
-# Raki
-alias raki='wk && cd Raki'
-alias rakilog='tail -f ~/Library/Application\ Support/Raki/raki.log'
-alias rakipouch='wk && cd pouchdb-server && pouchdb-server -p 5984'
-
-# Muki
-alias mukiw='wk && cd muki-worker'
-alias mukis='wk && cd muki-server'
-alias mukic='wk && cd muki-client'
-
-# ShareY
-alias sharey='wk && cd sharey'
-
-# Dotfiles
-alias dotfiles='d && cd Work/dotfiles'
-
-# Bot Land
-alias bl='cd /Volumes/Work/botland'
-
-#
-# Exports
-#
-
-# Node REPL configuration.
-export NODE_REPL_HISTORY=~/.node_history;
-export NODE_REPL_HISTORY_SIZE='10000';
-
-# Homebrew Cask
-export HOMEBREW_CASK_OPTS='--appdir=/Applications'
-
-#
-# Shortcuts
-#
-
-# Add a keybinding to accept suggestions.
-bindkey '^ ' autosuggest-accept
-
-#
-# Fzf
-#
+##
+### Fzf
+##
 
 # Add fzf default key bindings.
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -223,11 +191,11 @@ bindkey '^ ' autosuggest-accept
 # Add custom key bindings.
 bindkey '^[OP' fzf-cd-widget
 
-# Options.
+# Configure various options.
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
 export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
 
-# Custom Ctrl-R that can executes commands when pressing Ctrl-X
+# Add custom Ctrl-R widget that can executes commands when pressing Ctrl-X.
 fzf-history-widget() {
   local selected num
   setopt localoptions noglobsubst noposixbuiltins pipefail 2> /dev/null
@@ -251,35 +219,9 @@ fzf-history-widget() {
   return $ret
 }
 
-#
-# Custom commands.
-#
-
-# Remove the last added file in the Downloads folder if it matches a set of extensions.
-dlrm() {
-  validExtensions=("avi" "mkv")
-
-  dl
-  file=($(ls -tU | head -n1))
-  extension="${file##*.}"
-
-  for ext in "${validExtensions[@]}"
-  do
-      if [ "$ext" = "$extension" ] ; then
-          rm "$file"
-
-          echo "Deleted ${file}"
-
-          break
-      fi
-  done
-
-  cd - > /dev/null
-}
-
-#
-# Git
-#
+##
+### Git
+##
 
 # Alias git to hub.
 git() {
@@ -292,9 +234,13 @@ git() {
   fi
 }
 
-#
-# Node
-#
+##
+### Node
+##
+
+# Configure the Node REPL.
+export NODE_REPL_HISTORY=~/.node_history;
+export NODE_REPL_HISTORY_SIZE='10000';
 
 # Lazy-load fnm.
 eval "$(fnm env --multi)"
