@@ -72,10 +72,6 @@ alias grep='ggrep'
 alias psa='ps aux'
 alias psg='ps aux | grep -i'
 
-# Use human readable df & du.
-alias df='df -h'
-alias du='du -h -d 2'
-
 # Alias ls.
 alias l='ll'
 alias lsg='ll | grep -i'
