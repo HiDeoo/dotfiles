@@ -8,9 +8,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-##
-### ZSH
-##
+#
+# ZSH
+#
 
 # Set the system locale.
 export LANG=en_US.UTF-8
@@ -30,9 +30,9 @@ alias al='c ~/.zshrc'
 # Remove unused aliases.
 unalias lc
 
-##
-### Navigation
-##
+#
+# Navigation
+#
 
 # Changes the current working directory using fasd.
 alias d='fasd_cd'
@@ -53,17 +53,17 @@ alias toaster='cd /Volumes/Toaster'
 # Navigate to the dotfiles repository.
 alias dotfiles='db && cd Work/dotfiles'
 
-##
-### Editors
-##
+#
+# Editors
+#
 
 # Alias common editors.
 alias c='code'
 alias v='vim'
 
-##
-### Miscellaneous
-##
+#
+# Miscellaneous
+#
 
 # Use GNU grep instead of BSD grep.
 alias grep='ggrep'
@@ -120,9 +120,9 @@ dlrm() {
   cd - > /dev/null
 }
 
-##
-### macOS
-##
+#
+# macOS
+#
 
 # Configure the Homebrew Cask application directory.
 export HOMEBREW_CASK_OPTS='--appdir=/Applications'
@@ -157,9 +157,9 @@ alias unquarantine='xattr -r -d com.apple.quarantine'
 # Approve a specific element from an unidenfied developer via the system-wide assessment rule database.
 alias approve='spctl --add --label "Approved"'
 
-##
-### Internet
-##
+#
+# Internet
+#
 
 # Get external IPv4.
 alias ip='dig +short -4 myip.opendns.com @resolver1.opendns.com'
@@ -176,9 +176,9 @@ alias dig='dig +nocmd any +multiline +noall +answer'
 # Edit the hosts file.
 alias hosts='sudo $EDITOR /etc/hosts'
 
-##
-### Dev
-##
+#
+# Dev
+#
 
 # URL-encode a string.
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
@@ -189,9 +189,9 @@ alias gitcleanup='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 # Ssh to Zoidberg.
 alias zoid='ssh zoidberg'
 
-##
-### Fzf
-##
+#
+# Fzf
+#
 
 # Add fzf default key bindings.
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -227,9 +227,9 @@ fzf-history-widget() {
   return $ret
 }
 
-##
-### Git
-##
+#
+# Git
+#
 
 # Alias git to hub.
 git() {
@@ -242,9 +242,9 @@ git() {
   fi
 }
 
-##
-### Node
-##
+#
+# Node
+#
 
 # Configure the Node REPL.
 export NODE_REPL_HISTORY=~/.node_history;
