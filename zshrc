@@ -124,10 +124,11 @@ export HOMEBREW_CASK_OPTS='--appdir=/Applications'
 alias update_os='sudo softwareupdate -i -a'
 alias update_brew='brew -v update; brew upgrade; brew cleanup --prune=30; brew doctor'
 alias update_npm='npmgu'
+alias update_yarn='yarn global upgrade --latest'
 alias update_gem='sudo gem update --system; sudo gem update'
 alias update_pip='pip install -U pip; sudo -H pip-review --auto'
 alias update_prezto='cd ~/.zprezto && git pull && git submodule update --init --recursive && cd -'
-alias update_all='update_os; update_brew; update_npm; update_prezto'
+alias update_all='update_os; update_brew; update_npm; update_yarn; update_prezto'
 
 # Update npm global packages.
 function npmgu() {
