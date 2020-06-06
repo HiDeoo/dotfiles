@@ -223,7 +223,7 @@ fzf-history-widget() {
   fi
   zle redisplay
   typeset -f zle-line-init >/dev/null && zle zle-line-init
-  return $ret
+  return 0
 }
 
 #
