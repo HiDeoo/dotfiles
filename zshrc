@@ -3,6 +3,14 @@
 # See: https://github.com/sorin-ionescu/prezto/issues/1744
 export HISTFILE="${ZDOTDIR:-$HOME}/.zhistory"
 
+# Load brew completion definitions before Prezto & compinit.
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
+
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"

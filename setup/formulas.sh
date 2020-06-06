@@ -11,6 +11,7 @@ apps=(
   fzf
   git
   git-extras
+  github/gh/gh
   grep
   htop
   mongodb
