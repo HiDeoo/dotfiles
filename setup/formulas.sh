@@ -13,7 +13,6 @@ apps=(
   git-extras
   grep
   htop
-  hub
   mongodb
   mtr
   node

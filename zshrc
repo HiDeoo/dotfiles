@@ -230,14 +230,13 @@ fzf-history-widget() {
 # Git
 #
 
-# Alias git to hub.
+# Navigate automatically to a git cloned directory.
 git() {
-  # Clone and cd in the cloned directory automatically.
   if [ "$1" = clone ] ; then
-    /usr/local/bin/hub clone $2
+    command git clone $2
     cd $(basename $2 | sed 's/.git$//')
   else
-    /usr/local/bin/hub "$@"
+    command git "$@"
   fi
 }
 

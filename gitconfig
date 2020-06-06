@@ -12,8 +12,6 @@
 	verbose = true
 [gpg]
 	program = /usr/local/bin/gpg_wrap
-[hub]
-	protocol = ssh
 [grep]
 	lineNumber = true
 [pager]
