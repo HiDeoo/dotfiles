@@ -210,6 +210,7 @@ bindkey '^[OP' fzf-cd-widget
 # Configure various options.
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
 export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
+export FZF_DEFAULT_OPTS="--color=hl:13,hl+:13,fg+:10,pointer:9,bg+:#3a3e50,info:11"
 
 # Add custom Ctrl-R widget that can executes commands when pressing Ctrl-X.
 fzf-history-widget() {
