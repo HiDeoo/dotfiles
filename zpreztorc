@@ -34,6 +34,16 @@ zstyle ':prezto:load' pmodule \
   'prompt'
 
 #
+# Antigen
+#
+
+# Load Antigen.
+source $(brew --prefix)/share/antigen/antigen.zsh
+
+# Load 3rd party plugins.
+antigen apply
+
+#
 # Terminal
 #
 

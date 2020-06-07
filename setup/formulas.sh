@@ -3,6 +3,7 @@
 echo "Installing Formulas"
 
 apps=(
+  antigen
   bat
   coreutils
   ctags
