@@ -197,6 +197,10 @@ alias gitcleanup='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 # Ssh to Zoidberg.
 alias zoid='ssh zoidberg'
 
+# Alias The Silver Searcher.
+alias ag='ag --color-line-number "1;93" --color-match "1;95" --color-path "1;92"'
+alias agc='ag -C'
+
 #
 # Fzf
 #
