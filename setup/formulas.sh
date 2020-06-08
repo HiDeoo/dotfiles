@@ -16,6 +16,7 @@ apps=(
   github/gh/gh
   grep
   htop
+  jq
   mongodb
   mtr
   node
