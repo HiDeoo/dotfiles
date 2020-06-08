@@ -9,6 +9,7 @@ apps=(
   ctags
   curl
   diff-so-fancy
+  fd
   fzf
   git
   git-extras
