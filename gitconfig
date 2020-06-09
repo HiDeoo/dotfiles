@@ -31,6 +31,8 @@
 	newNormal= "green bold"
 	oldHighlight= "red bold 52"
 	oldNormal= "red bold"
+[pull]
+	ff = only
 [diff]
 	indentHeuristic = true
 	tool = Kaleidoscope
