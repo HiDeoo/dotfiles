@@ -1,0 +1,99 @@
+#!/bin/bash
+# Note that we're explicitly using `/bin/bash` instead of `/usr/bin/env bash` to workaround a macOS Catalina permission
+# issue when starting this script using launchd.
+
+set -Eeuo pipefail
+trap 'catch $? $LINENO' EXIT
+
+# Path(s) to backup.
+SOURCE_PATH="
+  /Users/hideo/Dropbox/.gpg \
+  /Users/hideo/Dropbox/.letsencrypt \
+  /Users/hideo/Dropbox/Sync \
+  /Users/hideo/Dropbox/Work/dotfiles \
+  /Users/hideo/.aws \
+  /Users/hideo/.config \
+  /Users/hideo/.now \
+  /Users/hideo/.npmrc \
+  /Users/hideo/.vsce \
+  /Users/hideo/.yarnrc \
+  /Users/hideo/.zsh_history \
+  /Users/hideo/Documents \
+  /Users/hideo/Movies \
+  /Users/hideo/Music \
+  /Users/hideo/Pictures"
+
+# Path of the repository that will contain the backup archives.
+REPO_PATH=/Volumes/hideo/Backup/iMac
+
+# Update the PATH to include brew binaries.
+export PATH=/usr/local/bin/:$PATH
+
+# Use macOS Keychain to get the passphrase.
+export BORG_PASSCOMMAND="security find-generic-password -a $USER -s borg-passphrase -w"
+
+# Common borg create options.
+BORG_CREATE_OPTIONS='--files-cache ctime,size --exclude-caches --exclude-from /Users/hideo/.backupignore'
+
+# Catches exit (due to an error or not).
+catch() {
+  # If there was no error, exit properly.
+  if [ "$1" == 0 ]; then
+    return
+  fi
+
+  # Handle errors.
+  osascript -e "display alert \
+    \"Backup interrupted\" message \
+    \"Something went wrong during a backup.\n\
+    \nCode: $1 - Line: $2\n\
+    \nCheck /Users/hideo/Library/Logs/local.backup.log for more details.\" \
+    as critical" &> /dev/null
+}
+
+# Displays command usage.
+usage() {
+  echo "Usage:"
+  echo "    backup                      Backup files."
+  echo "    backup help                 Display this help message."
+  echo "    backup list                 List files to backup."
+}
+
+# Lists files to backup (no backup are actually started).
+list() {
+  borg create ${BORG_CREATE_OPTIONS} -n --list ${REPO_PATH}::list ${SOURCE_PATH}
+}
+
+# Backups files.
+backup() {
+  # Create a new backup archive.
+  borg create ${BORG_CREATE_OPTIONS} ${REPO_PATH}::'{now:%Y-%m-%d} {now:%H:%M:%S}' ${SOURCE_PATH}
+
+  # Purge existing archives except the last two backups and at least 2 weekly archives.
+  borg prune --keep-last 2 -w 2 ${REPO_PATH}
+}
+
+# Handle various usages.
+if [ $# -eq 0 ]; then
+  # Without any option, start a backup.
+  backup
+elif [ $# -eq 1 ]; then
+  # Handle 1 option.
+  action=$1
+
+  case "${action}" in
+    help)
+      usage
+      ;;
+    list)
+      list
+      ;;
+    *)
+      usage
+      exit 1
+  esac
+else
+  # Invalid number of options.
+  usage
+  exit 1
+fi

@@ -30,15 +30,21 @@
     ~/.vimrc:
     ~/.vodrc:
     ~/.gitconfig:
+    ~/.backupignore:
+    ~/Library/LaunchAgents/local.backup.plist:
+      path: local.backup.plist
     /usr/local/bin/imgcat:
       path: bin/imgcat
     /usr/local/bin/+x:
       path: bin/+x
     /usr/local/bin/lc:
       path: bin/lc
+    /usr/local/bin/backup:
+      path: bin/backup
 
 - shell:
   - [chmod +x /usr/local/bin/imgcat, Setting permissions for imgcat.]
   - [chmod +x /usr/local/bin/+x, Setting permissions for +x.]
   - [chmod +x /usr/local/bin/lc, Setting permissions for lc.]
+  - [chmod +x /usr/local/bin/backup, Setting permissions for backup.]
   - [vim +PluginInstall +qall, Installing Vim plugins.]

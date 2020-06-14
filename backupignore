@@ -1,0 +1,20 @@
+# Borg backups exclude patterns using Fnmatch-style patterns.
+# See https://borgbackup.readthedocs.io/en/stable/usage/help.html?highlight=pattern#borg-help-patterns
+
+*/.git
+*/.gitmodules
+*/.DS_Store
+*/node_modules
+*/.localized
+*/Icon?
+
+*/.dotbot
+
+/Users/hideo/.config/borg
+/Users/hideo/.config/yarn
+
+/Users/hideo/Documents/Adobe
+/Users/hideo/Documents/ShareY
+/Users/hideo/Documents/Virtual Machines.localized
+
+/Users/hideo/Movies/TV
