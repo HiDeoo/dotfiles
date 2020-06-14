@@ -23,12 +23,14 @@ Included dotfiles:
   * [.vimrc](http://www.vim.org/docs.php)
   * [.gitconfig](https://git-scm.com/docs/git-config)
   * [.vodrc](https://github.com/HiDeoo/vod)
+  * [.backupignore](https://borgbackup.readthedocs.io/en/stable/usage/help.html?highlight=fnmatch#borg-help-patterns)
 
 Included scripts:
 
   * `imgcat`: Script showing inline images in iTerm2 v3.
   * `+x`: Script to quickly add execution permissions to a file.
   * `lc`: Script to generate a license.
+  * `backup`: Script using [Borg](https://borgbackup.readthedocs.io/) to create deduplicating backups every night.
 
 ### `install`
 
@@ -40,7 +42,7 @@ This script is meant to be used after a fresh install of macOS and will automati
 
 To install, just clone the repository and set the correct permissions:
 
-```
+```console
 $ git clone https://github.com/HiDeoo/dotfiles
 $ cd dotfiles
 $ chmod +x configure install
@@ -50,11 +52,11 @@ $ chmod +x configure install
 
 Use either the `configure` or `install` script:
 
-```
+```console
 $ ./configure
 ```
 
-```
+```console
 $ ./install
 ```
 
