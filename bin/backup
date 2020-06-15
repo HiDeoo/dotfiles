@@ -27,7 +27,7 @@ SOURCE_PATH="
 REPO_PATH=/Volumes/hideo/Backup/iMac
 
 # Update the PATH to include brew binaries.
-export PATH=/usr/local/bin/:$PATH
+export PATH=$(brew --prefix)/bin:$PATH
 
 # Use macOS Keychain to get the passphrase.
 export BORG_PASSCOMMAND="security find-generic-password -a $USER -s borg-passphrase -w"
