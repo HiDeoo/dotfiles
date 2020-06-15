@@ -96,6 +96,9 @@ alias cat='bat'
 alias ping='prettyping'
 alias rm='trash'
 
+# Add a native rm fallback.
+alias rmi='command rm -i'
+
 # Clear & list the current directory.
 alias cls='clear; ls'
 
