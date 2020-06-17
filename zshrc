@@ -206,6 +206,9 @@ alias zoid='ssh zoidberg'
 alias ag='ag --color-line-number "1;93" --color-match "1;95" --color-path "1;92"'
 alias agc='ag -C'
 
+# Extract an asar archive to a specific fodler.
+alias unasar='npx asar extract'
+
 #
 # Fzf
 #
