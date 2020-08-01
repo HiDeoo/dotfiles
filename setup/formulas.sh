@@ -7,10 +7,10 @@ apps=(
   coreutils
   ctags
   curl
-  diff-so-fancy
   fd
   fzf
   git
+  git-delta
   git-extras
   github/gh/gh
   grep

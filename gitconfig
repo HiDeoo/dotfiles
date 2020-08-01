@@ -14,9 +14,10 @@
 	program = /usr/local/bin/gpg_wrap
 [grep]
 	lineNumber = true
-[pager]
-	diff = diff-so-fancy | less --tabs=2 -RFX
-	show = diff-so-fancy | less --tabs=2 -RFX
+[core]
+	pager = delta
+[interactive]
+	diffFilter = delta --color-only
 [color]
 	ui = true
 [color "diff"]
@@ -73,5 +74,7 @@
 	s = status -sb
 	sub = submodule update --init --recursive
 	undo = reset --soft HEAD^
-[diff-so-fancy]
-	stripLeadingSymbols = false
+[delta]
+	syntax-theme = Monokai Extended Bright
+	line-numbers = true
+	side-by-side = true
