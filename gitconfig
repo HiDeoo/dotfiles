@@ -35,18 +35,16 @@
 [pull]
 	ff = only
 [diff]
-	indentHeuristic = true
-	tool = Kaleidoscope
+	tool = vscode
 [difftool]
 	prompt = false
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
 [merge]
 	log = true
-	tool = Kaleidoscope
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" \"$REMOTE\"
-	trustExitCode = true
+	tool = vscode
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
 [stash]
 	showPatch = true
 [status]
