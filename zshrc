@@ -106,7 +106,7 @@ alias cls='clear; ls'
 alias vvlc='open -n /Applications/VLC.app'
 
 # Start Streamlink.
-alias lv='streamlink --twitch-low-latency'
+alias lv='streamlink'
 
 # Remove the last added file in the ~/Downloads directory if it matches a set of extensions.
 dlrm() {

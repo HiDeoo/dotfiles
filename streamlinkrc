@@ -3,3 +3,9 @@ default-stream=best
 
 # Player
 player=/Applications/VLC.app/Contents/MacOS/VLC
+
+# Twitch options
+twitch-disable-hosting
+twitch-disable-ads
+twitch-disable-reruns
+twitch-low-latency
