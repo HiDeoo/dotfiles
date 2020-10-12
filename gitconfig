@@ -72,6 +72,7 @@
 	s = status -sb
 	sub = submodule update --init --recursive
 	undo = reset --soft HEAD^
+	wip = "!git add -A && git commit -m WIP"
 [delta]
 	syntax-theme = Monokai Extended Bright
 	line-numbers = true
