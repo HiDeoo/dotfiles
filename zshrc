@@ -271,4 +271,4 @@ export NODE_REPL_HISTORY=~/.node_history;
 export NODE_REPL_HISTORY_SIZE='10000';
 
 # Lazy-load fnm.
-eval "$(fnm env --multi)"
+eval "$(fnm env)"
