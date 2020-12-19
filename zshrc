@@ -187,8 +187,9 @@ alias flush='dscacheutil -flushcache && killall -HUP mDNSResponder'
 # Start a Proxy Socks v5.
 alias proxy='ssh -C2qTnN -D 8282'
 
-# Add default options to dig.
+# Add default options to dig & dog.
 alias dig='dig +nocmd any +multiline +noall +answer'
+alias dog='dog ANY'
 
 # Edit the hosts file.
 alias hosts='sudo $EDITOR /etc/hosts'

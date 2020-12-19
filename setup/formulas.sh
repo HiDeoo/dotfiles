@@ -7,6 +7,7 @@ apps=(
   coreutils
   ctags
   curl
+  dog
   fd
   fzf
   git
