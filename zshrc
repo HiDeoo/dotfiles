@@ -23,6 +23,10 @@ fi
 # Set the system locale.
 export LANG=en_US.UTF-8
 
+# Increase history size.
+export HISTSIZE=100000
+export SAVEHIST=${HISTSIZE}
+
 # Add a key binding to accept suggestions.
 bindkey '^ ' autosuggest-accept
 
