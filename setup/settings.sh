@@ -59,9 +59,6 @@ defaults write com.apple.loginwindow LoginwindowLaunchesRelaunchApps -bool false
 # UI
 #
 
-# Disable transparency.
-defaults write com.apple.universalaccess reduceTransparency -bool true
-
 # Disable the Menu Bar Items for Time Machine, Bluetooth, Airport, Battery & Users.
 for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
 	defaults write "${domain}" dontAutoLoad -array \
