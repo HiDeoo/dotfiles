@@ -27,7 +27,6 @@ apps=(
   rectangle
   slack
   spotify
-  steam
   the-unarchiver
   visual-studio-code
   vlc
