@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+echo "Installing Yarn."
+
+npm install -g yarn
+
 echo "Installing Node global packages."
 
 packages=(
