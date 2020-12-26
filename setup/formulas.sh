@@ -19,7 +19,6 @@ apps=(
   jq
   mongodb
   mtr
-  node
   perl
   prettyping
   python
@@ -34,7 +33,6 @@ apps=(
   vim
   wget
   xz
-  yarn
   zsh
 )
 
