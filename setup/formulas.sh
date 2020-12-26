@@ -4,6 +4,7 @@ echo "Installing Formulas"
 
 apps=(
   bat
+  borgbackup/tap/borgbackup-fuse
   coreutils
   ctags
   curl

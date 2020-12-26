@@ -8,7 +8,6 @@ brew tap caskroom/versions
 apps=(
   alfred
   appcleaner
-  borgbackup
   calibre
   couleurs
   discord
