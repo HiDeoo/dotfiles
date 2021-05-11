@@ -22,6 +22,7 @@ apps=(
   kaleidoscope
   karabiner-elements
   licecap
+  macfuse
   osxfuse
   rectangle
   slack
