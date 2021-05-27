@@ -60,7 +60,7 @@ $ ./install
 $ ./configure
 ```
 
-## `install` script
+### `install` script
 
 This script will launch the following scripts located in the `setup` folders:
 
@@ -71,7 +71,7 @@ This script will launch the following scripts located in the `setup` folders:
 - `node.sh`: Install the latest stable version of [Node.js](https://nodejs.org) using [`fnm`](https://github.com/Schniz/fnm) and install various global packages. This is the file to edit to define all the global Node packages you want to install.
 - `settings.sh`: Configure all your environment settings. This is the file to edit to enable / disable some customizations and define your own.
 
-## `configure` script
+### `configure` script
 
 The dotfiles & custom scripts installation is made using [Dotbot](https://github.com/anishathalye/dotbot). The `configure` script will automatically call Dotbot using the `.configure.yaml` file which contains all steps of the process.
 
