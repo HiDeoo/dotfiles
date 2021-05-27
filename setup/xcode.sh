@@ -11,10 +11,6 @@ if ! xcode-select --print-path &> /dev/null; then
 
   [ $? -eq 0 ] || exit $?;
 
-  sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer
-
-  [ $? -eq 0 ] || exit $?;
-
   sudo xcodebuild -license
 
   [ $? -eq 0 ] || exit $?;
