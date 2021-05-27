@@ -10,34 +10,24 @@ apps=(
   bat
   borgbackup/tap/borgbackup-fuse
   coreutils
-  ctags
-  curl
   dog
   fd
+  fnm
   fzf
+  gh
   git
   git-delta
   git-extras
-  github/gh/gh
   grep
   htop
   jq
-  mongodb
-  mtr
-  perl
   prettyping
   python
-  rtmpdump
-  ruby
-  Schniz/tap/fnm
   streamlink
   the_silver_searcher
-  tldr
   trash
-  tree
   vim
   wget
-  xz
   zsh
 )
 
