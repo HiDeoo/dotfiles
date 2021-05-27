@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+echo "Installing macFUSE"
+
+brew install --cask macfuse
+
 echo "Installing Formulas"
 
 apps=(
