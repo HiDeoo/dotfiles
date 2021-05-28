@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# https://github.com/paulirish/dotfiles/blob/d1ae5bd47804a9bcec0a434657dc002cee6cfb53/bin/imgcat
+# https://github.com/paulirish/dotfiles/blob/64c695666981866c8067d218181055c26bd355cd/bin/imgcat
 
 # tmux requires unrecognized OSC sequences to be wrapped with DCS tmux;
 # <sequence> ST, and for all ESCs in <sequence> to be replaced with ESC ESC. It
