@@ -12,6 +12,7 @@ apps=(
   coreutils
   dog
   fd
+  firebase-cli
   fnm
   fzf
   gh
@@ -32,6 +33,8 @@ apps=(
 )
 
 brew install "${apps[@]}"
+
+brew install yarn --without-node
 
 brew cleanup
 

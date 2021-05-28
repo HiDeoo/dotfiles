@@ -10,7 +10,7 @@ This repository contains a collection of [dotfiles](https://dotfiles.github.io/)
 
 ### `install`
 
-This script is meant to be used after a fresh install of macOS and will automatically install all your applications from Chrome to Node and configure your environment settings.
+This script is meant to be used after a fresh install of macOS and will automatically install all your applications from Chrome to `jq` and configure your environment settings.
 
 ### `configure`
 
@@ -68,7 +68,6 @@ This script will launch the following scripts located in the `setup` folders:
 - `homebrew.sh`: Install [Homebrew](https://brew.sh/).
 - `formulas.sh`: Install various Homebrew Formulas. This is the file to edit to define all the Formulas you want to install.
 - `casks.sh`: Install various Casks. This is the file to edit to define all the Casks you want to install.
-- `node.sh`: Install the latest stable version of [Node.js](https://nodejs.org) using [`fnm`](https://github.com/Schniz/fnm) and install various global packages. This is the file to edit to define all the global Node packages you want to install.
 - `settings.sh`: Configure all your environment settings. This is the file to edit to enable / disable some customizations and define your own.
 
 ### `configure` script
