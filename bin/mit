@@ -3,7 +3,7 @@
 NAME="HiDeoo"
 
 usage() {
-  echo "usage: $(basename "$0") [-m]"
+  echo "usage: $(basename "$0")"
   exit 1
 }
 
@@ -35,15 +35,8 @@ write() {
   "$1" > LICENSE
 }
 
-if [ $# -ne 1 ]; then
+if [ $# -ne 0 ]; then
   usage
 fi
 
-case $1 in
-  -m)
-    write mit
-    ;;
-  *)
-    usage
-    ;;
-esac
+write mit

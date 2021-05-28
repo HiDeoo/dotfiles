@@ -39,9 +39,6 @@ alias rr='exec zsh'
 # Edit zshrc in VS Code.
 alias al='c ~/.zshrc'
 
-# Remove unused aliases.
-unalias lc
-
 #
 # Navigation
 #

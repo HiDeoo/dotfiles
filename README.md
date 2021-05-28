@@ -32,7 +32,7 @@ Included scripts:
 
   * `imgcat`: Script showing inline images in iTerm2 v3.
   * `+x`: Script to quickly add execution permissions to a file.
-  * `lc`: Script to generate a license.
+  * `mit`: Script to generate an MIT license file.
   * `backup`: Script using [Borg](https://borgbackup.readthedocs.io/) to create deduplicating backups every night.
 
 ## Usage & customization
