@@ -28,7 +28,6 @@
     ~/.streamlinkrc:
     ~/.wgetrc:
     ~/.vimrc:
-    ~/.vodrc:
     ~/.gitconfig:
     ~/.backupignore:
     ~/Library/LaunchAgents/local.backup.plist:

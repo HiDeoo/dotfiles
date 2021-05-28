@@ -26,7 +26,6 @@ Included dotfiles:
   * [.wgetrc](https://www.gnu.org/software/wget/manual/html_node/Wgetrc-Commands.html)
   * [.vimrc](http://www.vim.org/docs.php)
   * [.gitconfig](https://git-scm.com/docs/git-config)
-  * [.vodrc](https://github.com/HiDeoo/vod)
   * [.backupignore](https://borgbackup.readthedocs.io/en/stable/usage/help.html?highlight=fnmatch#borg-help-patterns)
 
 Included scripts:

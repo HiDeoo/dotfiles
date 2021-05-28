@@ -2,7 +2,6 @@
   "files.associations": {
     "streamlinkrc": "properties",
     "vimrc": "properties",
-    "vodrc": "yaml",
     "wgetrc": "properties",
     "zlogin": "shellscript",
     "zlogout": "shellscript",
