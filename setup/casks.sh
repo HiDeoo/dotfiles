@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
 
-echo "Installing Homebrew-Cask."
-
-brew tap caskroom/cask
-brew tap caskroom/versions
-
 apps=(
   alfred
   appcleaner
@@ -14,17 +9,13 @@ apps=(
   dropbox
   fantastical
   firefox
-  google-chrome-canary
+  google-chrome
   imageoptim
   insomnia
-  istat-menus
-  iterm2-beta
-  kaleidoscope
+  iterm2
   karabiner-elements
   licecap
   rectangle
-  slack
-  spotify
   the-unarchiver
   visual-studio-code
   vlc
@@ -32,10 +23,12 @@ apps=(
 
 echo "Installing Casks."
 
-brew cask install "${apps[@]}"
+brew install --cask "${apps[@]}"
 
 echo "Installing Quick Look plugins."
 
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize qlvideo
+brew install --cask syntax-highlight sbarex-qlmarkdown qlvideo
+
+xattr -r -d com.apple.quarantine "/Applications/Syntax Highlight.app"
 
 exit 0
