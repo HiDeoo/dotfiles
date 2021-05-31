@@ -1,7 +1,8 @@
 {
   "files.associations": {
+    ".vim-plug": "shellscript",
     "streamlinkrc": "properties",
-    "vimrc": "properties",
+    "init.vim": "properties",
     "wgetrc": "properties",
     "zlogin": "shellscript",
     "zlogout": "shellscript",

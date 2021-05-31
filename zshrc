@@ -67,8 +67,10 @@ alias dotfiles='db && cd Work/dotfiles'
 #
 
 # Alias common editors.
+alias vim='nvim'
 alias c='code'
-alias v='vim'
+alias n='nvim'
+alias v='nvim'
 
 # Compare two files using VS Code.
 alias cdiff='c -n -d'

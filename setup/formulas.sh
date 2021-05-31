@@ -22,12 +22,12 @@ apps=(
   grep
   htop
   jq
+  neovim
   prettyping
   python
   streamlink
   the_silver_searcher
   trash
-  vim
   wget
   zsh
 )
