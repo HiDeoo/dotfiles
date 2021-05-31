@@ -72,6 +72,7 @@
 	rv = remote -v
 	s = status -sb
 	sub = submodule update --init --recursive
+	sw = switch
 	undo = reset --soft HEAD^
 	wip = "!git add -A && git commit -m WIP"
 [delta]
