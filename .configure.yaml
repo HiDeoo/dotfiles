@@ -40,10 +40,13 @@
       path: bin/mit
     /usr/local/bin/backup:
       path: bin/backup
+    /usr/local/bin/gpg_wrap:
+      path: bin/gpg_wrap
 
 - shell:
   - [chmod +x /usr/local/bin/imgcat, Setting permissions for imgcat.]
   - [chmod +x /usr/local/bin/+x, Setting permissions for +x.]
   - [chmod +x /usr/local/bin/mit, Setting permissions for mit.]
   - [chmod +x /usr/local/bin/backup, Setting permissions for backup.]
+  - [chmod +x /usr/local/bin/gpg_wrap, Setting permissions for gpg_wrap.]
   - [vim +PluginInstall +qall, Installing Vim plugins.]
