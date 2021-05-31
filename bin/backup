@@ -1,6 +1,6 @@
 #!/bin/bash
-# Note that we're explicitly using `/bin/bash` instead of `/usr/bin/env bash` to workaround a macOS Catalina permission
-# issue when starting this script using launchd.
+# Note that we're explicitly using `/bin/bash` instead of `/usr/bin/env bash` to workaround a macOS permission issue
+# when starting this script using launchd.
 
 set -Eeuo pipefail
 trap 'catch $? $LINENO' EXIT
