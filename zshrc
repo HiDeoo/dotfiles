@@ -1,8 +1,3 @@
-# Use .zhistory instead of .zsh_history.
-# This is a workaround to use on macOS Catalina an old history file created on macOS Mojave.
-# See: https://github.com/sorin-ionescu/prezto/issues/1744
-export HISTFILE="${ZDOTDIR:-$HOME}/.zhistory"
-
 # Load brew completion definitions before Prezto & compinit.
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
@@ -20,14 +15,11 @@ fi
 # ZSH
 #
 
-# Set the system locale.
-export LANG=en_US.UTF-8
-
 # Increase history size.
 export HISTSIZE=100000
 export SAVEHIST=${HISTSIZE}
 
-# Add a key binding to accept suggestions.
+# Add a key binding (Ctrl + Space) to accept suggestions.
 bindkey '^ ' autosuggest-accept
 
 # Expand aliases after sudo instead of only checking the first word of a command for an alias.
@@ -56,11 +48,8 @@ alias dt='cd ~/Desktop'
 alias wk='cd ~/Work'
 alias tmp='cd ~/tmp'
 
-# Navigate to the Toaster volume.
-alias toaster='cd /Volumes/Toaster'
-
 # Navigate to the dotfiles repository.
-alias dotfiles='db && cd Work/dotfiles'
+alias dotfiles='wk && cd dotfiles'
 
 #
 # Editors
@@ -148,9 +137,7 @@ alias update_os='sudo softwareupdate -i -a'
 alias update_brew='brew -v update; brew upgrade; brew cleanup --prune=30; brew doctor'
 alias update_npm='npmgu'
 alias update_yarn='yarn global upgrade --latest'
-alias update_gem='sudo gem update --system; sudo gem update'
-alias update_pip='pip install -U pip; sudo -H pip-review --auto'
-alias update_prezto='cd ~/.zprezto && git pull && git submodule update --init --recursive && cd -'
+alias update_prezto='cd ~/.zprezto && git pull && git submodule sync --recursive && git submodule update --init --recursive && cd -'
 alias update_all='update_os; update_brew; update_npm; update_yarn; update_prezto'
 
 # Update npm global packages.
@@ -161,16 +148,13 @@ function npmgu() {
   done
 }
 
-# Clean LaunchServices.
-alias lscleanup='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
-
 # Empty trashes on all mounted volumes, the trash of the main disk & Apple's System Logs.
 alias empty='sudo \rm -rfv /Volumes/*/.Trashes; sudo \rm -rfv ~/.Trash; sudo \rm -rfv /private/var/log/asl/*.asl'
 
 # Remove quarantine on a specific element.
 alias unquarantine='xattr -r -d com.apple.quarantine'
 
-# Approve a specific element from an unidenfied developer via the system-wide assessment rule database.
+# Approve a specific element from an unidentified developer via the system-wide assessment rule database.
 alias approve='spctl --add --label "Approved"'
 
 #
@@ -178,17 +162,13 @@ alias approve='spctl --add --label "Approved"'
 #
 
 # Get external IPv4.
-alias ip='dig +short -4 myip.opendns.com @resolver1.opendns.com'
-
-# Flush Directory Service cache.
-alias flush='dscacheutil -flushcache && killall -HUP mDNSResponder'
+alias ip='\dig +short -4 myip.opendns.com @resolver1.opendns.com'
 
 # Start a Proxy Socks v5.
 alias proxy='ssh -C2qTnN -D 8282'
 
-# Add default options to dig & dog.
-alias dig='dig +nocmd any +multiline +noall +answer'
-alias dog='dog ANY'
+# Alias dig to dog with some common default options.
+alias dig='dog ANY'
 
 # Edit the hosts file.
 alias hosts='sudo $EDITOR /etc/hosts'
@@ -198,10 +178,7 @@ alias hosts='sudo $EDITOR /etc/hosts'
 #
 
 # URL-encode a string.
-alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
-
-# Delete git local branches which have already been merged into the current HEAD.
-alias gitcleanup='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
+alias urlencode='python -c "import sys, urllib.parse as ul; print(ul.quote_plus(sys.argv[1]));"'
 
 # Ssh to Zoidberg.
 alias zoid='ssh zoidberg'
@@ -266,12 +243,14 @@ git() {
   fi
 }
 
+# Delete git local branches which have already been merged into the current HEAD.
+alias gitcleanup='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
+
 #
 # Node
 #
 
 # Configure the Node REPL.
-export NODE_REPL_HISTORY=~/.node_history;
 export NODE_REPL_HISTORY_SIZE='10000';
 
 # Lazy-load fnm.
