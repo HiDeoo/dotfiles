@@ -129,7 +129,7 @@ dlrm() {
 # macOS
 #
 
-# Use Python 3 as Python 2 is deprecated (even if not removed yet from macOS).
+# Use Homebrew’s Python 3.
 alias python='python3'
 
 # Configure the Homebrew Cask application directory.
