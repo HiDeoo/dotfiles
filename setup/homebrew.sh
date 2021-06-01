@@ -15,4 +15,6 @@ else
   echo "Homebrew is already installed."
 fi
 
+source ../bin/brew_init
+
 exit 0

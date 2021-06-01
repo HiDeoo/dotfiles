@@ -11,6 +11,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# Initialize brew.
+source /usr/local/bin/brew_init
+
 #
 # ZSH
 #

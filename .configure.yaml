@@ -33,6 +33,8 @@
       path: init.vim
     ~/Library/LaunchAgents/local.backup.plist:
       path: local.backup.plist
+    /usr/local/bin/brew_init:
+      path: bin/brew_init
     /usr/local/bin/imgcat:
       path: bin/imgcat
     /usr/local/bin/+x:
