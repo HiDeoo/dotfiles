@@ -44,6 +44,9 @@
     /usr/local/bin/gpg_wrap:
       path: bin/gpg_wrap
 
+- create:
+    - ~/Temp
+
 - shell:
   - [chmod +x /usr/local/bin/imgcat, Setting permissions for imgcat.]
   - [chmod +x /usr/local/bin/+x, Setting permissions for +x.]

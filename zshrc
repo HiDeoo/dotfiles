@@ -46,7 +46,7 @@ alias db='cd ~/Dropbox'
 alias dl='cd ~/Downloads'
 alias dt='cd ~/Desktop'
 alias wk='cd ~/Repos'
-alias tmp='cd ~/tmp'
+alias tmp='cd ~/Temp'
 
 # Navigate to the dotfiles repository.
 alias dotfiles='wk && cd dotfiles'
