@@ -140,7 +140,7 @@ alias update_os='sudo softwareupdate -i -a'
 alias update_brew='brew -v update; brew upgrade; brew cleanup --prune=30; brew doctor'
 alias update_npm='npmgu'
 alias update_yarn='yarn global upgrade --latest'
-alias update_prezto='cd ~/.zprezto && git pull && git submodule sync --recursive && git submodule update --init --recursive && cd -'
+alias update_prezto='zprezto-update'
 alias update_all='update_os; update_brew; update_npm; update_yarn; update_prezto'
 
 # Update npm global packages.
