@@ -6,8 +6,11 @@ apps=(
   calibre
   couleurs
   discord
+  docker
   dropbox
+  dynalist
   fantastical
+  figma
   firefox
   google-chrome
   imageoptim
@@ -15,7 +18,9 @@ apps=(
   iterm2
   karabiner-elements
   licecap
+  microsoft-edge-dev
   rectangle
+  sf-symbols
   the-unarchiver
   visual-studio-code
   vlc
