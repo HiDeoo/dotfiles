@@ -27,6 +27,7 @@ Included dotfiles:
   * [.config/nvim/init.vim](https://neovim.io/doc/user/starting.html#vimrc)
   * [.gitconfig](https://git-scm.com/docs/git-config)
   * [.backupignore](https://borgbackup.readthedocs.io/en/stable/usage/help.html?highlight=fnmatch#borg-help-patterns)
+  * [.hushlogin](https://man7.org/linux/man-pages/man1/login.1.html)
 
 Included scripts:
 

@@ -29,6 +29,7 @@
     ~/.wgetrc:
     ~/.gitconfig:
     ~/.backupignore:
+    ~/.hushlogin:
     ~/.config/nvim/init.vim:
       path: init.vim
     ~/Library/LaunchAgents/local.backup.plist:
