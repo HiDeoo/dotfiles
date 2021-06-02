@@ -13,6 +13,7 @@ apps=(
   figma
   firefox
   google-chrome
+  gpg-suite-no-mail
   imageoptim
   insomnia
   iterm2
