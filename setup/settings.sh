@@ -15,6 +15,21 @@ echo "Setting preferences."
 # General
 #
 
+# Use a dark appearance.
+defaults write NSGlobalDomain AppleInterfaceStyle Dark
+
+# Show scroll bars when scrolling.
+defaults write NSGlobalDomain AppleShowScrollBars -string "WhenScrolling"
+
+# Jump to the scroll bar spot on click.
+defaults write NSGlobalDomain AppleScrollerPagingBehavior -bool true
+
+# Prefer tabs when opening documents.
+defaults write NSGlobalDomain AppleWindowTabbingMode -string "always"
+
+# Close windows when quitting an app.
+defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool false
+
 # Expand Save Panel by default.
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
@@ -49,6 +64,9 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 defaults write com.apple.loginwindow TALLogoutSavesState -bool false
 defaults write com.apple.loginwindow LoginwindowLaunchesRelaunchApps -bool false
 
+# Update the time and date format for the menubar digital clock.
+defaults write com.apple.menuextra.clock "DateFormat" -string "\"EEE HH:mm:ss\""
+
 #
 # UI
 #
@@ -66,6 +84,50 @@ defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
 
 # Enable snap-to-grid for desktop icons.
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+
+# Set the Drift screensaver.
+defaults -currentHost write com.apple.screensaver moduleDict -dict moduleName -string "Drift" path -string "/System/Library/Screen Savers/Drift.saver" type -int 0
+
+# Show screensaver after 10 minutes.
+defaults -currentHost write com.apple.screensaver idleTime 600
+
+#
+# Screenshots
+#
+
+# Do not display a thumbnail after taking a screenshot.
+defaults write com.apple.screencapture show-thumbnail -bool false
+
+# Remove screenshot delays.
+defaults delete com.apple.screencapture captureDelay
+
+#
+# Spotlight
+#
+
+# Configure Spotlight search result categories.
+defaults write com.apple.spotlight orderedItems -array \
+	'{"enabled" = 1;"name" = "APPLICATIONS";}' \
+	'{"enabled" = 0;"name" = "MENU_SPOTLIGHT_SUGGESTIONS";}' \
+	'{"enabled" = 1;"name" = "MENU_CONVERSION";}' \
+	'{"enabled" = 1;"name" = "MENU_EXPRESSION";}' \
+	'{"enabled" = 1;"name" = "MENU_DEFINITION";}' \
+	'{"enabled" = 1;"name" = "SYSTEM_PREFS";}' \
+	'{"enabled" = 0;"name" = "DOCUMENTS";}' \
+	'{"enabled" = 0;"name" = "DIRECTORIES";}' \
+	'{"enabled" = 0;"name" = "PRESENTATIONS";}' \
+	'{"enabled" = 0;"name" = "SPREADSHEETS";}' \
+	'{"enabled" = 0;"name" = "PDF";}' \
+	'{"enabled" = 0;"name" = "MESSAGES";}' \
+	'{"enabled" = 1;"name" = "CONTACT";}' \
+	'{"enabled" = 1;"name" = "EVENT_TODO";}' \
+	'{"enabled" = 0;"name" = "IMAGES";}' \
+	'{"enabled" = 1;"name" = "BOOKMARKS";}' \
+	'{"enabled" = 0;"name" = "MUSIC";}' \
+	'{"enabled" = 0;"name" = "MOVIES";}' \
+	'{"enabled" = 0;"name" = "FONTS";}' \
+	'{"enabled" = 0;"name" = "MENU_OTHER";}' \
+	'{"enabled" = 1;"name" = "SOURCE";}'
 
 #
 # Finder
@@ -114,15 +176,36 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 # Show the ~/Library folder.
 chflags nohidden ~/Library
 
+# Remove the delay when hovering the toolbar title.
+defaults write NSGlobalDomain NSToolbarTitleViewRolloverDelay -float 0
+
 #
 # Dock
 #
+
+# Disable Dock magnification.
+defaults write com.apple.dock magnification -bool false
 
 # Set the icon size of Dock items.
 defaults write com.apple.dock tilesize -int 40
 
 # Disable size modification.
 defaults write com.apple.dock size-immutable -bool true
+
+# Autohides the Dock.
+defaults write com.apple.dock autohide -bool true
+
+# Do not show recently used apps in a separate section of the Dock.
+defaults write com.apple.dock show-recents -bool false
+
+# Change the Dock minimize animation.
+defaults write com.apple.dock mineffect -string "scale"
+
+# Show open applications indicator.
+defaults write com.apple.dock show-process-indicators -bool true
+
+# Minimize window on title bar double click.
+defaults write NSGlobalDomain AppleActionOnDoubleClick -string "Minimize"
 
 #
 # Dashboard
@@ -246,6 +329,9 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
 # Enable zoom using Ctrl + scroll.
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+
+# Disable bigger mouse pointer when shaking it.
+defaults write NSGlobalDomain CGDisableCursorLocationMagnification -bool YES
 
 #
 # END
