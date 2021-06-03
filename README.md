@@ -46,7 +46,6 @@ To install, just clone the repository and set the correct permissions:
 ```console
 $ git clone https://github.com/HiDeoo/dotfiles
 $ cd dotfiles
-$ chmod +x configure install
 ```
 
 *Note: Make sure to backup your existing dotfiles or add all your configurations in your forked repository before using the `configure` script as it will erase the current ones.*
