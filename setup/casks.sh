@@ -15,7 +15,6 @@ apps=(
   google-chrome
   gpg-suite-no-mail
   imageoptim
-  insomnia
   iterm2
   karabiner-elements
   licecap
