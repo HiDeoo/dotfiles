@@ -29,6 +29,8 @@ apps=(
 
 echo "Installing Casks."
 
+brew tap homebrew/cask-versions
+
 brew install --cask "${apps[@]}"
 
 echo "Installing Quick Look plugins."
