@@ -24,7 +24,7 @@ SOURCE_PATH="
   /Users/hideo/Pictures"
 
 # Path of the repository that will contain the backup archives.
-REPO_PATH=/Volumes/hideo/Backup/iMac
+REPO_PATH=/Volumes/hideo/Backups/iMac
 
 # Initialize brew paths.
 source /usr/local/bin/brew_init
