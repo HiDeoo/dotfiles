@@ -334,6 +334,19 @@ defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 defaults write NSGlobalDomain CGDisableCursorLocationMagnification -bool YES
 
 #
+# iTerm
+#
+
+# Load preferences from a custom folder.
+defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
+
+# Load prefernces from this repository.
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string "$HOME/Projects/dotfiles/config/iterm"
+
+# Save preference changes automatically.
+defaults write com.googlecode.iterm2 NoSyncNeverRemindPrefsChangesLostForFile_selection -int 2
+
+#
 # END
 #
 
