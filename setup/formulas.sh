@@ -28,6 +28,7 @@ apps=(
   streamlink
   the_silver_searcher
   trash
+  tree
   wget
   zsh
 )
