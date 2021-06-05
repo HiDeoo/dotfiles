@@ -49,6 +49,7 @@
 
 - create:
     - ~/Temp
+    - ~/Pictures/Screenshots
 
 - shell:
   - [chmod +x /usr/local/bin/imgcat, Setting permissions for imgcat.]

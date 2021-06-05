@@ -99,7 +99,10 @@ defaults -currentHost write com.apple.screensaver idleTime 600
 defaults write com.apple.screencapture show-thumbnail -bool false
 
 # Remove screenshot delays.
-defaults delete com.apple.screencapture captureDelay
+defaults delete com.apple.screencapture captureDelay &> /dev/null
+
+# Do not save screenshots to the desktop.
+defaults write com.apple.screencapture location -string "~/Pictures/Screenshots"
 
 #
 # Spotlight
