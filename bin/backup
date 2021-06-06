@@ -7,13 +7,9 @@ trap 'catch $? $LINENO' EXIT
 
 # Path(s) to backup.
 SOURCE_PATH="
-  /Users/hideo/Dropbox/.gpg \
-  /Users/hideo/Dropbox/.letsencrypt \
-  /Users/hideo/Dropbox/Sync \
-  /Users/hideo/Dropbox/Work/dotfiles \
-  /Users/hideo/.aws \
+  /Users/hideo/Dropbox/Backups \
+  /Users/hideo/Projects/dotfiles \
   /Users/hideo/.config \
-  /Users/hideo/.now \
   /Users/hideo/.npmrc \
   /Users/hideo/.vsce \
   /Users/hideo/.yarnrc \
