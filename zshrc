@@ -50,6 +50,7 @@ alias dl='cd ~/Downloads'
 alias dt='cd ~/Desktop'
 alias wk='cd ~/Projects'
 alias tmp='cd ~/Temp'
+alias ss='cd ~/Pictures/Screenshots'
 
 # Navigate to the dotfiles repository.
 alias dotfiles='wk && cd dotfiles'
