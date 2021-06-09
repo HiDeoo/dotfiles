@@ -25,6 +25,7 @@ apps=(
   neovim
   prettyping
   python
+  rename
   streamlink
   the_silver_searcher
   trash
