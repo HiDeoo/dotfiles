@@ -19,6 +19,7 @@ apps=(
   git
   git-delta
   git-extras
+  go
   grep
   htop
   jq

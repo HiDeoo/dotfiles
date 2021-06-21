@@ -197,6 +197,9 @@ alias agc='ag -C'
 # Extract an asar archive to a specific fodler.
 alias unasar='npx asar extract'
 
+# Configure Go.
+export GOPATH="$HOME/.go"
+
 #
 # Fzf
 #
