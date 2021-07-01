@@ -190,9 +190,9 @@ alias urlencode='python -c "import sys, urllib.parse as ul; print(ul.quote_plus(
 # Ssh to Zoidberg.
 alias zoid='ssh zoidberg'
 
-# Alias The Silver Searcher.
-alias ag='ag --color-line-number "1;93" --color-match "1;95" --color-path "1;92"'
-alias agc='ag -C'
+# Alias ripgrep.
+alias rg='rg --smart-case --colors "path:fg:green" --colors "path:style:bold" --colors "line:fg:yellow" --colors "line:style:bold" --colors "match:fg:magenta"'
+alias rgc='rg --context 2'
 
 # Extract an asar archive to a specific fodler.
 alias unasar='npx asar extract'

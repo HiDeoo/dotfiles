@@ -27,8 +27,8 @@ apps=(
   prettyping
   python
   rename
+  ripgrep
   streamlink
-  the_silver_searcher
   trash
   tree
   wget
