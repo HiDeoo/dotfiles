@@ -21,6 +21,9 @@ opt.tabstop = 2
 opt.shiftwidth = 2
 opt.expandtab = true
 
+-- Use smart indentation.
+opt.smartindent = true
+
 -- Load package manager.
 cmd 'packadd paq-nvim'
 local paq = require('paq-nvim').paq
@@ -31,6 +34,10 @@ paq {'savq/paq-nvim', opt = true}
 -- Add theme.
 paq {'connorholyday/vim-snazzy'}
 cmd 'colorscheme snazzy'
+
+-- Add Indentation guides.
+paq {'lukas-reineke/indent-blankline.nvim'}
+vim.g.indent_blankline_char = '│'
 
 -- Add git and git gutter decorations.
 paq {'tpope/vim-fugitive'}
