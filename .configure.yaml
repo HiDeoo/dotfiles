@@ -13,8 +13,8 @@
     stdout: true
     stderr: true
   -
-    command: sh .vim-plug
-    description: Installing vim-plug.
+    command: sh .paq-nvim
+    description: Installing paq-nvim.
     stdout: true
     stderr: true
 
@@ -30,8 +30,8 @@
     ~/.gitconfig:
     ~/.backupignore:
     ~/.hushlogin:
-    ~/.config/nvim/init.vim:
-      path: init.vim
+    ~/.config/nvim/init.lua:
+      path: init.lua
     ~/Library/LaunchAgents/local.backup.plist:
       path: local.backup.plist
     /usr/local/bin/brew_init:
@@ -57,4 +57,4 @@
   - [chmod +x /usr/local/bin/mit, Setting permissions for mit.]
   - [chmod +x /usr/local/bin/backup, Setting permissions for backup.]
   - [chmod +x /usr/local/bin/gpg_wrap, Setting permissions for gpg_wrap.]
-  - [nvim +PlugInstall +qall, Installing Vim plugins.]
+  - [nvim +PaqInstall +qall, Installing Neovim plugins.]
