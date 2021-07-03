@@ -16,7 +16,7 @@ This script is meant to be used after a fresh install of macOS and will automati
 
 This script will install Prezto if necessary, automatically symlink all dotfiles included in this repository to their assumed location and install some useful scripts to your system.
 
-Regarding Neovim, if not installed, [vim-plug](https://github.com/junegunn/vim-plug), a Vim plugin manager will also be installed automatically.
+Regarding Neovim, if not installed, [Paq](https://github.com/savq/paq-nvim), a Vim plugin manager will also be installed automatically.
 
 Included dotfiles:
 
@@ -24,7 +24,7 @@ Included dotfiles:
   * All [Prezto](https://github.com/sorin-ionescu/prezto) configuration
   * [.streamlinkrc](https://streamlink.github.io/cli.html#cli-streamlinkrc)
   * [.wgetrc](https://www.gnu.org/software/wget/manual/html_node/Wgetrc-Commands.html)
-  * [.config/nvim/init.vim](https://neovim.io/doc/user/starting.html#vimrc)
+  * [.config/nvim/init.lua](https://neovim.io/doc/user/starting.html#init.lua)
   * [.gitconfig](https://git-scm.com/docs/git-config)
   * [.backupignore](https://borgbackup.readthedocs.io/en/stable/usage/help.html?highlight=fnmatch#borg-help-patterns)
   * [.hushlogin](https://man7.org/linux/man-pages/man1/login.1.html)
