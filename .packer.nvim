@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -e
+
+INSTALL_FILE="${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/pack/packer/start/packer.nvim
+
+if [ -d $INSTALL_FILE ]; then
+  exit 0
+fi
+
+git clone https://github.com/wbthomason/packer.nvim $INSTALL_FILE
+
+ exit 0

@@ -24,28 +24,24 @@ opt.expandtab = true
 -- Use smart indentation.
 opt.smartindent = true
 
--- Load package manager.
-cmd 'packadd paq-nvim'
-local paq = require('paq-nvim').paq
+-- Load packages.
+require('packer').startup(function()
+  use 'wbthomason/packer.nvim' -- package manager
+  use 'connorholyday/vim-snazzy' -- theme
+  use 'lukas-reineke/indent-blankline.nvim' -- indentation guides
+  use 'tpope/vim-fugitive' -- git
+  use 'airblade/vim-gitgutter' -- git gutter
+  use 'bling/vim-airline' -- status line
+  use 'vim-airline/vim-airline-themes' -- status line themes
+end)
 
--- Make the package manager manage itself.
-paq {'savq/paq-nvim', opt = true}
-
--- Add theme.
-paq {'connorholyday/vim-snazzy'}
+-- Configure theme.
 cmd 'colorscheme snazzy'
 
--- Add Indentation guides.
-paq {'lukas-reineke/indent-blankline.nvim'}
+-- Configure indentation guides.
 vim.g.indent_blankline_char = '│'
 
--- Add git and git gutter decorations.
-paq {'tpope/vim-fugitive'}
-paq {'airblade/vim-gitgutter'}
-
--- Add custom status line.
-paq {'bling/vim-airline'}
-paq {'vim-airline/vim-airline-themes'}
+-- Configure status line.
 opt.laststatus = 2
 cmd([[
   let g:airline_theme='base16_snazzy'
