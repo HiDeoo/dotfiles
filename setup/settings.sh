@@ -276,11 +276,11 @@ defaults write com.apple.ActivityMonitor ShowCategory -int 100
 
 # Set columns for each tab in Activity Monitor.
 defaults write com.apple.ActivityMonitor "UserColumnsPerTab v6.0" -dict \
-	'0' '( Command, CPUUsage, CPUTime, Threads, IdleWakeUps, GPUUsage, PID, UID )' \
-	'1' '( Command, anonymousMemory, compressedMemory, ResidentSize, Threads, Ports, PID, UID )' \
-	'2' '( Command, PowerScore, 12HRPower, AppSleep, graphicCard, powerAssertion, UID )' \
-	'3' '( Command, bytesWritten, bytesRead, PID, UID )' \
-	'4' '( Command, txBytes, rxBytes, txPackets, rxPackets, PID, UID )' \
+	'0' '( Command, CPUUsage, CPUTime, Threads, IdleWakeUps, GPUUsage, PID, UID, Architecture )' \
+	'1' '( Command, anonymousMemory, compressedMemory, ResidentSize, Threads, Ports, PID, UID, Architecture )' \
+	'2' '( Command, PowerScore, 12HRPower, AppSleep, graphicCard, powerAssertion, UID, Architecture )' \
+	'3' '( Command, bytesWritten, bytesRead, PID, UID, Architecture )' \
+	'4' '( Command, txBytes, rxBytes, txPackets, rxPackets, PID, UID, Architecture )' \
 	'5' '( Name, LastHour, LastDay, LastWeek, LastMonth )' \
 	'6' '( Command, GPUUsage, GPUTime, PID, UID )'
 
