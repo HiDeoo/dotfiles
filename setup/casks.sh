@@ -4,7 +4,6 @@ apps=(
   alfred
   appcleaner
   calibre
-  couleurs
   discord
   docker
   dropbox
