@@ -32,12 +32,11 @@ apps=(
   trash
   tree
   wget
+  yarn
   zsh
 )
 
 brew install "${apps[@]}"
-
-brew install yarn --without-node
 
 brew cleanup
 
