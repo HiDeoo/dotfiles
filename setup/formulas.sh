@@ -28,6 +28,7 @@ apps=(
   python
   rename
   ripgrep
+  staticcheck
   streamlink
   trash
   tree
