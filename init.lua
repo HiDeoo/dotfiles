@@ -38,6 +38,10 @@ end)
 -- Configure theme.
 cmd 'colorscheme snazzy'
 
+-- Fix color scheme search highlight colors
+cmd 'autocmd ColorScheme * highlight Search guibg=#ff6ac1'
+cmd 'autocmd ColorScheme * highlight IncSearch guibg=#ff6ac1'
+
 -- Configure indentation guides.
 vim.g.indent_blankline_char = '│'
 
