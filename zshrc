@@ -88,7 +88,7 @@ alias cp='cp -v'
 alias mv='mv -v'
 
 # Override some default commands.
-alias cat='bat'
+alias cat='bat -p --theme ansi'
 alias ping='prettyping'
 alias rm='trash'
 
