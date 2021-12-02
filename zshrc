@@ -174,8 +174,8 @@ alias ip='\dig +short -4 myip.opendns.com @resolver1.opendns.com'
 # Start a Proxy Socks v5.
 alias proxy='ssh -C2qTnN -D 8282'
 
-# Alias dig to dog with some common default options.
-alias dig='dog ANY'
+# Alias dig to dog.
+alias dig='dog'
 
 # Edit the hosts file.
 alias hosts='sudo $EDITOR /etc/hosts'
