@@ -265,3 +265,6 @@ export NODE_REPL_HISTORY_SIZE='10000';
 
 # Lazy-load fnm.
 eval "$(fnm env)"
+
+# Load pnpm tab-completions.
+[ -f ~/.config/tabtab/zsh/__tabtab.zsh ] && source ~/.config/tabtab/zsh/__tabtab.zsh

@@ -24,6 +24,7 @@ apps=(
   htop
   jq
   neovim
+  pnpm
   prettyping
   python
   rename
@@ -44,5 +45,9 @@ brew cleanup
 echo "Installing fzf key bindings."
 
 $(brew --prefix)/opt/fzf/install
+
+echo "Installing pnpm tab-completions."
+
+$(brew --prefix)/opt/pnpm/bin/pnpm install-completion zsh
 
 exit 0
