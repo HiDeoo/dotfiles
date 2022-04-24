@@ -358,6 +358,8 @@
 	<string>498576ED-2CA6-45F5-8A13-C750D14D9458</string>
 	<key>DimBackgroundWindows</key>
 	<false/>
+	<key>EnableAPIServer</key>
+	<true/>
 	<key>EnableProxyIcon</key>
 	<false/>
 	<key>EnterCopyModeAutomatically</key>

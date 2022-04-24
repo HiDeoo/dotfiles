@@ -1,3 +1,10 @@
+#
+# Main
+#
+
+# Initialize Fig.
+source "$HOME/.fig/shell/zshrc.pre.zsh"
+
 # Load brew completion definitions before Prezto & compinit.
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
@@ -210,7 +217,6 @@ export GOPATH="$HOME/.go"
 # Add custom key bindings.
 bindkey '^[OP' fzf-cd-widget
 
-# Configure various options.
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
 export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
 export FZF_DEFAULT_OPTS="--color=hl:13,hl+:13,fg:#7f7e80,fg+:15,pointer:9,info:11,bg+:#3a3e50"
@@ -268,3 +274,10 @@ eval "$(fnm env)"
 
 # Load pnpm tab-completions.
 [ -f ~/.config/tabtab/zsh/__tabtab.zsh ] && source ~/.config/tabtab/zsh/__tabtab.zsh
+
+#
+# Main
+#
+
+# Finish loading Fig.
+source "$HOME/.fig/shell/zshrc.post.zsh"
