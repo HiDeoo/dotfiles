@@ -359,7 +359,7 @@
 	<key>DimBackgroundWindows</key>
 	<false/>
 	<key>EnableAPIServer</key>
-	<true/>
+	<false/>
 	<key>EnableProxyIcon</key>
 	<false/>
 	<key>EnterCopyModeAutomatically</key>

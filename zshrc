@@ -2,9 +2,6 @@
 # Main
 #
 
-# Initialize Fig.
-source "$HOME/.fig/shell/zshrc.pre.zsh"
-
 # Load brew completion definitions before Prezto & compinit.
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
@@ -274,10 +271,3 @@ eval "$(fnm env)"
 
 # Load pnpm tab-completions.
 [ -f ~/.config/tabtab/zsh/__tabtab.zsh ] && source ~/.config/tabtab/zsh/__tabtab.zsh
-
-#
-# Main
-#
-
-# Finish loading Fig.
-source "$HOME/.fig/shell/zshrc.post.zsh"

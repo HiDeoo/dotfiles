@@ -9,7 +9,6 @@ apps=(
   dropbox
   dynalist
   fantastical
-  fig
   figma
   firefox
   google-chrome
