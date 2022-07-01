@@ -33,6 +33,7 @@ apps=(
   streamlink
   trash
   tree
+  vsce
   wget
   yarn
   zsh
