@@ -271,3 +271,11 @@ export NODE_REPL_HISTORY_SIZE='10000';
 
 # Lazy-load fnm.
 eval "$(fnm env)"
+
+# Configure pnpm.
+export PNPM_HOME="$HOME/Library/pnpm"
+
+path=(
+  $PNPM_HOME
+  $path
+)
