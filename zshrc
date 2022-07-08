@@ -15,6 +15,11 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# Source iTerm2 Shell Integration.
+if [[ -s "${HOME}/.iterm2_shell_integration.zsh" ]]; then
+  source ${HOME}/.iterm2_shell_integration.zsh
+fi
+
 # Initialize brew.
 source /usr/local/bin/brew_init
 
