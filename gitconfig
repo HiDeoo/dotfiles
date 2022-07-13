@@ -12,6 +12,8 @@
 [commit]
 	gpgsign = true
 	verbose = true
+[tag]
+	gpgSign = true
 [gpg]
 	program = /usr/local/bin/gpg_wrap
 [grep]
