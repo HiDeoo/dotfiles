@@ -284,3 +284,8 @@ path=(
   $PNPM_HOME
   $path
 )
+
+# Bump version numbers.
+# https://github.com/antfu/bumpp
+# https://github.com/JS-DevTools/version-bump-prompt
+alias bump='pnpx bumpp --commit "v"'
