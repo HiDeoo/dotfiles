@@ -274,6 +274,9 @@ gitdone() {
   command git main && git pp && git branch -d ${branch}
 }
 
+# Create a new PR.
+alias npr='gh pr create --body ""'
+
 #
 # Node
 #
