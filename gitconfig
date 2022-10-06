@@ -81,6 +81,15 @@
 	undo = reset --soft HEAD^
 	wip = "!git add -A && git commit -m WIP"
 [delta]
-	syntax-theme = Monokai Extended Bright
+	features = vitesse-dark
 	line-numbers = true
 	side-by-side = true
+[delta "vitesse-dark"]
+    dark = true
+		syntax-theme = TwoDark
+		line-numbers-minus-style = "#cb7676"
+		line-numbers-plus-style = "#4d9375"
+		minus-emph-style = syntax "#612424"
+    minus-style = syntax "#3b1616"
+    plus-emph-style = syntax "#294c3e"
+    plus-style = syntax "#172b23"
