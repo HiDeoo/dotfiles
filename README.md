@@ -91,4 +91,4 @@ You can find more informations on the [Dotbot repository](https://github.com/ani
 
 ## License
 
-Code released under the [MIT license](https://github.com/HiDeoo/dotfiles/blob/master/LICENSE.md).
+Code released under the [MIT license](https://github.com/HiDeoo/dotfiles/blob/main/LICENSE.md).
