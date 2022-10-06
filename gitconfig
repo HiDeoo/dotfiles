@@ -72,8 +72,8 @@
 	r = reflog -20
 	ra = rebase --abort
 	rc = rebase --continue
-	rma = rebase master
-	rmi = rebase master -i
+	rma = rebase main
+	rmi = rebase main -i
 	rv = remote -v
 	s = status -sb
 	sub = submodule update --init --recursive
