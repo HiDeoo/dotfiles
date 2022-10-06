@@ -95,6 +95,13 @@ alias psg='ps aux | grep -i'
 alias l='ll'
 alias lsg='ll | grep -i'
 
+# Override ls commands to use exa.
+alias ls='exa -a -l --git --no-user'
+alias l='ls'
+alias ll='exa -a -l --git -g'
+alias lst='ls -T -L 2'
+alias lsgit='ls --git-ignore'
+
 # Use the verbose mode for cp & mv.
 alias cp='cp -v'
 alias mv='mv -v'

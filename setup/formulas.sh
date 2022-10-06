@@ -11,6 +11,7 @@ apps=(
   borgbackup/tap/borgbackup-fuse
   coreutils
   dog
+  exa
   fd
   firebase-cli
   fnm
