@@ -292,7 +292,7 @@ alias npr='gh pr create --body ""'
 export NODE_REPL_HISTORY_SIZE='10000';
 
 # Lazy-load fnm.
-eval "$(fnm env)"
+eval "$(fnm env --use-on-cd)"
 
 # Configure pnpm.
 export PNPM_HOME="$HOME/Library/pnpm"
