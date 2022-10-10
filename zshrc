@@ -57,7 +57,7 @@ alias d='fasd_cd'
 alias -- -='cd -'
 
 # Navigate to various common directories.
-alias db='cd ~/Dropbox'
+alias db='cd ~/Library/CloudStorage/Dropbox'
 alias dl='cd ~/Downloads'
 alias dt='cd ~/Desktop'
 alias wk='cd ~/Projects'

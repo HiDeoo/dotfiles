@@ -7,7 +7,7 @@ trap 'catch $? $LINENO' EXIT
 
 # Path(s) to backup.
 SOURCE_PATH="
-  /Users/hideo/Dropbox/Backups \
+  /Users/hideo/Library/CloudStorage/Dropbox/Backups \
   /Users/hideo/Projects/dotfiles \
   /Users/hideo/.config \
   /Users/hideo/.npmrc \
