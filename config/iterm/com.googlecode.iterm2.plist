@@ -1454,9 +1454,11 @@
 			<key>Name</key>
 			<string>HiDeo</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 12</string>
+			<string>FiraCodeNerdFontCompleteM-Retina 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
+			<key>Non-ASCII Ligatures</key>
+			<false/>
 			<key>Normal Font</key>
 			<string>PragmataProMono-Regular 13</string>
 			<key>Open Toolbelt</key>
@@ -1716,7 +1718,7 @@
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
-			<false/>
+			<true/>
 			<key>Use Tab Color</key>
 			<false/>
 			<key>Use Underline Color</key>

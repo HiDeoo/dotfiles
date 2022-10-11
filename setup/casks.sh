@@ -11,6 +11,7 @@ apps=(
   fantastical
   figma
   firefox
+  font-fira-code-nerd-font
   google-chrome
   gpg-suite-no-mail
   imageoptim
@@ -28,6 +29,7 @@ apps=(
 echo "Installing Casks."
 
 brew tap homebrew/cask-versions
+brew tap homebrew/cask-fonts
 
 brew install --cask "${apps[@]}"
 
