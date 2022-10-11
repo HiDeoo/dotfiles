@@ -151,6 +151,16 @@ dlrm() {
   cd - > /dev/null
 }
 
+# Open a specific file or the current directory.
+unalias o
+o() {
+  if [ -z "$1" ]; then
+    open .
+  else
+    open "$1"
+  fi
+}
+
 #
 # macOS
 #
@@ -170,7 +180,7 @@ alias update_prezto='zprezto-update'
 alias update_all='update_os; update_brew; update_npm; update_yarn; update_prezto'
 
 # Update npm global packages.
-function npmgu() {
+npmgu() {
   for package in $(npm -g outdated --parseable --depth=0 | cut -d: -f4)
   do
       npm -g --force install "$package"
