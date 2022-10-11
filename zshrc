@@ -302,7 +302,12 @@ path=(
   $path
 )
 
-# Bump version numbers.
+# Returns the latest version of a package matching a given semver range.
+latest() {
+  pnpm view $1 version | tail -n 1 | cut -d "'" -f 2
+}
+
+# Bump version numbers without Conventional Commits.
 # https://github.com/antfu/bumpp
 # https://github.com/JS-DevTools/version-bump-prompt
 alias bump='pnpx bumpp --commit "v"'
