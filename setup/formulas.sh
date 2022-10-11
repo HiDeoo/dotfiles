@@ -30,6 +30,7 @@ apps=(
   python
   rename
   ripgrep
+  starship
   staticcheck
   streamlink
   trash

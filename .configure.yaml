@@ -4,19 +4,17 @@
       relink: true
       force: true
 
-- clean: ['~']
+- clean: ["~"]
 
 - shell:
-  -
-    command: zsh .prezto
-    description: Installing Prezto.
-    stdout: true
-    stderr: true
-  -
-    command: sh .packer.nvim
-    description: Installing packer.nvim.
-    stdout: true
-    stderr: true
+    - command: zsh .prezto
+      description: Installing Prezto.
+      stdout: true
+      stderr: true
+    - command: sh .packer.nvim
+      description: Installing packer.nvim.
+      stdout: true
+      stderr: true
 
 - link:
     ~/.zlogin:
@@ -32,6 +30,8 @@
     ~/.hushlogin:
     ~/.config/nvim/init.lua:
       path: init.lua
+    ~/.config/starship.toml:
+      path: starship.toml
     ~/Library/LaunchAgents/local.backup.plist:
       path: local.backup.plist
     /usr/local/bin/brew_init:
@@ -52,13 +52,12 @@
     - ~/Pictures/Screenshots
 
 - shell:
-  - [chmod +x /usr/local/bin/imgcat, Setting permissions for imgcat.]
-  - [chmod +x /usr/local/bin/+x, Setting permissions for +x.]
-  - [chmod +x /usr/local/bin/mit, Setting permissions for mit.]
-  - [chmod +x /usr/local/bin/backup, Setting permissions for backup.]
-  - [chmod +x /usr/local/bin/gpg_wrap, Setting permissions for gpg_wrap.]
-  -
-    command: echo "To install Neovim plugins, use the ':PackerInstall' command."
-    description: Setting up Neovim plugins.
-    quiet: true
-    stdout: true
+    - [chmod +x /usr/local/bin/imgcat, Setting permissions for imgcat.]
+    - [chmod +x /usr/local/bin/+x, Setting permissions for +x.]
+    - [chmod +x /usr/local/bin/mit, Setting permissions for mit.]
+    - [chmod +x /usr/local/bin/backup, Setting permissions for backup.]
+    - [chmod +x /usr/local/bin/gpg_wrap, Setting permissions for gpg_wrap.]
+    - command: echo "To install Neovim plugins, use the ':PackerInstall' command."
+      description: Setting up Neovim plugins.
+      quiet: true
+      stdout: true

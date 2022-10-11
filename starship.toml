@@ -1,0 +1,7 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+[battery]
+disabled=true
+
+[package]
+display_private=true

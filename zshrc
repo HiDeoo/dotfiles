@@ -46,6 +46,9 @@ alias rr='exec zsh'
 # Edit zshrc in VS Code.
 alias al='c ~/.zshrc'
 
+# Load Starship prompt.
+eval "$(starship init zsh)"
+
 #
 # Navigation
 #
