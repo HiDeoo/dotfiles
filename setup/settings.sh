@@ -186,6 +186,9 @@ defaults write NSGlobalDomain NSToolbarTitleViewRolloverDelay -float 0
 # Dock
 #
 
+# Set the Dock orientation to the right.
+defaults write com.apple.dock orientation -string "right"
+
 # Disable Dock magnification.
 defaults write com.apple.dock magnification -bool false
 
