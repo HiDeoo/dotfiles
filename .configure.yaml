@@ -23,7 +23,6 @@
     ~/.zshenv:
     ~/.zshrc:
     ~/.zpreztorc:
-    ~/.streamlinkrc:
     ~/.wgetrc:
     ~/.gitconfig:
     ~/.backupignore:
@@ -32,6 +31,8 @@
       path: init.lua
     ~/.config/starship.toml:
       path: starship.toml
+    ~/Library/Application Support/streamlink/config:
+      path: streamlink.config
     ~/Library/LaunchAgents/local.backup.plist:
       path: local.backup.plist
     /usr/local/bin/brew_init:

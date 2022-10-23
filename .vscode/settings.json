@@ -1,7 +1,7 @@
 {
   "files.associations": {
     ".packer.nvim": "shellscript",
-    "streamlinkrc": "properties",
+    "streamlink.config": "properties",
     "wgetrc": "properties",
     "zlogin": "shellscript",
     "zlogout": "shellscript",

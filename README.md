@@ -20,26 +20,26 @@ Regarding Neovim, if not installed, [Packer](https://github.com/wbthomason/packe
 
 Included dotfiles:
 
-  * All [Zsh configuration](http://zsh.sourceforge.net/Intro/intro_3.html#SEC3)
-  * All [Prezto](https://github.com/sorin-ionescu/prezto) configuration
-  * [.streamlinkrc](https://streamlink.github.io/cli.html#cli-streamlinkrc)
-  * [.wgetrc](https://www.gnu.org/software/wget/manual/html_node/Wgetrc-Commands.html)
-  * [.config/nvim/init.lua](https://neovim.io/doc/user/starting.html#init.lua)
-  * [.gitconfig](https://git-scm.com/docs/git-config)
-  * [.backupignore](https://borgbackup.readthedocs.io/en/stable/usage/help.html?highlight=fnmatch#borg-help-patterns)
-  * [.hushlogin](https://man7.org/linux/man-pages/man1/login.1.html)
+- All [Zsh configuration](http://zsh.sourceforge.net/Intro/intro_3.html#SEC3)
+- All [Prezto](https://github.com/sorin-ionescu/prezto) configuration
+- [Streamlink configuration](https://streamlink.github.io/cli/config.html)
+- [.wgetrc](https://www.gnu.org/software/wget/manual/html_node/Wgetrc-Commands.html)
+- [.config/nvim/init.lua](https://neovim.io/doc/user/starting.html#init.lua)
+- [.gitconfig](https://git-scm.com/docs/git-config)
+- [.backupignore](https://borgbackup.readthedocs.io/en/stable/usage/help.html?highlight=fnmatch#borg-help-patterns)
+- [.hushlogin](https://man7.org/linux/man-pages/man1/login.1.html)
 
 Included scripts:
 
-  * `imgcat`: Script showing inline images in iTerm2 v3.
-  * `+x`: Script to quickly add execution permissions to a file.
-  * `mit`: Script to generate an MIT license file.
-  * `backup`: Script using [Borg](https://borgbackup.readthedocs.io/) to create deduplicating backups every night.
-  * `gpg_wrap`: Script used in `.gitconfig` to properly invoke GnuPG/MacGPG2 to sign all Git commits.
+- `imgcat`: Script showing inline images in iTerm2 v3.
+- `+x`: Script to quickly add execution permissions to a file.
+- `mit`: Script to generate an MIT license file.
+- `backup`: Script using [Borg](https://borgbackup.readthedocs.io/) to create deduplicating backups every night.
+- `gpg_wrap`: Script used in `.gitconfig` to properly invoke GnuPG/MacGPG2 to sign all Git commits.
 
 ## Usage & customization
 
-*Note: To properly customize the scripts, you should fork this repository and modify it to fit your needs and include your own configuration. You can also copy whatever portion of script / configuration that you find useful.*
+_Note: To properly customize the scripts, you should fork this repository and modify it to fit your needs and include your own configuration. You can also copy whatever portion of script / configuration that you find useful._
 
 To install, just clone the repository and set the correct permissions:
 
@@ -48,7 +48,7 @@ $ git clone https://github.com/HiDeoo/dotfiles
 $ cd dotfiles
 ```
 
-*Note: Make sure to backup your existing dotfiles or add all your configurations in your forked repository before using the `configure` script as it will erase the current ones.*
+_Note: Make sure to backup your existing dotfiles or add all your configurations in your forked repository before using the `configure` script as it will erase the current ones._
 
 Use either the `install` or `configure` script:
 
@@ -80,14 +80,13 @@ You can find more informations on the [Dotbot repository](https://github.com/ani
 
 ## Resources
 
-* [anishathalye/dotfiles](https://github.com/anishathalye/dotfiles)
-* [nicksp/dotfiles](https://github.com/nicksp/dotfiles)
-* [necolas/dotfiles](https://github.com/necolas/dotfiles)
-* [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles)
-* [alrra/dotfiles](https://github.com/alrra/dotfiles)
-* [paulirish/dotfiles](https://github.com/paulirish/dotfiles)
-* [jacobwgillespie/dotfiles](https://github.com/jacobwgillespie/dotfiles)
-
+- [anishathalye/dotfiles](https://github.com/anishathalye/dotfiles)
+- [nicksp/dotfiles](https://github.com/nicksp/dotfiles)
+- [necolas/dotfiles](https://github.com/necolas/dotfiles)
+- [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles)
+- [alrra/dotfiles](https://github.com/alrra/dotfiles)
+- [paulirish/dotfiles](https://github.com/paulirish/dotfiles)
+- [jacobwgillespie/dotfiles](https://github.com/jacobwgillespie/dotfiles)
 
 ## License
 
