@@ -19,6 +19,7 @@
 [grep]
 	lineNumber = true
 [core]
+	editor = code --wait
 	pager = delta
 [interactive]
 	diffFilter = delta --color-only
