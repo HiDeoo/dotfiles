@@ -34,7 +34,6 @@ apps=(
   staticcheck
   streamlink
   trash
-  tree
   vsce
   wget
   yarn

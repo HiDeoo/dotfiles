@@ -114,8 +114,8 @@ alias cat='bat -p --theme ansi'
 alias ping='prettyping'
 alias rm='trash'
 
-# Add colors to tree.
-alias tree='tree -C'
+# Alias ls to tree.
+alias tree='ls -T -L 2'
 
 # Add a native rm fallback.
 alias rmi='command rm -i'
