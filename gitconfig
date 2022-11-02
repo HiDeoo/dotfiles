@@ -1,6 +1,7 @@
 [user]
 	email = 494699+HiDeoo@users.noreply.github.com
 	name = HiDeoo
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGVI/tlnHsyRkQ8/2zZAGk9zni7dTOS2VC3Xw1Pht9g3
 [github]
 	user = HiDeoo
 [filter "lfs"]
@@ -10,12 +11,15 @@
 [init]
 	defaultBranch = main
 [commit]
-	gpgsign = true
+	gpgSign = true
 	verbose = true
 [tag]
 	gpgSign = true
 [gpg]
-	program = /usr/local/bin/gpg_wrap
+	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = "~/.ssh/allowed_signers"
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 [grep]
 	lineNumber = true
 [core]

@@ -35,6 +35,8 @@
       path: streamlink.config
     ~/Library/LaunchAgents/local.backup.plist:
       path: local.backup.plist
+    ~/.ssh/allowed_signers:
+      path: allowed_signers
     /usr/local/bin/brew_init:
       path: bin/brew_init
     /usr/local/bin/imgcat:
@@ -45,8 +47,6 @@
       path: bin/mit
     /usr/local/bin/backup:
       path: bin/backup
-    /usr/local/bin/gpg_wrap:
-      path: bin/gpg_wrap
 
 - create:
     - ~/Temp
@@ -57,7 +57,6 @@
     - [chmod +x /usr/local/bin/+x, Setting permissions for +x.]
     - [chmod +x /usr/local/bin/mit, Setting permissions for mit.]
     - [chmod +x /usr/local/bin/backup, Setting permissions for backup.]
-    - [chmod +x /usr/local/bin/gpg_wrap, Setting permissions for gpg_wrap.]
     - command: echo "To install Neovim plugins, use the ':PackerInstall' command."
       description: Setting up Neovim plugins.
       quiet: true

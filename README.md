@@ -35,7 +35,6 @@ Included scripts:
 - `+x`: Script to quickly add execution permissions to a file.
 - `mit`: Script to generate an MIT license file.
 - `backup`: Script using [Borg](https://borgbackup.readthedocs.io/) to create deduplicating backups every night.
-- `gpg_wrap`: Script used in `.gitconfig` to properly invoke GnuPG/MacGPG2 to sign all Git commits.
 
 ## Usage & customization
 
