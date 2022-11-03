@@ -1,19 +1,14 @@
 #!/usr/bin/env bash
 
-echo "Installing macFUSE"
-
-brew install --cask macfuse
-
 echo "Installing Formulas"
 
 apps=(
   bat
-  borgbackup/tap/borgbackup-fuse
+  borgbackup
   coreutils
   dog
   exa
   fd
-  firebase-cli
   fnm
   fzf
   gh
@@ -28,7 +23,6 @@ apps=(
   pnpm
   prettyping
   python
-  rename
   ripgrep
   starship
   staticcheck

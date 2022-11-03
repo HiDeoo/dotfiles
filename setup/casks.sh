@@ -17,7 +17,6 @@ apps=(
   imageoptim
   iterm2
   karabiner-elements
-  licecap
   microsoft-edge-dev
   rectangle
   sf-symbols
