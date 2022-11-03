@@ -17,6 +17,7 @@ apps=(
   imageoptim
   iterm2
   karabiner-elements
+  macupdater
   microsoft-edge-dev
   rectangle
   sf-symbols
