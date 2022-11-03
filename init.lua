@@ -37,6 +37,10 @@ end)
 
 -- Configure theme.
 cmd 'colorscheme snazzy'
+cmd([[
+  hi Normal ctermbg=16 guibg=#121212
+  hi LineNr ctermbg=16 guibg=#121212 guifg=#383837
+]])
 
 -- Fix color scheme search highlight colors
 cmd 'autocmd ColorScheme * highlight Search guibg=#ff6ac1'
