@@ -5,17 +5,20 @@
 # Initialize brew.
 source /usr/local/bin/brew_init
 
-# Load brew completion definitions before Prezto & compinit.
+# Add brew completion definitions before sourcing Prezto.
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-
-  autoload -Uz compinit
-  compinit
 fi
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+# Initialize completions.
+if type brew &>/dev/null; then
+  autoload -Uz compinit
+  compinit
 fi
 
 # Source iTerm2 Shell Integration.
