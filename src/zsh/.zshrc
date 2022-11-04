@@ -2,6 +2,9 @@
 # Main
 #
 
+# Initialize brew.
+source /usr/local/bin/brew_init
+
 # Load brew completion definitions before Prezto & compinit.
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
@@ -19,9 +22,6 @@ fi
 if [[ -s "${HOME}/.iterm2_shell_integration.zsh" ]]; then
   source ${HOME}/.iterm2_shell_integration.zsh
 fi
-
-# Initialize brew.
-source /usr/local/bin/brew_init
 
 # Load extra tab-completions.
 [ -f ~/.config/tabtab/zsh/__tabtab.zsh ] && source ~/.config/tabtab/zsh/__tabtab.zsh
