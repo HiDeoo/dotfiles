@@ -7,7 +7,6 @@ apps=(
   discord
   docker
   dropbox
-  dynalist
   fantastical
   figma
   firefox
