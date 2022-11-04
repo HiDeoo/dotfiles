@@ -1,14 +1,8 @@
 {
   "files.associations": {
-    ".packer.nvim": "shellscript",
-    "streamlink.config": "properties",
-    "wgetrc": "properties",
-    "zlogin": "shellscript",
-    "zlogout": "shellscript",
-    "zpreztorc": "shellscript",
-    "zprofile": "shellscript",
-    "zshenv": "shellscript",
-    "zshrc": "shellscript"
+    "**/src/streamlink/config": "properties",
+    "**/src/wget/.wgetrc": "properties",
+    "**/src/zsh/*": "shellscript"
   },
   "files.exclude": {
     ".dotbot": true

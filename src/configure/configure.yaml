@@ -1,0 +1,78 @@
+- defaults:
+    link:
+      create: true
+      force: true
+      relink: true
+
+- clean: ["~"]
+
+- shell:
+    - command: zsh src/configure/prezto
+      description: Installing Prezto.
+      stdout: true
+      stderr: true
+    - command: sh src/configure/packer.nvim
+      description: Installing packer.nvim.
+      stdout: true
+      stderr: true
+
+- link:
+    # ~
+    ~/.backupignore:
+      path: src/borg/.backupignore
+    ~/.gitconfig:
+      path: src/git/.gitconfig
+    ~/.hushlogin:
+      path: src/zsh/.hushlogin
+    ~/.wgetrc:
+      path: src/wget/.wgetrc
+    ~/.zlogin:
+      path: src/zsh/.zlogin
+    ~/.zlogout:
+      path: src/zsh/.zlogout
+    ~/.zpreztorc:
+      path: src/zsh/.zpreztorc
+    ~/.zprofile:
+      path: src/zsh/.zprofile
+    ~/.zshenv:
+      path: src/zsh/.zshenv
+    ~/.zshrc:
+      path: src/zsh/.zshrc
+    # ~/.config
+    ~/.config/nvim/init.lua:
+      path: src/nvim/init.lua
+    ~/.config/starship.toml:
+      path: src/zsh/starship.toml
+    # ~/.ssh
+    ~/.ssh/allowed_signers:
+      path: src/git/allowed_signers
+    # ~/Library
+    ~/Library/Application Support/streamlink/config:
+      path: src/streamlink/config
+    ~/Library/LaunchAgents/local.backup.plist:
+      path: src/borg/local.backup.plist
+    # /usr/local/bin
+    /usr/local/bin/+x:
+      path: src/bin/+x
+    /usr/local/bin/backup:
+      path: src/bin/backup
+    /usr/local/bin/brew_init:
+      path: src/bin/brew_init
+    /usr/local/bin/imgcat:
+      path: src/bin/imgcat
+    /usr/local/bin/mit:
+      path: src/bin/mit
+
+- create:
+    - ~/Temp
+    - ~/Pictures/Screenshots
+
+- shell:
+    - [chmod +x /usr/local/bin/backup, Setting permissions for backup binary.]
+    - [chmod +x /usr/local/bin/+x, Setting permissions for +x binary.]
+    - [chmod +x /usr/local/bin/imgcat, Setting permissions for imgcat binary.]
+    - [chmod +x /usr/local/bin/mit, Setting permissions for mit binary.]
+    - command: echo "To install Neovim plugins, use the ':PackerInstall' command."
+      description: Setting up Neovim plugins.
+      quiet: true
+      stdout: true
