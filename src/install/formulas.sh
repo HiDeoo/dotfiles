@@ -28,7 +28,6 @@ apps=(
   staticcheck
   streamlink
   trash
-  vsce
   wget
   yarn
   zsh
