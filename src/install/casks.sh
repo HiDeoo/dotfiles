@@ -15,12 +15,12 @@ apps=(
   gpg-suite-no-mail
   imageoptim
   iterm2
-  karabiner-elements
   macupdater
   microsoft-edge-dev
   rectangle
   sf-symbols
   the-unarchiver
+  via
   visual-studio-code
   vlc
 )
