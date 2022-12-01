@@ -45,4 +45,8 @@ echo "Installing pnpm tab-completions."
 
 $(brew --prefix)/opt/pnpm/bin/pnpm install-completion zsh
 
+echo "Installing GitHub CLI extensions."
+
+$(brew --prefix)/opt/gh/bin/gh extension install seachicken/gh-poi
+
 exit 0

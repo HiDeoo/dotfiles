@@ -278,7 +278,7 @@ git() {
 }
 
 # Delete git local branches which have already been merged into the current HEAD.
-alias gitcleanup='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
+alias gitcleanup='gh poi'
 
 # Switch to the main branch, pull-prune the latest changes and delete the previous branch.
 gitdone() {
