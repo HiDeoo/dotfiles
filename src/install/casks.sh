@@ -14,6 +14,7 @@ apps=(
   google-chrome
   gpg-suite-no-mail
   imageoptim
+  insomnia
   iterm2
   macupdater
   microsoft-edge-dev
