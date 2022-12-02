@@ -6,18 +6,19 @@ set -Eeuo pipefail
 trap 'catch $? $LINENO' EXIT
 
 # Path(s) to backup.
-SOURCE_PATH="
-  /Users/hideo/Library/CloudStorage/Dropbox/Backups \
-  /Users/hideo/Library/Application\ Support/Insomnia \
-  /Users/hideo/Projects/dotfiles \
-  /Users/hideo/.config \
-  /Users/hideo/.npmrc \
-  /Users/hideo/.yarnrc \
-  /Users/hideo/.zsh_history \
-  /Users/hideo/Documents \
-  /Users/hideo/Movies \
-  /Users/hideo/Music \
-  /Users/hideo/Pictures"
+SOURCE_PATH=(
+  "/Users/hideo/Library/CloudStorage/Dropbox/Backups"
+  "/Users/hideo/Library/Application Support/Insomnia"
+  "/Users/hideo/Projects/dotfiles"
+  "/Users/hideo/.config"
+  "/Users/hideo/.npmrc"
+  "/Users/hideo/.yarnrc"
+  "/Users/hideo/.zsh_history"
+  "/Users/hideo/Documents"
+  "/Users/hideo/Movies"
+  "/Users/hideo/Music"
+  "/Users/hideo/Pictures"
+)
 
 # Path of the repository that will contain the backup archives.
 REPO_PATH="bullpen:~/.backups/iMac"
@@ -57,13 +58,13 @@ usage() {
 
 # Lists files to backup (no backup are actually started).
 list() {
-  borg create ${BORG_CREATE_OPTIONS} -n --list ${REPO_PATH}::list ${SOURCE_PATH}
+  borg create ${BORG_CREATE_OPTIONS} -n --list ${REPO_PATH}::list "${SOURCE_PATH[@]}"
 }
 
 # Backups files.
 backup() {
   # Create a new backup archive.
-  borg create ${BORG_CREATE_OPTIONS} ${REPO_PATH}::'{now:%Y-%m-%d} {now:%H:%M:%S}' ${SOURCE_PATH}
+  borg create ${BORG_CREATE_OPTIONS} ${REPO_PATH}::'{now:%Y-%m-%d} {now:%H:%M:%S}' "${SOURCE_PATH[@]}"
 
   # Purge existing archives except the last two backups and at least 2 weekly archives.
   borg prune --keep-last 2 -w 2 ${REPO_PATH}
