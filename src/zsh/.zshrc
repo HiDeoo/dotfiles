@@ -320,3 +320,6 @@ alias bump='pnpx bumpp --commit "v"'
 
 # Update various packages to their latest versions.
 alias pnpmup='pnpm up --latest'
+
+# Lint a package.json file.
+alias pkglint='pnpx publint'
