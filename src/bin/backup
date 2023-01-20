@@ -12,7 +12,6 @@ SOURCE_PATH=(
   "/Users/hideo/Projects/dotfiles"
   "/Users/hideo/.config"
   "/Users/hideo/.npmrc"
-  "/Users/hideo/.yarnrc"
   "/Users/hideo/.zsh_history"
   "/Users/hideo/Documents"
   "/Users/hideo/Movies"
