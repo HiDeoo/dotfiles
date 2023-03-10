@@ -56,6 +56,7 @@
     cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
 [stash]
 	showPatch = true
+	showIncludeUntracked = true
 [status]
 	showUntrackedFiles = all
 	submoduleSummary = true
