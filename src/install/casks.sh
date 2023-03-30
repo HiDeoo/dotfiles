@@ -11,13 +11,12 @@ apps=(
   figma
   firefox
   font-fira-code-nerd-font
-  google-chrome
+  google-chrome-dev
   gpg-suite-no-mail
   imageoptim
   insomnia
   iterm2
   macupdater
-  microsoft-edge-dev
   rectangle
   sf-symbols
   the-unarchiver
