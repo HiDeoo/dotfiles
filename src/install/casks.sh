@@ -5,7 +5,6 @@ apps=(
   appcleaner
   calibre
   discord
-  docker
   dropbox
   fantastical
   figma
@@ -17,6 +16,7 @@ apps=(
   insomnia
   iterm2
   macupdater
+  orbstack
   rectangle
   sf-symbols
   the-unarchiver
