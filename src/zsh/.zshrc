@@ -205,6 +205,9 @@ alias dig='dog'
 # Edit the hosts file.
 alias hosts='sudo $EDITOR /etc/hosts'
 
+# Setup a tunnel using Cloudflare Tunnel.
+alias tunnel='cloudflared tunnel --url'
+
 #
 # Dev
 #

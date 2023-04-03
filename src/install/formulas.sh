@@ -5,6 +5,7 @@ echo "Installing Formulas"
 apps=(
   bat
   borgbackup
+  cloudflared
   coreutils
   dog
   exa
