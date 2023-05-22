@@ -19,6 +19,7 @@ apps=(
   orbstack
   rectangle
   sf-symbols
+  shottr
   the-unarchiver
   via
   visual-studio-code
