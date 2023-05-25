@@ -126,6 +126,9 @@ alias rmi='command rm -i'
 # Clear & list the current directory.
 alias cls='clear; ls'
 
+# Make pbcopy shorter.
+alias copy='pbcopy <'
+
 # Launch a new VLC instance.
 alias vvlc='open -n /Applications/VLC.app'
 
