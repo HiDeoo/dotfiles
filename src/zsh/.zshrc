@@ -328,4 +328,4 @@ alias bump='pnpx bumpp --commit "v"'
 alias pnpmup='pnpm up --latest'
 
 # Lint a package.json file.
-alias pkglint='pnpx publint --strict'
+alias pkglint='pnpx publint --strict; pnpx @arethetypeswrong/cli $(npm pack)'
