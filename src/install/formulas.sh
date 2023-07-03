@@ -5,6 +5,7 @@ echo "Installing Formulas"
 apps=(
   bat
   borgbackup
+  bun
   cloudflared
   coreutils
   dog
@@ -31,6 +32,8 @@ apps=(
   wget
   zsh
 )
+
+brew tap oven-sh/bun
 
 brew install "${apps[@]}"
 
