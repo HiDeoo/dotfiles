@@ -2,6 +2,7 @@
 
 apps=(
   alfred
+  alt-tab
   appcleaner
   calibre
   discord
