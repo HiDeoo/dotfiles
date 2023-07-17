@@ -10,7 +10,6 @@ apps=(
   fantastical
   figma
   firefox
-  font-fira-code-nerd-font
   google-chrome-dev
   gpg-suite-no-mail
   imageoptim
