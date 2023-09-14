@@ -346,7 +346,7 @@ defaults write NSGlobalDomain CGDisableCursorLocationMagnification -bool YES
 # Load preferences from a custom folder.
 defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
 
-# Load prefernces from this repository.
+# Load preferences from this repository.
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "$HOME/Projects/dotfiles/src/iterm2"
 
 # Save preference changes automatically.
