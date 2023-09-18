@@ -8,7 +8,7 @@ apps=(
   bun
   cloudflared
   coreutils
-  dog
+  doggo
   eza
   fd
   fnm
