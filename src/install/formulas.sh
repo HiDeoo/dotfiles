@@ -9,7 +9,7 @@ apps=(
   cloudflared
   coreutils
   dog
-  exa
+  eza
   fd
   fnm
   fzf
