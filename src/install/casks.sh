@@ -12,8 +12,8 @@ apps=(
   firefox
   google-chrome-dev
   gpg-suite-no-mail
+  httpie
   imageoptim
-  insomnia
   iterm2
   macupdater
   orbstack
