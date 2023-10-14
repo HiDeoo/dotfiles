@@ -10,7 +10,7 @@ apps=(
   fantastical
   figma
   firefox
-  google-chrome-dev
+  google-chrome-beta
   gpg-suite-no-mail
   httpie
   imageoptim
