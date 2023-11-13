@@ -20,6 +20,7 @@ apps=(
   rectangle
   sf-symbols
   shottr
+  stats
   the-unarchiver
   via
   visual-studio-code
