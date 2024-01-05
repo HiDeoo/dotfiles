@@ -329,3 +329,56 @@ alias pnpmup='pnpm up --latest'
 
 # Lint a package.json file.
 alias pkglint='pnpx publint --strict; pnpx @arethetypeswrong/cli $(npm pack)'
+
+# Setup a fresh environment to reproduce a Starlight issue.
+#
+# By default, the script will:
+#   - Create a new directory in the ~/Temp folder named st-repro-YYYY-MM-DD-HH-MM-SS.
+#   - Clone the Starlight repository.
+#   - Install the dependencies.
+#   - Open the project in Visual Studio Code.
+#   - Go to the docs folder.
+#   - Start the development server.
+#
+# The `-m` or `--minimal` flag can be used to create a new project using the `basics` Starlight template instead of
+# cloning the Starlight repository.
+#
+# It is also possible to specify a custom name for the repro using the `-n` or `--name` flag which will replace the
+# date-based suffix.
+strepro() {
+  tmp
+
+  while [[ "$#" -gt 0 ]]; do
+    case $1 in
+      -n|--name) local suffix="$2"; shift;;
+      -m|--minimal) local minimal=1;;
+      *) echo "Unknown option: $1"; return;;
+    esac
+    shift
+  done
+
+  if [ -z "$suffix" ]; then
+    local suffix=$(date '+%Y-%m-%d-%H-%M-%S')
+  fi
+
+  local name="st-repro-${suffix}"
+
+  if [ -d "${name}" ]; then
+    echo "A repro with the name '${suffix}' already exists."
+    return
+  fi
+
+  mkdcd "${name}"
+
+  if [ -z "$minimal" ]; then
+    git clone https://github.com/withastro/starlight
+    pnpm i
+    c .
+    cd docs
+  else
+    pnpm create astro@latest --template starlight --install --no-git --typescript strict --skip-houston .
+    c .
+  fi
+
+  pnpm dev
+}
