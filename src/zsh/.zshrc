@@ -52,6 +52,13 @@ alias al='c ~/.zshrc'
 # Load Starship prompt.
 eval "$(starship init zsh)"
 
+# Prevent some commands from being saved in the history.
+zshaddhistory() {
+  if [[ "$1" == "strepro"* ]]; then
+    fc -p
+  fi
+}
+
 #
 # Navigation
 #
