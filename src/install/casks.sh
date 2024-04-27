@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 
 apps=(
-  alfred
   alt-tab
-  appcleaner
   calibre
   discord
   dropbox
@@ -17,7 +15,6 @@ apps=(
   iterm2
   macupdater
   orbstack
-  rectangle
   sf-symbols
   shottr
   stats
