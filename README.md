@@ -43,6 +43,7 @@ $ ./configure
 Dotfiles:
 
 - [Borg](https://borgbackup.readthedocs.io/)
+- [Espanso](https://github.com/espanso/espanso)
 - [Git](https://git-scm.com/docs/git-config)
 - [iTerm2](https://iterm2.com/documentation-preferences.html)
 - [Neovim](https://neovim.io/doc/user/starting.html#init.lua)
