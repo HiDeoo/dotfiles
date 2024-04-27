@@ -15,6 +15,7 @@ apps=(
   iterm2
   macupdater
   orbstack
+  raycast
   sf-symbols
   shottr
   stats
