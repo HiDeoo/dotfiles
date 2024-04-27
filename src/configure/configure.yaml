@@ -51,6 +51,8 @@
       path: src/streamlink/config
     ~/Library/LaunchAgents/local.backup.plist:
       path: src/borg/local.backup.plist
+    ~/Library/Application Support/espanso:
+      path: src/espanso
     # /usr/local/bin
     /usr/local/bin/+x:
       path: src/bin/+x

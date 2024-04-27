@@ -1,0 +1,35 @@
+matches:
+  - trigger: "'gh"
+    replace: "GitHub"
+    word: true
+  - trigger: "'vsc"
+    replace: "Visual Studio Code"
+    word: true
+  - trigger: "'i18n"
+    replace: "internationalization"
+    propagate_case: true
+    word: true
+  - trigger: "'a11y"
+    replace: "accessibility"
+    propagate_case: true
+    word: true
+  - trigger: "'dep"
+    replace: "dependency"
+    propagate_case: true
+    word: true
+  - trigger: "'deps"
+    replace: "dependencies"
+    propagate_case: true
+    word: true
+  - trigger: "'misc"
+    replace: "miscellaneous"
+    propagate_case: true
+    word: true
+  - trigger: "'repo"
+    replace: "repository"
+    propagate_case: true
+    word: true
+  - trigger: "'repos"
+    replace: "repositories"
+    propagate_case: true
+    word: true

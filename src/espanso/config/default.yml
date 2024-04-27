@@ -1,0 +1,8 @@
+# Disable the toggle key.
+toggle_key: OFF
+
+# Disable the search bar.
+search_shortcut: off
+
+# Disable the menu bar icon.
+show_icon: false

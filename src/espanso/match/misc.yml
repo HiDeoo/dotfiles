@@ -1,0 +1,18 @@
+matches:
+  - trigger: "'stfirst"
+    replace: |
+      :starlight: **FIRST-TIME CONTRIBUTOR ALERT** :starlight:
+      Welcome to the Starlight contributors, USERNAME ! PUN :lunaria_party:
+  - trigger: "'stpr"
+    replace: |
+      #### Description
+
+      - Closes #
+      - What does this PR change? Give us a brief description.
+      - Did you change something visual? A before/after screenshot can be helpful.
+
+  - trigger: "'i18nok"
+    replace: |
+      Thanks for the translation :raised_hands:
+
+      As a non-native speaker, I reviewed this PR using the [Docs Translation Review Checklist](https://hackmd.io/1KYnrpUQR0SAGTzHIUoUDg?view) and everything looks good to me 👍

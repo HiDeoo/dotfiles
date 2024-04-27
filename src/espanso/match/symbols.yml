@@ -1,0 +1,46 @@
+matches:
+  - trigger: "'em"
+    replace: "—"
+    word: true
+  - trigger: "'t"
+    replace: "↑"
+    word: true
+  - trigger: "'r"
+    replace: "→"
+    word: true
+  - trigger: "'b"
+    replace: "↓"
+    word: true
+  - trigger: "'l"
+    replace: "←"
+    word: true
+  - trigger: "'tm"
+    replace: "™"
+    word: true
+  - trigger: "'copy"
+    replace: "©"
+    word: true
+  - trigger: "'command"
+    replace: "⌘"
+    word: true
+  - trigger: "'option"
+    replace: "⌥"
+    word: true
+  - trigger: "'ctrl"
+    replace: "⌃"
+    word: true
+  - trigger: "'shift"
+    replace: "⇧"
+    word: true
+  - trigger: "'12"
+    replace: "½"
+    word: true
+  - trigger: "'14"
+    replace: "¼"
+    word: true
+  - trigger: "'sq"
+    replace: "²"
+    word: true
+  - trigger: "'deg"
+    replace: "°"
+    word: true

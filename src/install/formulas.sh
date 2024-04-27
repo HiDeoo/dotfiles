@@ -9,6 +9,7 @@ apps=(
   cloudflared
   coreutils
   doggo
+  espanso
   eza
   fd
   fnm
@@ -33,6 +34,7 @@ apps=(
   zsh
 )
 
+brew tap espanso/espanso
 brew tap oven-sh/bun
 
 brew install "${apps[@]}"

@@ -1,0 +1,4 @@
+matches:
+  - trigger: "'bleedingeyes"
+    replace: "http://i.imgur.com/MlI5NtG.gifv"
+    word: true

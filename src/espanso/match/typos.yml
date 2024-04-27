@@ -1,0 +1,13 @@
+matches:
+  - trigger: "explicitely"
+    replace: "explicitly"
+    propagate_case: true
+    word: true
+  - trigger: "ha"
+    replace: "ah"
+    propagate_case: true
+    word: true
+  - trigger: "ho"
+    replace: "oh"
+    propagate_case: true
+    word: true

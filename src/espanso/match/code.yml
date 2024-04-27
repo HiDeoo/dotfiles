@@ -1,0 +1,16 @@
+matches:
+  - trigger: "'mref"
+    replace: "[reference]({{clipboard}})"
+    word: true
+    vars:
+      - name: "clipboard"
+        type: "clipboard"
+  - trigger: "'mlink"
+    replace: "[$|$]({{clipboard}})"
+    word: true
+    vars:
+      - name: "clipboard"
+        type: "clipboard"
+  - trigger: "'skipci"
+    replace: "[skip ci]"
+    word: true

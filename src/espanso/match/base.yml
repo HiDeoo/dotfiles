@@ -1,0 +1,21 @@
+matches:
+  - trigger: "'date"
+    replace: "{{date}}"
+    word: true
+    vars:
+      - name: date
+        type: date
+        params:
+          format: "%m/%d/%Y"
+  - trigger: "'ddate"
+    replace: "{{day}} {{date}}"
+    word: true
+    vars:
+      - name: day
+        type: date
+        params:
+          format: "%a"
+      - name: date
+        type: match
+        params:
+          trigger: "'date"
