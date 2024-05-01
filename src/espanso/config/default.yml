@@ -6,3 +6,6 @@ search_shortcut: off
 
 # Disable the menu bar icon.
 show_icon: false
+
+# Prevent backspace from undoing the last expansion.
+undo_backspace: false
