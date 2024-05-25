@@ -2,9 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AiMaxTokens</key>
+	<integer>16384</integer>
+	<key>AiModel</key>
+	<string>gpt-3.5-turbo</string>
 	<key>AutoCommandHistory</key>
 	<false/>
 	<key>CheckTestRelease</key>
+	<false/>
+	<key>ClickToSelectCommand</key>
 	<false/>
 	<key>CopySelection</key>
 	<false/>
@@ -776,6 +782,8 @@
 	<true/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>IRMemory</key>
+	<integer>4</integer>
 	<key>JobName</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -1512,9 +1520,13 @@
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
+			<key>Set Local Environment Vars</key>
+			<integer>2</integer>
 			<key>Shortcut</key>
 			<string></string>
 			<key>Show Mark Indicators</key>
+			<false/>
+			<key>Show Offscreen Command line</key>
 			<false/>
 			<key>Show Status Bar</key>
 			<false/>
