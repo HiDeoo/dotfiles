@@ -303,6 +303,9 @@ gitdone() {
 # Create a new PR.
 alias npr='gh pr create --body ""'
 
+# Checkout a PR.
+alias pr='gh pr checkout'
+
 #
 # Node
 #
