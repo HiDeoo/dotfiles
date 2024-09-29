@@ -392,3 +392,13 @@ strepro() {
 
   pnpm dev
 }
+
+# Start a dev npm script using pnpm in the docs folder if it exists or in the current directory.
+dev() {
+  if [[ -d docs ]]
+  then
+      cd docs
+  fi
+
+  pnpm dev
+}
