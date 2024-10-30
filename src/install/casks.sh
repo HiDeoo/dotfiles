@@ -14,7 +14,6 @@ apps=(
   imageoptim
   iterm2
   macupdater
-  microsoft-edge
   orbstack
   raycast
   sf-symbols
