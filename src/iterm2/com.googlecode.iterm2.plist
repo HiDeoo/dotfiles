@@ -1457,6 +1457,19 @@
 				<key>Red Component</key>
 				<real>0.30196078431372547</real>
 			</dict>
+			<key>Match Background Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.0</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>1</real>
+				<key>Red Component</key>
+				<real>1</real>
+			</dict>
 			<key>Minimum Contrast</key>
 			<real>0.11647135416666667</real>
 			<key>Mouse Reporting</key>
