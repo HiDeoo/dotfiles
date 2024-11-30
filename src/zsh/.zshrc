@@ -281,7 +281,7 @@ fzf-history-widget() {
 
 # Navigate automatically to a git cloned directory.
 git() {
-  if [ "$1" = clone ] ; then
+  if [ "$1" = clone ] && [ "$#" -eq 2 ]; then
     command git clone $2
     cd $(basename $2 | sed 's/.git$//')
   else
