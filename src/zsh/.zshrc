@@ -296,7 +296,7 @@ alias gitcleanup='gh poi'
 gitdone() {
   branch=($(git rev-parse --abbrev-ref HEAD))
 
-  command git main && git pp && git branch -d ${branch}
+  command git main && git pp && git branch -D ${branch}
 }
 
 # Create a new PR.
