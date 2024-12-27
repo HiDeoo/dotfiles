@@ -4,7 +4,7 @@
 </div>
 
 <div align="center">
-  <a href="https://github.com/HiDeoo/dotfiles/blob/main/LICENSE">
+  <a href="https://github.com/HiDeoo/dotfiles/blob/main/LICENSE.md">
     <img alt="License" src="https://badgen.net/github/license/HiDeoo/dotfiles" />
   </a>
   <br />
