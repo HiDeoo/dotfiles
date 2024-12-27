@@ -45,7 +45,7 @@ Dotfiles:
 - [Borg](https://borgbackup.readthedocs.io/)
 - [Espanso](https://github.com/espanso/espanso)
 - [Git](https://git-scm.com/docs/git-config)
-- [iTerm2](https://iterm2.com/documentation-preferences.html)
+- [Ghostty](https://ghostty.org/)
 - [Neovim](https://neovim.io/doc/user/starting.html#init.lua)
 - [Packer](https://github.com/wbthomason/packer.nvim)
 - [Prezto](https://github.com/sorin-ionescu/prezto)
@@ -58,7 +58,6 @@ Scripts:
 - `+x`: Script to quickly add the execution permission to a file.
 - `backup`: Script using [Borg](https://borgbackup.readthedocs.io/) to create deduplicating backups every night.
 - `brew_init`: Script to initialize [Homebrew](https://brew.sh/) with Apple Silicon support.
-- `imgcat`: Script showing inline images in iTerm2.
 - `mit`: Script to generate an MIT license file in the current directory.
 
 ## Resources

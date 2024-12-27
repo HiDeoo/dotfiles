@@ -1,0 +1,40 @@
+confirm-close-surface = false
+font-family = "PragmataProMono Nerd Font"
+macos-titlebar-style = tabs
+minimum-contrast = 1.1
+quit-after-last-window-closed = true
+window-inherit-working-directory = false
+window-new-tab-position = end
+window-padding-x = 10
+window-padding-y = 2
+window-width = 238
+window-height = 75
+
+keybind = cmd+shift+left=previous_tab
+keybind = cmd+shift+right=next_tab
+keybind = cmd+shift+up=jump_to_prompt:-1
+keybind = cmd+shift+down=jump_to_prompt:1
+
+# Vitesse Dark theme (https://github.com/HiDeoo/iTerm2-theme-vitesse)
+palette = 0=#393a34
+palette = 1=#cb7676
+palette = 2=#4d9375
+palette = 3=#e6cc77
+palette = 4=#6394bf
+palette = 5=#d9739f
+palette = 6=#5eaab5
+palette = 7=#dbd7ca
+palette = 8=#777777
+palette = 9=#cb7676
+palette = 10=#4d9375
+palette = 11=#e6cc77
+palette = 12=#6394bf
+palette = 13=#d9739f
+palette = 14=#5eaab5
+palette = 15=#ffffff
+background = #121212
+foreground = #dbd7ca
+cursor-color = #dbd7ca
+selection-background = #4d9375
+selection-foreground = #121212
+unfocused-split-fill = #424242

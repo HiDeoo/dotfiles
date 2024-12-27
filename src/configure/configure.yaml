@@ -39,6 +39,8 @@
     ~/.zshrc:
       path: src/zsh/.zshrc
     # ~/.config
+    ~/.config/ghostty/config:
+      path: src/ghostty/config
     ~/.config/nvim/init.lua:
       path: src/nvim/init.lua
     ~/.config/starship.toml:
@@ -60,8 +62,6 @@
       path: src/bin/backup
     /usr/local/bin/brew_init:
       path: src/bin/brew_init
-    /usr/local/bin/imgcat:
-      path: src/bin/imgcat
     /usr/local/bin/mit:
       path: src/bin/mit
 
@@ -72,7 +72,6 @@
 - shell:
     - [chmod +x /usr/local/bin/backup, Setting permissions for backup binary.]
     - [chmod +x /usr/local/bin/+x, Setting permissions for +x binary.]
-    - [chmod +x /usr/local/bin/imgcat, Setting permissions for imgcat binary.]
     - [chmod +x /usr/local/bin/mit, Setting permissions for mit binary.]
     - command: echo "To install Neovim plugins, use the ':PackerInstall' command."
       description: Setting up Neovim plugins.

@@ -21,11 +21,6 @@ if type brew &>/dev/null; then
   compinit
 fi
 
-# Source iTerm2 Shell Integration.
-if [[ -s "${HOME}/.iterm2_shell_integration.zsh" ]]; then
-  source ${HOME}/.iterm2_shell_integration.zsh
-fi
-
 # Load extra tab-completions.
 [ -f ~/.config/tabtab/zsh/__tabtab.zsh ] && source ~/.config/tabtab/zsh/__tabtab.zsh
 
