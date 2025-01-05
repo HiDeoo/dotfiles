@@ -1,3 +1,6 @@
+# Fix for lag issues with Mission Control since v1.0.1 with macos-titlebar-style set to `tabs`
+# https://github.com/ghostty-org/ghostty/discussions/4256#discussioncomment-11722304
+background-opacity=0.99
 confirm-close-surface = false
 font-family = "PragmataProMono Nerd Font"
 macos-titlebar-style = tabs
