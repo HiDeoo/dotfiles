@@ -334,6 +334,9 @@ alias pnpmup='pnpm up --latest'
 # Lint a package.json file.
 alias pkglint='pnpx publint --strict; pnpx @arethetypeswrong/cli $(npm pack)'
 
+# Run locally installed changeset shell script and open the changeset file.
+alias changeset='pnpm exec changeset --open'
+
 # Setup a fresh environment to reproduce a Starlight issue.
 #
 # By default, the script will:
