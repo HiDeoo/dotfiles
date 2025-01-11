@@ -1,0 +1,18 @@
+set diff-highlight = true
+set ignore-case = smart-case
+set main-view = date:custom,format="%Y-%m-%d %H:%M" id:true date:relative author:full,width=20 commit-title:graph=v2,refs=true
+set tab-size = 2
+
+bind generic <Esc>[1;5A previous
+bind generic <Esc>[1;5B next
+bind main <Space> enter
+bind diff <Space> view-main
+bind diff <Up> scroll-line-up
+bind diff <Down> scroll-line-down
+
+color author cyan default
+color cursor green green
+color date blue default
+color id yellow default
+color title-blur green default
+color title-focus green default

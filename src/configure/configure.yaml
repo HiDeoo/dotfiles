@@ -45,6 +45,8 @@
       path: src/nvim/init.lua
     ~/.config/starship.toml:
       path: src/zsh/starship.toml
+    ~/.config/tig/config:
+      path: src/tig/config
     # ~/.ssh
     ~/.ssh/allowed_signers:
       path: src/git/allowed_signers
