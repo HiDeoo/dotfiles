@@ -9,7 +9,6 @@ apps=(
   cloudflared
   coreutils
   doggo
-  espanso
   eza
   fd
   fnm

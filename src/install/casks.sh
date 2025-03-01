@@ -5,6 +5,7 @@ apps=(
   calibre
   discord
   dropbox
+  espanso
   fantastical
   figma
   firefox
