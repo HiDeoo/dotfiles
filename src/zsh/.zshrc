@@ -131,9 +131,6 @@ alias cls='clear; ls'
 # Make pbcopy shorter.
 alias copy='pbcopy <'
 
-# Launch a new VLC instance.
-alias vvlc='open -n /Applications/VLC.app'
-
 # Remove the last added file in the ~/Downloads directory if it matches a set of extensions.
 dlrm() {
   validExtensions=("avi" "mkv")

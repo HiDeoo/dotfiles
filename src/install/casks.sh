@@ -13,6 +13,7 @@ apps=(
   google-chrome
   gpg-suite-no-mail
   httpie
+  iina
   imageoptim
   macupdater
   orbstack
@@ -23,7 +24,6 @@ apps=(
   the-unarchiver
   via
   visual-studio-code
-  vlc
 )
 
 echo "Installing Casks."
