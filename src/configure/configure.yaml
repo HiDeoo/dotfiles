@@ -51,8 +51,6 @@
     ~/.ssh/allowed_signers:
       path: src/git/allowed_signers
     # ~/Library
-    ~/Library/Application Support/streamlink/config:
-      path: src/streamlink/config
     ~/Library/LaunchAgents/local.backup.plist:
       path: src/borg/local.backup.plist
     ~/Library/Application Support/espanso:

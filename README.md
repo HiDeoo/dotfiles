@@ -49,7 +49,6 @@ Dotfiles:
 - [Neovim](https://neovim.io/doc/user/starting.html#init.lua)
 - [Packer](https://github.com/wbthomason/packer.nvim)
 - [Prezto](https://github.com/sorin-ionescu/prezto)
-- [Streamlink](https://streamlink.github.io/cli/config.html)
 - [Wget](https://www.gnu.org/software/wget/manual/html_node/Wgetrc-Commands.html)
 - [Zsh](http://zsh.sourceforge.net/Intro/intro_3.html#SEC3)
 

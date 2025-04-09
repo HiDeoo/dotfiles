@@ -1,7 +1,6 @@
 {
   "files.associations": {
     "**/src/ghostty/config": "properties",
-    "**/src/streamlink/config": "properties",
     "**/src/wget/.wgetrc": "properties",
     "**/src/zsh/*": "shellscript"
   },

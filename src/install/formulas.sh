@@ -27,7 +27,6 @@ apps=(
   ripgrep
   starship
   staticcheck
-  streamlink
   trash
   wget
   zsh
