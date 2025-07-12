@@ -22,7 +22,6 @@ apps=(
   shottr
   stats
   the-unarchiver
-  via
   visual-studio-code
 )
 
