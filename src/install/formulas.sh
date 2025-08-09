@@ -20,6 +20,7 @@ apps=(
   go
   grep
   htop
+  hyperfine
   jq
   neovim
   prettyping
