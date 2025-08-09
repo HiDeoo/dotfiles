@@ -167,9 +167,6 @@ o() {
 # macOS
 #
 
-# Use Homebrew’s Python 3.
-alias python='python3'
-
 # Configure the Homebrew Cask application directory.
 export HOMEBREW_CASK_OPTS='--appdir=/Applications'
 
@@ -209,9 +206,6 @@ alias tunnel='cloudflared tunnel --url'
 #
 # Dev
 #
-
-# URL-encode a string.
-alias urlencode='python -c "import sys, urllib.parse as ul; print(ul.quote_plus(sys.argv[1]));"'
 
 # Ssh to Zoidberg.
 alias zoid='ssh zoidberg'
