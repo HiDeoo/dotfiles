@@ -23,7 +23,6 @@ apps=(
   jq
   neovim
   prettyping
-  python
   ripgrep
   starship
   staticcheck
