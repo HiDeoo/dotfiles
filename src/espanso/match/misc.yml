@@ -24,6 +24,22 @@ matches:
       - Closes #
       - Suggested label:
 
+  - trigger: "'aspr"
+    replace: |
+      ## Changes
+
+      $|$
+
+      ## Testing
+
+      <!-- How was this change tested? -->
+
+      ## Docs
+
+      <!-- Could this affect a user’s behavior? We probably need to update docs! -->
+      <!-- If docs will be needed or you’re not sure, uncomment the next line: -->
+      <!-- /cc @withastro/maintainers-docs for feedback! -->
+
   - trigger: "'i18nok"
     replace: |
       Thanks for the translation :raised_hands:
