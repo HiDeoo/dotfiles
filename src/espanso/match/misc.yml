@@ -13,6 +13,17 @@ matches:
 
       - Closes #
 
+  - trigger: "'docspr"
+    replace: |
+      #### Description
+
+      $|$
+
+      #### Related issues & labels
+
+      - Closes #
+      - Suggested label:
+
   - trigger: "'i18nok"
     replace: |
       Thanks for the translation :raised_hands:
