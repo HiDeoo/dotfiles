@@ -28,6 +28,7 @@ apps=(
   starship
   staticcheck
   trash
+  tw93/tap/mole
   wget
   zsh
 )
