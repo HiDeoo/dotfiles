@@ -119,7 +119,7 @@ alias cat='bat -p --theme ansi'
 alias ping='prettyping'
 alias rm='trash'
 
-# Alias ls to tree.
+# Alias tree to ls with a tree-like output.
 alias tree='ls -T -L 2'
 
 # Add a native rm fallback.
