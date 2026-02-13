@@ -1,14 +1,16 @@
+auto-update-channel = tip
 confirm-close-surface = false
 font-family = "PragmataProMono Nerd Font"
 macos-titlebar-style = tabs
 minimum-contrast = 1.1
 quit-after-last-window-closed = true
+tab-inherit-working-directory = false
 window-inherit-working-directory = false
 window-new-tab-position = end
 window-padding-x = 10
 window-padding-y = 2
 window-position-x = 486
-window-position-y = 108
+window-position-y = 137
 window-width = 238
 window-height = 75
 
