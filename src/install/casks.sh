@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 apps=(
+  1password
   alt-tab
   calibre
   discord
@@ -15,12 +16,15 @@ apps=(
   httpie
   iina
   imageoptim
-  macupdater
+  mimestream
+  obs
+  obsidian
   orbstack
   raycast
   sf-symbols
   shottr
   stats
+  steermouse
   the-unarchiver
   visual-studio-code
 )
@@ -34,7 +38,7 @@ brew install --cask "${apps[@]}"
 
 echo "Installing Quick Look plugins."
 
-brew install --cask syntax-highlight sbarex-qlmarkdown qlvideo
+brew install --cask syntax-highlight qlmarkdown qlvideo
 
 xattr -r -d com.apple.quarantine "/Applications/Syntax Highlight.app"
 
