@@ -1,4 +1,4 @@
-auto-update-channel = tip
+auto-update-channel = stable
 confirm-close-surface = false
 font-family = "PragmataProMono Nerd Font"
 macos-titlebar-style = tabs
