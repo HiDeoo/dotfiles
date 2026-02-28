@@ -117,7 +117,6 @@ alias mv='mv -v'
 # Override some default commands.
 alias cat='bat -p --theme ansi'
 alias ping='prettyping'
-alias rm='trash'
 
 # Alias tree to ls with a tree-like output.
 alias tree='ls -T -L 2'
