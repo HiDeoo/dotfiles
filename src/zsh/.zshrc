@@ -54,7 +54,7 @@ zshaddhistory() {
 # Changes the current working directory using fasd.
 alias d='fasd_cd'
 
-# Navigate to the previous directory.
+# Navigate to the previous directory using `-`.
 alias -- -='cd -'
 
 # Navigate to various common directories.
@@ -370,7 +370,7 @@ strepro() {
   pnpm dev
 }
 
-# Start a dev npm script using pnpm in the docs folder if it exists or in the current directory.
+# Start a `dev` npm script using `pnpm` in the `docs` folder if it exists or in the current directory.
 dev() {
   if [[ -d docs ]]
   then
