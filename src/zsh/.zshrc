@@ -164,9 +164,6 @@ alias update_brew='brew -v update; brew upgrade; brew cleanup --prune=30; brew d
 alias update_prezto='zprezto-update'
 alias update_all='update_brew; update_prezto'
 
-# Empty trashes on all mounted volumes, the trash of the main disk & Apple's System Logs.
-alias empty='sudo \rm -rfv /Volumes/*/.Trashes; sudo \rm -rfv ~/.Trash; sudo \rm -rfv /private/var/log/asl/*.asl'
-
 # Remove quarantine on a specific element.
 alias unquarantine='xattr -r -d com.apple.quarantine'
 
