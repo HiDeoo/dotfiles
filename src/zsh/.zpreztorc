@@ -50,7 +50,7 @@ zstyle ':prezto:module:terminal:tab-title' format '%s'
 # Editor
 #
 
-# Set the key mapping style to 'emacs' or 'vi'.
+# Set the key mapping style to 'emacs'.
 zstyle ':prezto:module:editor' key-bindings 'emacs'
 
 # Auto convert .... to ../..
