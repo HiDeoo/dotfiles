@@ -294,11 +294,6 @@ latest() {
   pnpm view $1 version | tail -n 1 | cut -d "'" -f 2
 }
 
-# Bump version numbers without Conventional Commits.
-# https://github.com/antfu/bumpp
-# https://github.com/JS-DevTools/version-bump-prompt
-alias bump='pnpx bumpp --commit "v"'
-
 # Update various packages to their latest versions.
 alias pnpmup='pnpm up --latest'
 
