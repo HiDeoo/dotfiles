@@ -177,9 +177,6 @@ alias approve='spctl --add --label "Approved"'
 # Get external IPv4.
 alias ip='\dig +short -4 myip.opendns.com @resolver1.opendns.com'
 
-# Start a Proxy Socks v5.
-alias proxy='ssh -C2qTnN -D 8282'
-
 # Alias dig to doggo.
 alias dig='doggo'
 
