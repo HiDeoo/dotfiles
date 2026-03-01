@@ -114,9 +114,6 @@ alias ping='prettyping'
 # Alias tree to ls with a tree-like output.
 alias tree='ls -T -L 2'
 
-# Add a native rm fallback.
-alias rmi='command rm -i'
-
 # Clear & list the current directory.
 alias cls='clear; ls'
 
