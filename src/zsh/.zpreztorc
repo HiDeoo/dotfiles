@@ -55,6 +55,20 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 zstyle ':prezto:module:editor' dot-expansion 'yes'
 
 #
+# History
+#
+
+# Increase history size.
+zstyle ':prezto:module:history' histsize 1000000
+
+#
+# Utility
+#
+
+# Disable interactive variants.
+zstyle ':prezto:module:utility' safe-ops 'no'
+
+#
 # Syntax Highlighting
 #
 

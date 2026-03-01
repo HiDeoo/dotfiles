@@ -28,10 +28,6 @@ fi
 # ZSH
 #
 
-# Increase history size.
-export HISTSIZE=1000000
-export SAVEHIST=${HISTSIZE}
-
 # Add a key binding (Ctrl + Space) to accept suggestions.
 bindkey '^ ' autosuggest-accept
 
