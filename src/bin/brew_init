@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-if type /usr/local/bin/brew > /dev/null 2>&1; then
-  eval $(/usr/local/bin/brew shellenv)
-fi
-
-if [ "`arch`" = "arm64" ] && type /opt/homebrew/bin/brew > /dev/null 2>&1; then
+if type /opt/homebrew/bin/brew > /dev/null 2>&1; then
   eval $(/opt/homebrew/bin/brew shellenv)
 fi

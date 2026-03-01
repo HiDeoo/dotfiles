@@ -21,7 +21,7 @@ SOURCE_PATH=(
 # Path of the repository that will contain the backup archives.
 REPO_PATH="bullpen:~/.backups/iMac"
 
-# Initialize brew paths.
+# Initialize Homebrew.
 source /usr/local/bin/brew_init
 
 # Use macOS Keychain to get the passphrase.

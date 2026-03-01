@@ -56,7 +56,7 @@ Scripts:
 
 - `+x`: Script to quickly add the execution permission to a file.
 - `backup`: Script using [Borg](https://borgbackup.readthedocs.io/) to create deduplicating backups every night.
-- `brew_init`: Script to initialize [Homebrew](https://brew.sh/) with Apple Silicon support.
+- `brew_init`: Script to initialize [Homebrew](https://brew.sh/).
 - `mit`: Script to generate an MIT license file in the current directory.
 
 ## Resources
