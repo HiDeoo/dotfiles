@@ -27,11 +27,9 @@ zstyle ':prezto:load' pmodule \
   'git' \
   'archive' \
   'osx' \
-  'rsync' \
   'syntax-highlighting' \
   'history-substring-search' \
-  'autosuggestions' \
-  'prompt'
+  'autosuggestions'
 
 #
 # Terminal
@@ -68,13 +66,3 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
   'line' \
   'cursor' \
   'root'
-
-#
-# Prompt
-#
-
-# Disable return values
-zstyle ':prezto:module:prompt' show-return-val 'no'
-
-# Set the prompt theme to load.
-zstyle ':prezto:module:prompt' theme 'sorin'
