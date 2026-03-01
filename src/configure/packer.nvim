@@ -10,4 +10,4 @@ fi
 
 git clone https://github.com/wbthomason/packer.nvim $INSTALL_FILE
 
- exit 0
+exit 0
