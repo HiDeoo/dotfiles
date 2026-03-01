@@ -5,5 +5,3 @@ command_timeout=1000
 [battery]
 disabled=true
 
-[package]
-display_private=true
