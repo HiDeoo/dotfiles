@@ -19,6 +19,14 @@ keybind = cmd+shift+right=next_tab
 keybind = cmd+shift+up=jump_to_prompt:-1
 keybind = cmd+shift+down=jump_to_prompt:1
 
+keybind = ctrl+v=activate_key_table:resize
+keybind = resize/arrow_up=resize_split:up,75
+keybind = resize/arrow_down=resize_split:down,75
+keybind = resize/arrow_left=resize_split:left,75
+keybind = resize/arrow_right=resize_split:right,75
+keybind = resize/escape=deactivate_key_table
+keybind = resize/catch_all=ignore
+
 # Vitesse Dark theme (https://github.com/HiDeoo/iTerm2-theme-vitesse)
 palette = 0=#393a34
 palette = 1=#cb7676
