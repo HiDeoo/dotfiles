@@ -10,4 +10,5 @@ sh xcode.sh
 sh homebrew.sh
 sh formulas.sh
 sh casks.sh
+sh node.sh
 sh settings.sh
