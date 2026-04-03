@@ -294,14 +294,11 @@ latest() {
   pnpm view $1 version | tail -n 1 | cut -d "'" -f 2
 }
 
-# Update various packages to their latest versions.
-alias pnpmup='pnpm up --latest'
-
 # Lint a package.json file.
 alias pkglint='pnpx publint --strict; pnpx @arethetypeswrong/cli $(npm pack)'
 
 # Run locally installed changeset shell script and open the changeset file.
-alias changeset='pnpm exec changeset --open'
+alias changeset='na exec changeset --open'
 
 # Setup a fresh environment to reproduce a Starlight issue.
 #
@@ -345,7 +342,7 @@ strepro() {
 
   if [ -z "$minimal" ]; then
     git clone https://github.com/withastro/starlight
-    pnpm i
+    ni
     c .
     cd docs
   else
@@ -353,15 +350,15 @@ strepro() {
     c .
   fi
 
-  pnpm dev
+  nr dev
 }
 
-# Start a `dev` npm script using `pnpm` in the `docs` folder if it exists or in the current directory.
+# Start a `dev` npm script in the `docs` folder if it exists or in the current directory.
 dev() {
   if [[ -d docs ]]
   then
       cd docs
   fi
 
-  pnpm dev
+  nr dev
 }
