@@ -1,6 +1,7 @@
 auto-update-channel = stable
 confirm-close-surface = false
 font-family = "PragmataProMono Nerd Font"
+macos-option-as-alt = true
 macos-titlebar-style = tabs
 minimum-contrast = 1.1
 quit-after-last-window-closed = true
