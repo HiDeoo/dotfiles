@@ -18,7 +18,7 @@ fi
 #
 
 export EDITOR='nvim'
-export VISUAL='code'
+export VISUAL='code --wait'
 export PAGER='less'
 
 #
