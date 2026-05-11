@@ -19,6 +19,7 @@ keybind = cmd+shift+left=previous_tab
 keybind = cmd+shift+right=next_tab
 keybind = cmd+shift+up=jump_to_prompt:-1
 keybind = cmd+shift+down=jump_to_prompt:1
+keybind = cmd+k=text:clear\x0d
 
 keybind = ctrl+v=activate_key_table:resize
 keybind = resize/arrow_up=resize_split:up,75
