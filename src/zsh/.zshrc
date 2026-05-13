@@ -279,7 +279,7 @@ alias pr='gh pr checkout'
 export NODE_REPL_HISTORY_SIZE='10000';
 
 # Lazy-load fnm.
-eval "$(fnm env --use-on-cd)"
+eval "$(fnm env --use-on-cd --version-file-strategy=recursive)"
 
 # Configure pnpm.
 export PNPM_HOME="$HOME/Library/pnpm"
