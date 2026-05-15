@@ -1,10 +1,10 @@
 matches:
   - trigger: "'shrug"
     replace: "¯\\_(ツ)_/¯"
-    word: true
+    right_word: true
   - trigger: "'flip"
     replace: "(╯°□°）╯︵ ┻━┻"
-    word: true
+    right_word: true
   - trigger: "'unflip"
     replace: "┬─┬ ノ( ゜-゜ノ)"
-    word: true
+    right_word: true
