@@ -1,13 +1,13 @@
 matches:
   - trigger: "'mref"
     replace: "[reference]({{clipboard}})"
-    right_word: true
+    word: true
     vars:
       - name: "clipboard"
         type: "clipboard"
   - trigger: "'mlink"
     replace: "[$|$]({{clipboard}})"
-    right_word: true
+    word: true
     vars:
       - name: "clipboard"
         type: "clipboard"

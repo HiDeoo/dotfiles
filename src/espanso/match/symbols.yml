@@ -1,7 +1,7 @@
 matches:
   - trigger: "'em"
     replace: "—"
-    right_word: true
+    word: true
   - trigger: "'t"
     replace: "↑"
     word: true
@@ -16,31 +16,31 @@ matches:
     word: true
   - trigger: "'tm"
     replace: "™"
-    right_word: true
+    word: true
   - trigger: "'copy"
     replace: "©"
-    right_word: true
+    word: true
   - trigger: "'command"
     replace: "⌘"
-    right_word: true
+    word: true
   - trigger: "'option"
     replace: "⌥"
-    right_word: true
+    word: true
   - trigger: "'ctrl"
     replace: "⌃"
-    right_word: true
+    word: true
   - trigger: "'shift"
     replace: "⇧"
-    right_word: true
+    word: true
   - trigger: "'12"
     replace: "½"
-    right_word: true
+    word: true
   - trigger: "'14"
     replace: "¼"
-    right_word: true
+    word: true
   - trigger: "'sq"
     replace: "²"
-    right_word: true
+    word: true
   - trigger: "'deg"
     replace: "°"
-    right_word: true
+    word: true

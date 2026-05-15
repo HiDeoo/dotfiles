@@ -1,7 +1,7 @@
 matches:
   - trigger: "'date"
     replace: "{{date}}"
-    right_word: true
+    word: true
     vars:
       - name: date
         type: date
@@ -9,7 +9,7 @@ matches:
           format: "%m/%d/%Y"
   - trigger: "'ddate"
     replace: "{{day}} {{date}}"
-    right_word: true
+    word: true
     vars:
       - name: day
         type: date
