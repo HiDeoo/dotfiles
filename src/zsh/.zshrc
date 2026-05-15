@@ -42,7 +42,7 @@ eval "$(starship init zsh)"
 
 # Prevent some commands from being saved in the history.
 zshaddhistory() {
-  if [[ "$1" == "strepro"* ]]; then
+  if [[ "$1" == "strepro"* || "$1" == "  clear"* ]]; then
     fc -p
   fi
 }
