@@ -160,7 +160,7 @@ o() {
 export HOMEBREW_CASK_OPTS='--appdir=/Applications'
 
 # Update various parts of the system.
-alias update_brew='brew -v update; brew upgrade; brew cleanup --prune=30; brew doctor'
+alias update_brew='brew -v update; brew upgrade -y; brew cleanup --prune=30; brew doctor'
 alias update_prezto='zprezto-update'
 alias update_all='update_brew; update_prezto'
 
@@ -362,3 +362,5 @@ dev() {
 
   nr dev
 }
+
+. "$HOME/.cargo/env"
