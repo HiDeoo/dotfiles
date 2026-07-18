@@ -11,9 +11,9 @@ window-new-tab-position = end
 window-padding-x = 10
 window-padding-y = 2
 window-position-x = 486
-window-position-y = 137
+window-position-y = 65
 window-width = 238
-window-height = 75
+window-height = 85
 
 keybind = cmd+shift+left=previous_tab
 keybind = cmd+shift+right=next_tab
