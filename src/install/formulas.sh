@@ -5,13 +5,11 @@ echo "Installing Formulas"
 apps=(
   bat
   borgbackup
-  bun
   cloudflared
   coreutils
   doggo
   eza
   fd
-  fnm
   fzf
   gh
   git
@@ -33,7 +31,6 @@ apps=(
 )
 
 brew tap espanso/espanso
-brew tap oven-sh/bun
 
 brew install "${apps[@]}"
 

@@ -272,20 +272,17 @@ alias npr='gh pr create --body ""'
 alias pr='gh pr checkout'
 
 #
-# Node
+# Dev
 #
 
 # Configure the Node REPL.
 export NODE_REPL_HISTORY_SIZE='10000';
 
-# Lazy-load fnm.
-eval "$(fnm env --use-on-cd --version-file-strategy=recursive)"
-
 # Configure pnpm.
 export PNPM_HOME="$HOME/Library/pnpm"
 
 path=(
-  $PNPM_HOME
+  $PNPM_HOME/bin
   $path
 )
 
@@ -342,7 +339,7 @@ strepro() {
 
   if [ -z "$minimal" ]; then
     git clone https://github.com/withastro/starlight
-    ni
+    pnpm i
     c .
     cd docs
   else
@@ -350,7 +347,7 @@ strepro() {
     c .
   fi
 
-  nr dev
+  pnpm dev
 }
 
 # Start a `dev` npm script in the `docs` folder if it exists or in the current directory.
@@ -360,7 +357,7 @@ dev() {
       cd docs
   fi
 
-  nr dev
+  pnpm dev
 }
 
 . "$HOME/.cargo/env"

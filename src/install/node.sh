@@ -1,13 +1,9 @@
 #!/usr/bin/env bash
 
+echo "Installing pnpm."
+
+curl -fsSL https://get.pnpm.io/install.sh | sh -
+
 echo "Installing Node.js LTS."
 
-fnm install --lts
-
-echo "Installing corepack."
-
-pnpm add -g corepack
-
-echo "Installing ni."
-
-pnpm add -g @antfu/ni
+pnpm runtime set node lts -g

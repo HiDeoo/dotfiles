@@ -30,7 +30,7 @@ The installation process will:
 - Install [Homebrew](https://brew.sh/).
 - Install various [Homebrew Formulas](src/install/formulas.sh).
 - Install various [Homebrew Casks](src/install/casks.sh).
-- Install [Node.js](src/install/node.sh) and some global npm packages.
+- Install [Node.js](src/install/node.sh) using [pnpm](https://pnpm.io/).
 - Configure all the [environment settings](src/install/settings.sh).
 
 ### Configuration
