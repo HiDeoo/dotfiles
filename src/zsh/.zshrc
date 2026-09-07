@@ -295,7 +295,7 @@ latest() {
 alias pkglint='pnpx publint --strict; pnpx @arethetypeswrong/cli $(npm pack)'
 
 # Run locally installed changeset shell script and open the changeset file.
-alias changeset='na exec changeset --open'
+alias changeset='pnpm exec changeset --open'
 
 # Setup a fresh environment to reproduce a Starlight issue.
 #
