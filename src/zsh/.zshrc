@@ -271,6 +271,9 @@ alias npr='gh pr create --body ""'
 # Checkout a PR.
 alias pr='gh pr checkout'
 
+# Open GitHub repository.
+alias repo='gh browse'
+
 #
 # Dev
 #
