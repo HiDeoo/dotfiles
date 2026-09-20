@@ -15,7 +15,6 @@ apps=(
   git
   git-delta
   git-extras
-  go
   grep
   htop
   hyperfine
@@ -24,7 +23,6 @@ apps=(
   prettyping
   ripgrep
   starship
-  staticcheck
   tw93/tap/mole
   wget
   zsh
