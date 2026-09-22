@@ -346,7 +346,7 @@ strepro() {
     c .
     cd docs
   else
-    pnpm create astro@latest --template starlight --install --no-git --skip-houston .
+    pnpm create astro@latest --template starlight --install --no-ai --no-git --skip-houston .
     c .
   fi
 
