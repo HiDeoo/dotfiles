@@ -22,7 +22,6 @@ apps=(
   orbstack
   raycast
   sf-symbols
-  shottr
   stats
   steermouse
   the-unarchiver
