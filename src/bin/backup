@@ -19,7 +19,7 @@ SOURCE_PATH=(
 )
 
 # Path of the repository that will contain the backup archives.
-REPO_PATH="bullpen:~/.backups/iMac"
+REPO_PATH="ssh://e6oamp9u@e6oamp9u.repo.borgbase.com/./repo"
 
 # Initialize Homebrew.
 source /usr/local/bin/brew_init
@@ -66,6 +66,9 @@ backup() {
 
   # Purge existing archives except the last two backups and at least 2 weekly archives.
   borg prune --keep-last 2 -w 2 ${REPO_PATH}
+
+  # Compact the repository to save space.
+  borg compact ${REPO_PATH}
 }
 
 # Handle various usages.
