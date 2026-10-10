@@ -200,9 +200,6 @@ alias rgc='rg --context 2'
 # Extract an asar archive to a specific fodler.
 alias unasar='npx asar extract'
 
-# Configure Go.
-export GOPATH="$HOME/.go"
-
 #
 # Fzf
 #
