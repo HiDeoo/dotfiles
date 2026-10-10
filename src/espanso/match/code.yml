@@ -14,3 +14,6 @@ matches:
   - trigger: "'skipci"
     replace: "[skip ci]"
     word: true
+  - trigger: "'mba"
+    replace: "| Before       | After        |\n| ------------ | ------------ |\n| TODO(HiDeoo) | TODO(HiDeoo) |\n\n"
+    word: true
