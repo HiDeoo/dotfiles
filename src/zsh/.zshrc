@@ -187,20 +187,6 @@ alias hosts='sudo $EDITOR /etc/hosts'
 alias tunnel='cloudflared tunnel --url'
 
 #
-# Dev
-#
-
-# Ssh to Zoidberg.
-alias zoid='ssh zoidberg'
-
-# Alias ripgrep.
-alias rg='rg --smart-case --colors "path:fg:green" --colors "path:style:bold" --colors "line:fg:yellow" --colors "line:style:bold" --colors "match:fg:magenta"'
-alias rgc='rg --context 2'
-
-# Extract an asar archive to a specific fodler.
-alias unasar='npx asar extract'
-
-#
 # Fzf
 #
 
@@ -275,6 +261,10 @@ alias repo='gh browse'
 # Dev
 #
 
+# Alias ripgrep.
+alias rg='rg --smart-case --colors "path:fg:green" --colors "path:style:bold" --colors "line:fg:yellow" --colors "line:style:bold" --colors "match:fg:magenta"'
+alias rgc='rg --context 2'
+
 # Configure the Node REPL.
 export NODE_REPL_HISTORY_SIZE='10000';
 
@@ -296,6 +286,9 @@ alias pkglint='pnpx publint --strict; pnpx @arethetypeswrong/cli $(npm pack)'
 
 # Run locally installed changeset shell script and open the changeset file.
 alias changeset='pnpm exec changeset --open'
+
+# Extract an asar archive to a specific fodler.
+alias unasar='pnpx asar extract'
 
 # Setup a fresh environment to reproduce a Starlight issue.
 #
